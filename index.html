@@ -13,11 +13,9 @@
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->  <script>
-  	var link = document.createElement('link');
-  	link.rel = 'stylesheet';
-  	link.type = 'text/css';
-  	link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
-  	document.getElementsByTagName('head')[0].appendChild( link );
+  	if (window.location.search.match(/print-pdf/gi)) {
+  	  document.getElementsByTagName('head')[0].appendChild('<link rel="stylesheet" href="assets/css/print/pdf.css">');
+  	}
   </script>
   <link rel="stylesheet" href = "assets/css/print">
 <link rel="stylesheet" href = "assets/css/style.css">
