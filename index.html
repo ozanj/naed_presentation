@@ -13,13 +13,13 @@
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->  <script>
+    console.log(window.location.href);
   	if (window.location.search.match(/print-pdf/gi)) {
-  	  document.getElementsByTagName('head')[0].appendChild('<link rel="stylesheet" href="assets/css/print/pdf.css">');
+  	  console.log('matched');
+  	  document.getElementsByTagName('head')[0].appendChild('<link rel="stylesheet" href="assets/css/pdf.css">');
   	}
   </script>
-  <link rel="stylesheet" href = "assets/css/print">
-<link rel="stylesheet" href = "assets/css/style.css">
-
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 </head>
 <body>
