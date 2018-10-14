@@ -13,10 +13,12 @@
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->  <script>
-    console.log(window.location.href);
+    var link = document.createElement( 'link' );
+  	link.rel = 'stylesheet';
+  	link.type = 'text/css';
+  	link.href = 'assets/css/pdf.css';
   	if (window.location.search.match(/print-pdf/gi)) {
-  	  console.log('matched');
-  	  document.getElementsByTagName('head')[0].appendChild('<link rel="stylesheet" href="assets/css/pdf.css">');
+  	  document.getElementsByTagName('head')[0].appendChild(link);
   	}
   </script>
   <link rel="stylesheet" href="assets/css/style.css">
