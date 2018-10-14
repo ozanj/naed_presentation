@@ -44,6 +44,42 @@
   text-align: left;
 }
 
+.reveal iframe {
+  height: 500px;
+}
+
+.graphs-set {
+  height: 500px;
+}
+
+.graphs-row {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.graphs-row img {
+  height: 90%;
+  display: block;
+  margin: 10px 70px;
+}
+
+.reveal .btn {
+  border: #3b759e 1.5px dashed;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 6px;
+  transition: border 2s linear;
+}
+
+.reveal a:not(.image).btn:hover {
+  border: #74a7cb 1.5px solid;
+}
+
+.reveal a {
+  cursor: pointer;
+}
+
 .reveal p {
   font-size: 25px;
   margin: 25px 0;
@@ -66,7 +102,18 @@
   background: none;
   border: none;
   box-shadow: none;
-  width: 35%;
   display: block;
   margin: 20px auto;
+}
+
+.slide-horizontal .reveal section img {
+  width: 35%;
+}
+
+/* Arrow Controls */
+
+.slide-horizontal .reveal .controls .navigate-down,
+.slide-vertical .reveal .controls .navigate-left,
+.slide-vertical .reveal .controls .navigate-right {
+  display: none;
 }

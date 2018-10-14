@@ -14,23 +14,24 @@
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->  <link rel="stylesheet" href = "assets/css/style.css">
 
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
-      <section class='title ' data-state='' id='slide-1'>
+      <section class='title ' data-state='slide-horizontal' id='slide-1'>
   <h1>Title Slide</h1>
   <h2>Author</h2>
 
 <p>Date</p>
 
 </section>
-<section class='' data-state='' id='slide-2'>
+<section class='' data-state='slide-horizontal' id='slide-2'>
   <h1>Introduction</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   </section>
-<section class='' data-state='' id='slide-3'>
+<section class='' data-state='slide-horizontal' id='slide-3'>
   <h1>Overview</h1>
   
     <div class='fragment'>
@@ -52,7 +53,7 @@
 
     </div>
   </section>
-<section class='' data-state='' id='slide-4'>
+<section class='' data-state='slide-horizontal' id='slide-4'>
   <h1>Background</h1>
   <p>The Enrollment Funnel:</p>
 
@@ -60,39 +61,57 @@
 
   </section>
 <section>
-   <section class='' data-state=''>
+   <section class='vertical-top ' data-state='slide-horizontal'>
     <h1>Deep-Dive Results on Specific Universities</h1>
     <p>Select a university to take a closer look at the results.</p>
 
+<ul id="univ_options">
+  <li><a data-univ-id="139959">UGA</a></li>
+  <li><a data-univ-id="110635">UC Berkeley</a></li>
+  <li><a data-univ-id="215293">U Pitt</a></li>
+  <li><a data-univ-id="196097">Stony Brook</a></li>
+</ul>
+
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='' data-state=''>
+   <section class='vertical ' data-state='slide-vertical'>
     <h1>In-State Results</h1>
+    <iframe id="map" width=100% height=100% allowtransparency="true"></iframe>
 
-<p>Blah.</p>
+<p><a class='btn' href="#/4">Select another university.</a></p>
 
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='' data-state=''>
+   <section class='vertical ' data-state='slide-vertical'>
     <h1>Tables and Figures</h1>
+    <div class="graphs-set">
+  <div class="graphs-row">
+    <img id="graph1" />
+    <img id="graph2" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph3" />
+    <img id="graph4" />
+  </div>
+</div>
 
-<p>Blah.</p>
+<p><a class='btn' href="#/4">Select another university.</a></p>
 
     <aside class='notes'>
       
     </aside>
    </section>
 </section>
-<section class='' data-state='' id='slide-6'>
+<section class='' data-state='slide-horizontal' id='slide-6'>
   <h1>Comparison Across Universities</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   </section>
-<section class='' data-state='' id='slide-7'>
+<section class='' data-state='slide-horizontal' id='slide-7'>
   <h1>Conclusion</h1>
   <p>The End.</p>
 
@@ -129,5 +148,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <!-- DONE LOADING HIGHLIGHTER JS FILES -->
  
+
+  <script src="./assets/js/script.js"></script>
 
 </html>

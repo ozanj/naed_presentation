@@ -52,17 +52,35 @@ The Enrollment Funnel:
 
 Select a university to take a closer look at the results.
 
+<ul id="univ_options">
+  <li><a data-univ-id="139959">UGA</a></li>
+  <li><a data-univ-id="110635">UC Berkeley</a></li>
+  <li><a data-univ-id="215293">U Pitt</a></li>
+  <li><a data-univ-id="196097">Stony Brook</a></li>
+</ul>
+
 ***
 
 # In-State Results
 
-Blah.
+<iframe id="map" width=100% height=100% allowtransparency="true"></iframe>
+<a class='btn' href="#/4">Select another university.</a>
 
 ***
 
 # Tables and Figures
 
-Blah.
+<div class="graphs-set">
+  <div class="graphs-row">
+    <img id="graph1" />
+    <img id="graph2" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph3" />
+    <img id="graph4" />
+  </div>
+</div>
+<a class='btn' href="#/4">Select another university.</a>
 
 ---
 

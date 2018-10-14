@@ -1,5 +1,5 @@
 <section>
-   <section class='{{slide.class}}' data-state='{{slide.ds}}'>
+   <section class='vertical-top {{slide.class}}' data-state='slide-horizontal'>
     {{{slide.header}}}
     {{{slide.content}}}
     <aside class='notes'>
@@ -7,8 +7,9 @@
     </aside>
    </section>
    {{# slide.blocks }}
-   <section class='{{class}}' data-state='{{ds}}'>
-    {{{ html }}}
+   <section class='vertical {{class}}' data-state='slide-vertical'>
+    {{{ header }}}
+    {{{ content }}}
     <aside class='notes'>
       {{{ pnotes.html }}}
     </aside>
