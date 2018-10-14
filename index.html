@@ -12,7 +12,15 @@
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
-  <![endif]-->  <link rel="stylesheet" href = "assets/css/style.css">
+  <![endif]-->  <script>
+  	var link = document.createElement('link');
+  	link.rel = 'stylesheet';
+  	link.type = 'text/css';
+  	link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+  	document.getElementsByTagName('head')[0].appendChild( link );
+  </script>
+  <link rel="stylesheet" href = "assets/css/print">
+<link rel="stylesheet" href = "assets/css/style.css">
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 </head>
@@ -128,6 +136,7 @@
     controls: true,
     progress: true,
     history: true,
+    pdfSeparateFragments: false,
     center: false,
     theme: Reveal.getQueryHash().theme || 'sky', 
     transition: Reveal.getQueryHash().transition || 'slide', 

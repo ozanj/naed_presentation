@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   {{> head }}
+  <script>
+  	var link = document.createElement('link');
+  	link.rel = 'stylesheet';
+  	link.type = 'text/css';
+  	link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+  	document.getElementsByTagName('head')[0].appendChild( link );
+  </script>
   {{{ page.stylesheets }}}
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 </head>
