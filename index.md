@@ -44,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 The Enrollment Funnel:
 
-![](assets/img/funnel.png)
+<img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
 
 --- &vertical
 
@@ -64,7 +64,7 @@ Select a university to take a closer look at the results.
 # In-State Results
 
 <iframe id="map" width=100% height=100% allowtransparency="true"></iframe>
-<a class='btn' href="#/4">Select another university.</a>
+<a class='btn' href="#/4">Select another university</a>
 
 ***
 
@@ -80,7 +80,7 @@ Select a university to take a closer look at the results.
     <img id="graph4" />
   </div>
 </div>
-<a class='btn' href="#/4">Select another university.</a>
+<a class='btn' href="#/4">Select another university</a>
 
 ---
 

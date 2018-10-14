@@ -106,10 +106,6 @@
   margin: 20px auto;
 }
 
-.slide-horizontal .reveal section img {
-  width: 35%;
-}
-
 /* Arrow Controls */
 
 .slide-horizontal .reveal .controls .navigate-down,
