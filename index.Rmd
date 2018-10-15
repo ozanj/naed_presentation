@@ -3,7 +3,7 @@ title: "Presentation"
 # lib_cdn: "https://cdn.rawgit.com/ramnathv/slidifyLibraries/master/inst/libraries"
 mode: selfcontained
 ext_widgets : {rCharts: [libraries/leaflet]}
-framework: revealjs
+framework: revealjs # framework refers to layouts, transitions, vertical slides, other features, etc.
 revealjs:
   theme: sky
   transition: slide
