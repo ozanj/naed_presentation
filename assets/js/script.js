@@ -84,11 +84,11 @@ $(function() {
   }, false );
   
   function setUnivID(univ_id) {
-    $('#map').attr('src', `assets/maps/${univ_id}.html`);
-    $('#graph1').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/visit_count.png`);
-    $('#graph2').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/timeline.png`);
-    $('#graph3').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/median_income.png`);
-    $('#graph4').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/income_band.png`);
+    $('#map-state').attr('src', `assets/data/${univ_id}/map-state.html`);
+    $('#graph-overview-1').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/visit_count.png`);
+    $('#graph-overview-2').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/timeline.png`);
+    $('#graph-overview-3').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/median_income.png`);
+    $('#graph-overview-4').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/income_band.png`);
   }
 
   $('#univ_options a').on('click', function() {

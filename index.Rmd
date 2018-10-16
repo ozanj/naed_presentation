@@ -11,44 +11,34 @@ revealjs:
 --- &title
 
 # Title Slide
-
 ## Author
 
 Date
 
----
+--- 
 
-# Introduction
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
----
-
-# Overview
-
-***
-
-- Background
-
-***
-
-- Deep-Dive Results on Specific Universities
-
-***
-
-- Comparison Across Universities
-
----
-
-# Background
-
-The Enrollment Funnel:
+# Motivation
+## Enrollment Funnel
 
 <img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
 
+---
+
+# Motivation
+## Research and policy on access inequality
+
+Add text.
+
+---
+
+# Motivation
+## Scholarship on recruiting
+
+Add text.
+
 --- &vertical
 
-# Deep-Dive Results on Specific Universities
+# Deep-Dive Results
 
 Select a university to take a closer look at the results.
 
@@ -61,30 +51,82 @@ Select a university to take a closer look at the results.
 
 ***
 
-# In-State Results
-
-<iframe id="map" width=100% height=100% allowtransparency="true"></iframe>
-<a class='btn' href="#/4">Select another university</a>
-
-***
-
-# Tables and Figures
+# National Overview
 
 <div class="graphs-set">
   <div class="graphs-row">
-    <img id="graph1" />
-    <img id="graph2" />
+    <img id="graph-overview-1" />
+    <img id="graph-overview-2" />
   </div>
   <div class="graphs-row">
-    <img id="graph3" />
-    <img id="graph4" />
+    <img id="graph-overview-3" />
+    <img id="graph-overview-4" />
   </div>
 </div>
-<a class='btn' href="#/4">Select another university</a>
+
+***
+
+# In-State Results
+## State Map
+
+<iframe id="map-state" width=100% height=100% allowtransparency="true"></iframe>
+
+***
+
+# In-State Results
+## Tables and Figures
+
+<div class="graphs-set">
+  <div class="graphs-row">
+    <img id="graph-instate-1" />
+    <img id="graph-instate-2" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph-instate-3" />
+    <img id="graph-instate-4" />
+  </div>
+</div>
+
+***
+
+# In-State Results
+## Metro Area Map
+
+<iframe id="map-metro-1" width=100% height=100% allowtransparency="true"></iframe>
+
+***
+
+# Out-of-State Results
+## Tables and Figures
+
+<div class="graphs-set">
+  <div class="graphs-row">
+    <img id="graph-outofstate-1" />
+    <img id="graph-outofstate-2" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph-outofstate-3" />
+    <img id="graph-outofstate-4" />
+  </div>
+</div>
+
+***
+
+# Out-of-State Results
+## Metro Area Map
+
+<iframe id="map-metro-2" width=100% height=100% allowtransparency="true"></iframe>
+
+***
+
+# Out-of-State Results
+## Metro Area Map
+
+<iframe id="map-metro-3" width=100% height=100% allowtransparency="true"></iframe>
 
 ---
 
-# Comparison Across Universities
+# Cross-University Results
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

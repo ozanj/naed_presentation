@@ -65,6 +65,7 @@
 }
 
 .reveal .btn {
+  top: 10px;
   border: #3b759e 1.5px dashed;
   border-radius: 10px;
   font-size: 18px;
@@ -94,8 +95,27 @@
   list-style-type: circle;
 }
 
-.reveal h1 {
-  margin: 20px 0 40px;
+.reveal .slide h2,
+.reveal .vertical h2 {
+  font-size: 30px;
+  text-transform: inherit;
+  opacity: 0.8;
+}
+
+.reveal .slide h1 {
+  margin: 10px 0 40px;
+}
+
+.reveal .slide h2 {
+  margin: -30px 0 40px;
+}
+
+.reveal .vertical h1 {
+  margin: 10px 0 20px;
+}
+
+.reveal .vertical h2 {
+  margin: -10px 0 20px;
 }
 
 .reveal section img {
