@@ -38,7 +38,7 @@
   <h1>Motivation</h1>
   <h2>Enrollment Funnel</h2>
 
-<p><img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;"></p>
+<p><img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;border:none;"></p>
 
   </section>
 <section class='slide ' data-state='slide-horizontal' id='slide-3'>
@@ -61,17 +61,17 @@
     <p>Select a university to take a closer look at the results.</p>
 
 <ul id="univ_options">
-  <li><a data-univ-id="139959">UGA</a></li>
-  <li><a data-univ-id="110635">UC Berkeley</a></li>
-  <li><a data-univ-id="215293">U Pitt</a></li>
-  <li><a data-univ-id="196097">Stony Brook</a></li>
+  <li><a data-univ-id="139959" data-state="GA" data-metro="Atlanta, GA">UGA</a></li>
+  <li><a data-univ-id="110635" data-state="CA" data-metro="San Francisco-Oakland-Hayward, CA">UC Berkeley</a></li>
+  <li><a data-univ-id="215293"data-state="PA" data-metro="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD">U Pitt</a></li>
+  <li><a data-univ-id="196097" data-state="NY" data-metro="New York-Newark-Jersey City, NY-NJ-PA">Stony Brook</a></li>
 </ul>
 
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>National Overview</h1>
     <div class="graphs-set">
   <div class="graphs-row">
@@ -89,7 +89,7 @@
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>In-State Results</h1>
     <h2>State Map</h2>
 
@@ -100,10 +100,13 @@
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>In-State Results</h1>
     <h2>Tables and Figures</h2>
 
+<div style="height:450px;"><p style="margin-top:40px">Add figures.</p></div>
+
+<!--
 <div class="graphs-set">
   <div class="graphs-row">
     <img id="graph-instate-1" />
@@ -114,13 +117,14 @@
     <img id="graph-instate-4" />
   </div>
 </div>
+-->
 
     <a class='btn' href="#/4">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>In-State Results</h1>
     <h2>Metro Area Map</h2>
 
@@ -131,10 +135,13 @@
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>Out-of-State Results</h1>
     <h2>Tables and Figures</h2>
 
+<div style="height:450px;"><p style="margin-top:40px">Add figures.</p></div>
+
+<!--
 <div class="graphs-set">
   <div class="graphs-row">
     <img id="graph-outofstate-1" />
@@ -145,15 +152,16 @@
     <img id="graph-outofstate-4" />
   </div>
 </div>
+-->
 
     <a class='btn' href="#/4">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>Out-of-State Results</h1>
-    <h2>Metro Area Map</h2>
+    <h2>Metro Area Map (Chicago-Naperville-Elgin, IL-IN-WI)</h2>
 
 <iframe id="map-metro-2" width=100% height=100% allowtransparency="true"></iframe>
 
@@ -162,9 +170,9 @@
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='vertical ' id='' data-state='slide-vertical'>
     <h1>Out-of-State Results</h1>
-    <h2>Metro Area Map</h2>
+    <h2>Metro Area Map (Houston-The Woodlands-Sugar Land, TX)</h2>
 
 <iframe id="map-metro-3" width=100% height=100% allowtransparency="true"></iframe>
 
@@ -176,7 +184,16 @@
 </section>
 <section class='slide ' data-state='slide-horizontal' id='slide-6'>
   <h1>Cross-University Results</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="graphs-set">
+  <div class="graphs-row">
+    <img src="https://map.emraresearch.org/static/small_multiples/196097/titled_map.png" />
+    <img src="https://map.emraresearch.org/static/small_multiples/215293/titled_map.png" />
+  </div>
+  <div class="graphs-row">
+    <img src="https://map.emraresearch.org/static/small_multiples/110635/titled_map.png" />
+    <img src="https://map.emraresearch.org/static/small_multiples/139959/titled_map.png" />
+  </div>
+</div>
 
   </section>
 <section class='slide ' data-state='slide-horizontal' id='slide-7'>

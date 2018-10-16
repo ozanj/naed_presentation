@@ -83,8 +83,13 @@ $(function() {
     handleHorizontal();
   }, false );
   
-  function setUnivID(univ_id) {
+  function setUnivID(univ_id, state, metro) {
+    $('#map-state').prev().html(state);
     $('#map-state').attr('src', `assets/data/${univ_id}/map-state.html`);
+    $('#map-metro-1').prev().html(metro);
+    $('#map-metro-1').attr('src', `assets/data/${univ_id}/map-metro-1.html`);
+    $('#map-metro-2').attr('src', `assets/data/${univ_id}/map-metro-2.html`);
+    $('#map-metro-3').attr('src', `assets/data/${univ_id}/map-metro-3.html`);
     $('#graph-overview-1').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/visit_count.png`);
     $('#graph-overview-2').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/timeline.png`);
     $('#graph-overview-3').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/median_income.png`);
@@ -93,7 +98,9 @@ $(function() {
 
   $('#univ_options a').on('click', function() {
     var univ_id = $(this).data('univ-id');
-    setUnivID(univ_id);
+    var state = 'State Map (' + $(this).data('state') + ')';
+    var metro = 'Metro Area Map (' + $(this).data('metro') + ')';
+    setUnivID(univ_id, state, metro);
     Reveal.slide(4, 1);
   });
 

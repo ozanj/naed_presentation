@@ -120,7 +120,7 @@
 
 .reveal section img {
   background: none;
-  border: none;
+  border: silver 1px solid;
   box-shadow: none;
   display: block;
   margin: 20px auto;

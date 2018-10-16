@@ -20,7 +20,7 @@ Date
 # Motivation
 ## Enrollment Funnel
 
-<img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
+<img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;border:none;">
 
 ---
 
@@ -43,10 +43,10 @@ Add text.
 Select a university to take a closer look at the results.
 
 <ul id="univ_options">
-  <li><a data-univ-id="139959">UGA</a></li>
-  <li><a data-univ-id="110635">UC Berkeley</a></li>
-  <li><a data-univ-id="215293">U Pitt</a></li>
-  <li><a data-univ-id="196097">Stony Brook</a></li>
+  <li><a data-univ-id="139959" data-state="GA" data-metro="Atlanta, GA">UGA</a></li>
+  <li><a data-univ-id="110635" data-state="CA" data-metro="San Francisco-Oakland-Hayward, CA">UC Berkeley</a></li>
+  <li><a data-univ-id="215293"data-state="PA" data-metro="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD">U Pitt</a></li>
+  <li><a data-univ-id="196097" data-state="NY" data-metro="New York-Newark-Jersey City, NY-NJ-PA">Stony Brook</a></li>
 </ul>
 
 ***
@@ -76,6 +76,9 @@ Select a university to take a closer look at the results.
 # In-State Results
 ## Tables and Figures
 
+<div style="height:450px;"><p style="margin-top:40px">Add figures.</p></div>
+
+<!--
 <div class="graphs-set">
   <div class="graphs-row">
     <img id="graph-instate-1" />
@@ -86,6 +89,7 @@ Select a university to take a closer look at the results.
     <img id="graph-instate-4" />
   </div>
 </div>
+-->
 
 ***
 
@@ -99,6 +103,9 @@ Select a university to take a closer look at the results.
 # Out-of-State Results
 ## Tables and Figures
 
+<div style="height:450px;"><p style="margin-top:40px">Add figures.</p></div>
+
+<!--
 <div class="graphs-set">
   <div class="graphs-row">
     <img id="graph-outofstate-1" />
@@ -109,18 +116,19 @@ Select a university to take a closer look at the results.
     <img id="graph-outofstate-4" />
   </div>
 </div>
+-->
 
 ***
 
 # Out-of-State Results
-## Metro Area Map
+## Metro Area Map (Chicago-Naperville-Elgin, IL-IN-WI)
 
 <iframe id="map-metro-2" width=100% height=100% allowtransparency="true"></iframe>
 
 ***
 
 # Out-of-State Results
-## Metro Area Map
+## Metro Area Map (Houston-The Woodlands-Sugar Land, TX)
 
 <iframe id="map-metro-3" width=100% height=100% allowtransparency="true"></iframe>
 
@@ -128,7 +136,16 @@ Select a university to take a closer look at the results.
 
 # Cross-University Results
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="graphs-set">
+  <div class="graphs-row">
+    <img src="https://map.emraresearch.org/static/small_multiples/196097/titled_map.png" />
+    <img src="https://map.emraresearch.org/static/small_multiples/215293/titled_map.png" />
+  </div>
+  <div class="graphs-row">
+    <img src="https://map.emraresearch.org/static/small_multiples/110635/titled_map.png" />
+    <img src="https://map.emraresearch.org/static/small_multiples/139959/titled_map.png" />
+  </div>
+</div>
 
 ---
 
