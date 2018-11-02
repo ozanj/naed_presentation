@@ -20,7 +20,7 @@ Date
 # Motivation
 ## Enrollment Funnel
 
-<img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;border:none;">
+<img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
 
 ---
 
@@ -53,14 +53,21 @@ Select a university to take a closer look at the results.
 
 # National Overview
 
+<div class="modal">
+  <span class="close">&times;</span>
+  <h3></h3>
+  <img />
+  <p></p>
+</div>
+
 <div class="graphs-set">
   <div class="graphs-row">
-    <img id="graph-overview-1" />
-    <img id="graph-overview-2" />
+    <img id="graph-overview-1" data-title="Number of events by event type" />
+    <img id="graph-overview-2" data-title="Timeline of visits by event type" />
   </div>
   <div class="graphs-row">
-    <img id="graph-overview-3" />
-    <img id="graph-overview-4" />
+    <img id="graph-overview-3" data-title="Average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
+    <img id="graph-overview-4" data-title="Average income composition in zip code of visited public HS's vs non-visited public HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
   </div>
 </div>
 
