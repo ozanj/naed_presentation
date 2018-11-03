@@ -62,12 +62,12 @@ Select a university to take a closer look at the results.
 
 <div class="graphs-set">
   <div class="graphs-row">
-    <img id="graph-overview-1" data-title="Number of events by event type" />
-    <img id="graph-overview-2" data-title="Timeline of visits by event type" />
+    <img id="graph-overview-1" data-title="Map of visits" />
+    <img id="graph-overview-2" data-title="Number of events by event type" />
   </div>
   <div class="graphs-row">
-    <img id="graph-overview-3" data-title="Average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
-    <img id="graph-overview-4" data-title="Average income composition in zip code of visited public HS's vs non-visited public HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
+    <img id="graph-overview-3" data-title="Timeline of visits" />
+    <img id="graph-overview-4" data-title="Number of events by urban or rural area" />
   </div>
 </div>
 
@@ -81,22 +81,24 @@ Select a university to take a closer look at the results.
 ***
 
 # In-State Results
-## Tables and Figures
 
-<div style="height:450px;"><p style="margin-top:40px">Add figures.</p></div>
+<div class="modal">
+  <span class="close">&times;</span>
+  <h3></h3>
+  <img />
+  <p></p>
+</div>
 
-<!--
 <div class="graphs-set">
   <div class="graphs-row">
-    <img id="graph-instate-1" />
-    <img id="graph-instate-2" />
+    <img id="graph-instate-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-44 and age group 45-64 years olds were used" />
+    <img id="graph-instate-2" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latino, or Native American" />
   </div>
   <div class="graphs-row">
-    <img id="graph-instate-3" />
-    <img id="graph-instate-4" />
+    <img id="graph-instate-3" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-instate-4" data-title="Distribution of 12th grade enrollment size in visited public HS's vs non-visited public HS's" />
   </div>
 </div>
--->
 
 ***
 
@@ -108,22 +110,24 @@ Select a university to take a closer look at the results.
 ***
 
 # Out-of-State Results
-## Tables and Figures
 
-<div style="height:450px;"><p style="margin-top:40px">Add figures.</p></div>
+<div class="modal">
+  <span class="close">&times;</span>
+  <h3></h3>
+  <img />
+  <p></p>
+</div>
 
-<!--
 <div class="graphs-set">
   <div class="graphs-row">
-    <img id="graph-outofstate-1" />
-    <img id="graph-outofstate-2" />
+    <img id="graph-outofstate-1" data-title="Average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-44 and age group 45-64 years olds were used; Out-of-state only includes states where the university visited at least one high school" />
+    <img id="graph-outofstate-2" data-title="Average racial composition of university vs state vs visited public HS's vs non-visited public HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
   </div>
   <div class="graphs-row">
-    <img id="graph-outofstate-3" />
-    <img id="graph-outofstate-4" />
+    <img id="graph-outofstate-3" data-title="Distribution of 12th grade enrollment size in visited public HS's vs visited private HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
+    <img id="graph-outofstate-4" data-title="Average racial composition of university vs state vs visited private HS's vs non-visited private HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
   </div>
 </div>
--->
 
 ***
 

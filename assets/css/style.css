@@ -130,7 +130,7 @@
   border: silver 1px solid;
 }
 
-.reveal .vertical :not(.modal) img:hover {
+.reveal .vertical .graphs-set img:hover {
   opacity: 0.7;
   cursor: pointer;
   transform: scale(1.05);

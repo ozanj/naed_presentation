@@ -89,13 +89,23 @@ $(function() {
   });
 
   function setUnivID(univ_id, state, metro) {
-    $('#graph-overview-1').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/visit_count.png`);
-    $('#graph-overview-2').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/timeline.png`);
-    $('#graph-overview-3').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/median_income.png`);
-    $('#graph-overview-4').attr('src', `https://map.emraresearch.org/static/small_multiples/${univ_id}/income_band.png`);
+    $('#graph-overview-1').attr('src', `assets/data/${univ_id}/map.png`);
+    $('#graph-overview-2').attr('src', `assets/data/${univ_id}/visit_count.png`);
+    $('#graph-overview-3').attr('src', `assets/data/${univ_id}/timeline.png`);
+    $('#graph-overview-4').attr('src', `assets/data/${univ_id}/urban_rural.png`);
+
+    $('#graph-instate-1').attr('src', `assets/data/${univ_id}/distribution_median_in.png`);
+    $('#graph-instate-2').attr('src', `assets/data/${univ_id}/distribution_race_in.png`);
+    $('#graph-instate-3').attr('src', `assets/data/${univ_id}/distribution_math_in.png`);
+    $('#graph-instate-4').attr('src', `assets/data/${univ_id}/distribution_size_in.png`);
+
+    $('#graph-outofstate-1').attr('src', `assets/data/${univ_id}/median_income.png`);
+    $('#graph-outofstate-2').attr('src', `assets/data/${univ_id}/race_pub_out.png`);
+    $('#graph-outofstate-3').attr('src', `assets/data/${univ_id}/distribution_size_pub_priv_out.png`);
+    $('#graph-outofstate-4').attr('src', `assets/data/${univ_id}/race_priv_out.png`);
 
     $('#map-state').prev().html(state);
-    $('#map-state').attr('src', `assets/data/${univ_id}/map-state.html`);
+    $('#map-state').attr('src', `assets/data/${univ_id}/map-state-in.html`);
     $('#map-metro-1').prev().html(metro);
     $('#map-metro-1').attr('src', `assets/data/${univ_id}/map-metro-1.html`);
     $('#map-metro-2').attr('src', `assets/data/${univ_id}/map-metro-2.html`);
@@ -110,7 +120,7 @@ $(function() {
     Reveal.slide(4, 1);
   });
 
-  $('.reveal .graphs-set img').on('click', function() {
+  $('.reveal .vertical .graphs-set img').on('click', function() {
     var src = $(this).attr('src'),
         title = $(this).data('title'),
         caption = $(this).data('caption');
