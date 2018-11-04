@@ -56,7 +56,7 @@ order by 3;
 ```{r, echo=FALSE, results='asis'}
 univs <- read.csv('./assets/tables/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
-  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-state-in="', univs[i, 'state_code'], '" data-metro-in="', univs[i, 'cbsa_title'], '">', univs[i, 'univ_abbrev'], '</a></li>'))
+  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-in="', univs[i, 'state_code'], '" data-metro-in="', univs[i, 'cbsa_title'], '">', univs[i, 'univ_abbrev'], '</a></li>'))
 }
 ```
 </ul>

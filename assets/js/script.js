@@ -88,7 +88,9 @@ $(function() {
     $('.graphs-set img').removeClass('disabled');
   });
 
-  function setUnivID(univ_id, state, metro) {
+  function setUnivID(univ_id, univ_name, state, metro) {
+    $('.univ-name').html(univ_name);
+
     $('#graph-overview-1').attr('src', `assets/data/${univ_id}/map.png`);
     $('#graph-overview-2').attr('src', `assets/data/${univ_id}/visit_count.png`);
     $('#graph-overview-3').attr('src', `assets/data/${univ_id}/timeline.png`);
@@ -116,9 +118,10 @@ $(function() {
 
   $('#univ_options a').on('click', function() {
     var univ_id = $(this).data('univ-id');
+    var univ_name = $(this).data('univ-name');
     var state = 'State Map (' + $(this).data('state-in') + ')';
     var metro = 'Metro Area Map (' + $(this).data('metro-in') + ')';
-    setUnivID(univ_id, state, metro);
+    setUnivID(univ_id, univ_name, state, metro);
     Reveal.slide(4, 1);
   });
 
