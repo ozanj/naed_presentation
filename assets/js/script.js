@@ -104,18 +104,20 @@ $(function() {
     $('#graph-outofstate-3').attr('src', `assets/data/${univ_id}/distribution_size_pub_priv_out.png`);
     $('#graph-outofstate-4').attr('src', `assets/data/${univ_id}/race_priv_out.png`);
 
-    $('#map-state').prev().html(state);
-    $('#map-state').attr('src', `assets/data/${univ_id}/map-state-in.html`);
-    $('#map-metro-1').prev().html(metro);
-    $('#map-metro-1').attr('src', `assets/data/${univ_id}/map-metro-1.html`);
-    $('#map-metro-2').attr('src', `assets/data/${univ_id}/map-metro-2.html`);
-    $('#map-metro-3').attr('src', `assets/data/${univ_id}/map-metro-3.html`);
+    $('#map-state-in').prev().html(state);
+    $('#map-state-in').attr('src', `assets/data/${univ_id}/map-state-in.html`);
+
+    $('#map-metro-in').prev().html(metro);
+    $('#map-metro-in').attr('src', `assets/data/${univ_id}/map-metro-in.html`);
+
+    // $('#map-metro-out-1').attr('src', `assets/data/${univ_id}/map-metro-out-1.html`);
+    // $('#map-metro-out-2').attr('src', `assets/data/${univ_id}/map-metro-out-2.html`);
   }
 
   $('#univ_options a').on('click', function() {
     var univ_id = $(this).data('univ-id');
-    var state = 'State Map (' + $(this).data('state') + ')';
-    var metro = 'Metro Area Map (' + $(this).data('metro') + ')';
+    var state = 'State Map (' + $(this).data('state-in') + ')';
+    var metro = 'Metro Area Map (' + $(this).data('metro-in') + ')';
     setUnivID(univ_id, state, metro);
     Reveal.slide(4, 1);
   });

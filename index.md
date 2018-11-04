@@ -42,11 +42,18 @@ Add text.
 
 Select a university to take a closer look at the results.
 
+<!--
+select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, mu.cbsa_code, msa.cbsa_title
+from meta_university mu
+left join msa_metadata msa on msa.cbsa_code = mu.cbsa_code
+left join state_data sd on sd.state_code = mu.state_code
+left join meta_univ_classification muc on muc.univ_id = mu.univ_id
+where mu.univ_id in ('100751', '106397', '110635', '110653', '126614', '139959', '149222', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
+order by 3;
+-->
+
 <ul id="univ_options">
-  <li><a data-univ-id="139959" data-state="GA" data-metro="Atlanta, GA">UGA</a></li>
-  <li><a data-univ-id="110635" data-state="CA" data-metro="San Francisco-Oakland-Hayward, CA">UC Berkeley</a></li>
-  <li><a data-univ-id="215293"data-state="PA" data-metro="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD">U Pitt</a></li>
-  <li><a data-univ-id="196097" data-state="NY" data-metro="New York-Newark-Jersey City, NY-NJ-PA">Stony Brook</a></li>
+<li><a data-univ-id="126614" data-state-in="CO" data-metro-in="Boulder, CO">CU Boulder</a></li><li><a data-univ-id="199193" data-state-in="NC" data-metro-in="Raleigh, NC">NCSU</a></li><li><a data-univ-id="186380" data-state-in="NJ" data-metro-in="New York-Newark-Jersey City, NY-NJ-PA">Rutgers</a></li><li><a data-univ-id="149222" data-state-in="IL" data-metro-in="Carbondale-Marion, IL">SIU</a></li><li><a data-univ-id="196097" data-state-in="NY" data-metro-in="New York-Newark-Jersey City, NY-NJ-PA">SUNY Stony Brook</a></li><li><a data-univ-id="100751" data-state-in="AL" data-metro-in="Tuscaloosa, AL">U of Alabama</a></li><li><a data-univ-id="106397" data-state-in="AR" data-metro-in="Fayetteville-Springdale-Rogers, AR-MO">U of Arkansas</a></li><li><a data-univ-id="201885" data-state-in="OH" data-metro-in="Cincinnati, OH-KY-IN">U of Cincinnati</a></li><li><a data-univ-id="139959" data-state-in="GA" data-metro-in="Athens-Clarke County, GA">U of Georgia</a></li><li><a data-univ-id="155317" data-state-in="KS" data-metro-in="Lawrence, KS">U of Kansas</a></li><li><a data-univ-id="215293" data-state-in="PA" data-metro-in="Pittsburgh, PA">U of Pitt</a></li><li><a data-univ-id="218663" data-state-in="SC" data-metro-in="Columbia, SC">U of S.Carolina</a></li><li><a data-univ-id="110635" data-state-in="CA" data-metro-in="San Francisco-Oakland-Hayward, CA">UC Berkeley</a></li><li><a data-univ-id="110653" data-state-in="CA" data-metro-in="Los Angeles-Long Beach-Anaheim, CA">UC Irvine</a></li><li><a data-univ-id="166629" data-state-in="MA" data-metro-in="Springfield, MA">UMass Amherst</a></li><li><a data-univ-id="181464" data-state-in="NE" data-metro-in="Lincoln, NE">UNL</a></li>
 </ul>
 
 ***
@@ -76,7 +83,7 @@ Select a university to take a closer look at the results.
 # In-State Results
 ## State Map
 
-<iframe id="map-state" width=100% height=100% allowtransparency="true"></iframe>
+<iframe id="map-state-in" width=100% height=100% allowtransparency="true"></iframe>
 
 ***
 
@@ -105,7 +112,7 @@ Select a university to take a closer look at the results.
 # In-State Results
 ## Metro Area Map
 
-<iframe id="map-metro-1" width=100% height=100% allowtransparency="true"></iframe>
+<iframe id="map-metro-in" width=100% height=100% allowtransparency="true"></iframe>
 
 ***
 
@@ -132,16 +139,24 @@ Select a university to take a closer look at the results.
 ***
 
 # Out-of-State Results
-## Metro Area Map (Chicago-Naperville-Elgin, IL-IN-WI)
+## Metro Area Map
 
-<iframe id="map-metro-2" width=100% height=100% allowtransparency="true"></iframe>
+<div style="height:450px;"><p style="margin-top:40px">Add map.</p></div>
+
+<!--
+<iframe id="map-metro-out-1" width=100% height=100% allowtransparency="true"></iframe>
+-->
 
 ***
 
 # Out-of-State Results
-## Metro Area Map (Houston-The Woodlands-Sugar Land, TX)
+## Metro Area Map
 
-<iframe id="map-metro-3" width=100% height=100% allowtransparency="true"></iframe>
+<div style="height:450px;"><p style="margin-top:40px">Add map.</p></div>
+
+<!--
+<iframe id="map-metro-out-2" width=100% height=100% allowtransparency="true"></iframe>
+-->
 
 ---
 
