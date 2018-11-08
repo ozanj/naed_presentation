@@ -91,7 +91,7 @@
 }
 
 .reveal li {
-  font-size: 25px;
+  font-size: 22px;
   margin: 0 25px 10px;
 }
 
@@ -160,7 +160,7 @@
   padding: 20px;
   left: 50%;
   top: 48%;
-  width: 60%;
+  width: 70%;
   background-color: white;
   border: solid 1px gray;
   transform: translate(-50%, -50%);
@@ -170,18 +170,19 @@
 .modal h3 {
   text-align: center;
   text-transform: inherit;
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 26px;
+  margin: 0 30px 35px;
 }
 
 .modal p {
   margin: 0;
   color: gray;
-  font-size: 16px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .modal img {
-  width: 500px;
+  width: 600px;
 }
 
 .modal .close {
