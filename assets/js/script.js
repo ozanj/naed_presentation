@@ -96,10 +96,13 @@ $(function() {
     $('#graph-overview-3').attr('src', `assets/data/${univ_id}/timeline.png`);
     $('#graph-overview-4').attr('src', `assets/data/${univ_id}/urban_rural.png`);
 
+    $('#graph-instate').prev().html(state);
     $('#graph-instate-1').attr('src', `assets/data/${univ_id}/distribution_median_in.png`);
-    $('#graph-instate-2').attr('src', `assets/data/${univ_id}/distribution_race_in.png`);
-    $('#graph-instate-3').attr('src', `assets/data/${univ_id}/distribution_math_in.png`);
-    $('#graph-instate-4').attr('src', `assets/data/${univ_id}/distribution_size_in.png`);
+    $('#graph-instate-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_in.png`);
+    $('#graph-instate-3').attr('src', `assets/data/${univ_id}/distribution_size_in.png`);
+    $('#graph-instate-4').attr('src', `assets/data/${univ_id}/distribution_race_in.png`);
+    $('#graph-instate-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_in.png`);
+    $('#graph-instate-6').attr('src', `assets/data/${univ_id}/distribution_math_in.png`);
 
     $('#graph-outofstate-1').attr('src', `assets/data/${univ_id}/median_income.png`);
     $('#graph-outofstate-2').attr('src', `assets/data/${univ_id}/race_pub_out.png`);
@@ -117,10 +120,11 @@ $(function() {
   }
 
   $('#univ_options a').on('click', function() {
-    var univ_id = $(this).data('univ-id');
-    var univ_name = $(this).data('univ-name');
-    var state = 'State Map (' + $(this).data('state-in') + ')';
-    var metro = 'Metro Area Map (' + $(this).data('metro-in') + ')';
+    var univ_id = $(this).data('univ-id'),
+        univ_name = $(this).data('univ-name'),
+        state = $(this).data('state-in'),
+        metro = $(this).data('metro-in');
+
     setUnivID(univ_id, univ_name, state, metro);
     Reveal.slide(4, 1);
   });
