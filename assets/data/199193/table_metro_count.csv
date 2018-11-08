@@ -1,0 +1,59 @@
+cbsa_code,cbsa_name,total_count,pubHS_count,privHS_count,cc_count,other_count
+24660,"Greensboro-High Point, NC",67,52,0,9,6
+39580,"Raleigh, NC",54,38,3,10,3
+16740,"Charlotte-Concord-Gastonia, NC-SC",53,32,1,11,9
+35620,"New York-Newark-Jersey City, NY-NJ-PA",44,31,4,2,7
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",38,26,8,0,4
+20500,"Durham-Chapel Hill, NC",32,22,0,5,5
+49180,"Winston-Salem, NC",27,20,0,4,3
+12060,"Atlanta-Sandy Springs-Roswell, GA",24,13,4,0,7
+25860,"Hickory-Lenoir-Morganton, NC",24,19,0,3,2
+24780,"Greenville, NC",24,4,0,6,14
+40580,"Rocky Mount, NC",23,9,0,6,8
+11700,"Asheville, NC",22,8,0,10,4
+20380,"Dunn, NC",19,15,0,2,2
+35100,"New Bern, NC",19,12,0,2,5
+24140,"Goldsboro, NC",19,16,0,3,0
+31300,"Lumberton, NC",15,12,0,0,3
+38240,"Pinehurst-Southern Pines, NC",14,8,0,4,2
+47820,"Washington, NC",13,7,0,0,6
+48900,"Wilmington, NC",13,10,0,3,0
+22180,"Fayetteville, NC",11,5,0,2,4
+48980,"Wilson, NC",11,9,0,2,0
+32000,"Marion, NC",10,8,0,2,0
+15500,"Burlington, NC",10,5,0,2,3
+40260,"Roanoke Rapids, NC",10,2,0,6,2
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC",10,5,0,5,0
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",10,6,1,0,3
+12580,"Baltimore-Columbia-Towson, MD",9,6,1,1,1
+33980,"Morehead City, NC",9,4,0,2,3
+27260,"Jacksonville, FL",8,5,0,0,3
+40060,"Richmond, VA",8,3,5,0,0
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC",8,5,1,0,2
+35900,"North Wilkesboro, NC",8,6,0,2,0
+41820,"Sanford, NC",8,4,0,2,2
+17140,"Cincinnati, OH-KY-IN",8,3,3,0,2
+28620,"Kill Devil Hills, NC",7,7,0,0,0
+27340,"Jacksonville, NC",7,5,0,2,0
+14380,"Boone, NC",6,6,0,0,0
+25780,"Henderson, NC",5,1,0,4,0
+37080,"Oxford, NC",5,5,0,0,0
+21020,"Elizabeth City, NC",5,0,0,2,3
+16980,"Chicago-Naperville-Elgin, IL-IN-WI",4,4,0,0,0
+34340,"Mount Airy, NC",4,0,0,4,0
+14820,"Brevard, NC",4,4,0,0,0
+22580,"Forest City, NC",4,2,0,2,0
+28820,"Kinston, NC",4,2,0,0,2
+14460,"Boston-Cambridge-Newton, MA-NH",3,0,0,0,3
+43140,"Shelby, NC",3,2,0,1,0
+19000,"Cullowhee, NC",2,0,0,2,0
+15680,"California-Lexington Park, MD",2,0,0,0,2
+45300,"Tampa-St. Petersburg-Clearwater, FL",1,0,0,0,1
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL",1,0,0,0,1
+38300,"Pittsburgh, PA",1,0,0,0,1
+29900,"Laurinburg, NC",1,1,0,0,0
+44300,"State College, PA",1,0,0,0,1
+45820,"Topeka, KS",1,0,0,0,1
+13380,"Bellingham, WA",1,0,0,0,1
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",1,0,0,0,1
+45220,"Tallahassee, FL",1,0,0,0,1

@@ -1,0 +1,41 @@
+cbsa_code,cbsa_name,total_count,pubHS_count,privHS_count,cc_count,other_count
+16980,"Chicago-Naperville-Elgin, IL-IN-WI",235,148,20,49,18
+41180,"St. Louis, MO-IL",93,62,9,8,14
+37900,"Peoria, IL",22,16,1,3,2
+16060,"Carbondale-Marion, IL",20,12,0,8,0
+26900,"Indianapolis-Carmel-Anderson, IN",13,9,0,0,4
+44100,"Springfield, IL",13,12,1,0,0
+19340,"Davenport-Moline-Rock Island, IA-IL",12,10,0,0,2
+16580,"Champaign-Urbana, IL",11,9,1,0,1
+23660,"Galesburg, IL",10,6,0,3,1
+14010,"Bloomington, IL",9,6,1,1,1
+16020,"Cape Girardeau, MO-IL",8,4,2,0,2
+28100,"Kankakee, IL",8,5,0,3,0
+36860,"Ottawa-Peru, IL",8,6,0,2,0
+19500,"Decatur, IL",7,6,0,1,0
+34500,"Mount Vernon, IL",7,3,0,2,2
+16660,"Charleston-Mattoon, IL",7,5,0,0,2
+21780,"Evansville, IN-KY",6,2,1,0,3
+16460,"Centralia, IL",6,3,0,2,1
+20820,"Effingham, IL",5,3,1,0,1
+37140,"Paducah, KY-IL",5,4,0,0,1
+36980,"Owensboro, KY",5,3,1,0,1
+40420,"Rockford, IL",4,1,0,3,0
+27300,"Jacksonville, IL",4,4,0,0,0
+19940,"Dixon, IL",4,2,0,2,0
+15900,"Canton, IL",3,2,0,1,0
+45380,"Taylorville, IL",2,2,0,0,0
+30660,"Lincoln, IL",2,2,0,0,0
+44580,"Sterling, IL",2,2,0,0,0
+23300,"Freeport, IL",2,0,0,2,0
+40300,"Rochelle, IL",2,0,0,2,0
+43460,"Sikeston, MO",2,2,0,0,0
+45460,"Terre Haute, IN",2,0,0,0,2
+19180,"Danville, IL",2,1,0,1,0
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",2,1,0,0,1
+17540,"Clinton, IA",1,0,0,0,1
+34700,"Muscatine, IA",1,0,0,0,1
+39500,"Quincy, IL-MO",1,0,0,1,0
+14020,"Bloomington, IN",1,1,0,0,0
+18820,"Crawfordsville, IN",1,1,0,0,0
+38700,"Pontiac, IL",1,1,0,0,0
