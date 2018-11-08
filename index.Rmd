@@ -43,20 +43,22 @@ Add text.
 Select a university to take a closer look at the results.
 
 <!--
-select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, mu.cbsa_code, msa.cbsa_title
+select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name
 from meta_university mu
-left join msa_metadata msa on msa.cbsa_code = mu.cbsa_code
 left join state_data sd on sd.state_code = mu.state_code
 left join meta_univ_classification muc on muc.univ_id = mu.univ_id
+left join msa_metadata msa1 on msa1.cbsa_code = muc.metro1
+left join msa_metadata msa2 on msa2.cbsa_code = muc.metro2
+left join msa_metadata msa3 on msa3.cbsa_code = muc.metro3
 where mu.univ_id in ('100751', '106397', '110635', '110653', '126614', '139959', '149222', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
-order by 3;
+order by 2;
 -->
 
 <ul id="univ_options">
 ```{r, echo=FALSE, results='asis'}
 univs <- read.csv('./assets/tables/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
-  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-in="', univs[i, 'state_name'], '" data-metro-in="', univs[i, 'cbsa_title'], '">', univs[i, 'univ_name'], '</a></li>'))
+  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-name="', univs[i, 'state_name'], '" data-metro1-name="', univs[i, 'metro1_name'], '" data-metro2-name="', univs[i, 'metro2_name'], '" data-metro3-name="', univs[i, 'metro3_name'], '">', univs[i, 'univ_name'], '</a></li>'))
 }
 ```
 </ul>
@@ -121,6 +123,31 @@ for (i in 1:nrow(univs)) {
 ## Metro Area Map
 
 <iframe id="map-metro-in" width=100% height=100% allowtransparency="true"></iframe>
+
+***
+
+# In-State Results
+## Metro Area Figures
+
+<div id="graph-metro1" class="graphs-set graphs-set-wide">
+  <div class="graphs-row">
+    <img id="graph-metro1-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
+    <img id="graph-metro1-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
+    <img id="graph-metro1-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph-metro1-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
+    <img id="graph-metro1-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
+    <img id="graph-metro1-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+  </div>
+</div>
+
+<div class="modal">
+  <span class="close">&times;</span>
+  <h3></h3>
+  <img />
+  <p></p>
+</div>
 
 ***
 

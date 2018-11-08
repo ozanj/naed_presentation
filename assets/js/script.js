@@ -88,7 +88,7 @@ $(function() {
     $('.graphs-set img').removeClass('disabled');
   });
 
-  function setUnivID(univ_id, univ_name, state, metro) {
+  function setUnivID(univ_id, univ_name, state, metro1, metro2, metro3) {
     $('.univ-name').html(univ_name);
 
     $('#graph-overview-1').attr('src', `assets/data/${univ_id}/map.png`);
@@ -104,6 +104,14 @@ $(function() {
     $('#graph-instate-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_in.png`);
     $('#graph-instate-6').attr('src', `assets/data/${univ_id}/distribution_math_in.png`);
 
+    $('#graph-metro1').prev().html(metro1);
+    $('#graph-metro1-1').attr('src', `assets/data/${univ_id}/distribution_median_metro1.png`);
+    $('#graph-metro1-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro1.png`);
+    $('#graph-metro1-3').attr('src', `assets/data/${univ_id}/distribution_size_metro1.png`);
+    $('#graph-metro1-4').attr('src', `assets/data/${univ_id}/distribution_race_metro1.png`);
+    $('#graph-metro1-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro1.png`);
+    $('#graph-metro1-6').attr('src', `assets/data/${univ_id}/distribution_math_metro1.png`);
+
     $('#graph-outofstate-1').attr('src', `assets/data/${univ_id}/median_income.png`);
     $('#graph-outofstate-2').attr('src', `assets/data/${univ_id}/race_pub_out.png`);
     $('#graph-outofstate-3').attr('src', `assets/data/${univ_id}/distribution_size_pub_priv_out.png`);
@@ -112,7 +120,7 @@ $(function() {
     $('#map-state-in').prev().html(state);
     $('#map-state-in').attr('src', `assets/data/${univ_id}/map-state-in.html`);
 
-    $('#map-metro-in').prev().html(metro);
+    $('#map-metro-in').prev().html(metro1);
     $('#map-metro-in').attr('src', `assets/data/${univ_id}/map-metro-in.html`);
 
     // $('#map-metro-out-1').attr('src', `assets/data/${univ_id}/map-metro-out-1.html`);
@@ -122,10 +130,12 @@ $(function() {
   $('#univ_options a').on('click', function() {
     var univ_id = $(this).data('univ-id'),
         univ_name = $(this).data('univ-name'),
-        state = $(this).data('state-in'),
-        metro = $(this).data('metro-in');
+        state = $(this).data('state-name'),
+        metro1 = $(this).data('metro1-name'),
+        metro2 = $(this).data('metro2-name'),
+        metro3 = $(this).data('metro3-name');
 
-    setUnivID(univ_id, univ_name, state, metro);
+    setUnivID(univ_id, univ_name, state, metro1, metro2, metro3);
     Reveal.slide(4, 1);
   });
 
