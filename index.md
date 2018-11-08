@@ -168,6 +168,14 @@ order by 2;
 
 ***
 
+# Top Visited Metro Areas
+
+<div class="table-wrapper">
+  <table id="table-metro-count"></table>
+</div>
+
+***
+
 # Out-of-State Results
 ## Metro Area Map
 

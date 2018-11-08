@@ -218,6 +218,18 @@ order by 2;
    </section>
    <section class='vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
+    <h1>Top Visited Metro Areas</h1>
+    <div class="table-wrapper">
+  <table id="table-metro-count"></table>
+</div>
+
+    <a class='btn' href="#/4">Select another university</a>
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='vertical ' data-state='slide-vertical'>
+     <span class='univ-name'></span>
     <h1>Out-of-State Results</h1>
     <h2>Metro Area Map</h2>
 
@@ -281,7 +293,7 @@ order by 2;
     progress: true,
     history: true,
     pdfSeparateFragments: false,
-    viewDistance: 10,
+    viewDistance: 15,
     center: false,
     theme: Reveal.getQueryHash().theme || 'sky', 
     transition: Reveal.getQueryHash().transition || 'slide', 
@@ -303,6 +315,7 @@ order by 2;
 <!-- DONE LOADING HIGHLIGHTER JS FILES -->
  
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/jquery.csv.min.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>

@@ -173,6 +173,14 @@ for (i in 1:nrow(univs)) {
 
 ***
 
+# Top Visited Metro Areas
+
+<div class="table-wrapper">
+  <table id="table-metro-count"></table>
+</div>
+
+***
+
 # Out-of-State Results
 ## Metro Area Map
 

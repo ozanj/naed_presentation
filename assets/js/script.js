@@ -1,4 +1,6 @@
 $(function() {
+
+  // Keyboard Controls
   
   function handleRight() {
     var verticalSlide = 4;
@@ -88,6 +90,31 @@ $(function() {
     $('.graphs-set img').removeClass('disabled');
   });
 
+  // Univ Selection
+
+  $('#univ_options a').on('click', function() {
+    var univ_id = $(this).data('univ-id'),
+        univ_name = $(this).data('univ-name'),
+        state = $(this).data('state-name'),
+        metro1 = $(this).data('metro1-name'),
+        metro2 = $(this).data('metro2-name'),
+        metro3 = $(this).data('metro3-name');
+
+    setUnivID(univ_id, univ_name, state, metro1, metro2, metro3);
+    $('#table-metro-count').empty();
+
+    $.ajax({
+      type: 'GET',
+      url: 'assets/data/' + univ_id + '/table_metro_count.csv',
+      dataType: 'text',
+      success: function(data) { populateTable(data); }
+    });
+
+    Reveal.slide(4, 1);
+  });
+
+  // Maps + Graphs
+
   function setUnivID(univ_id, univ_name, state, metro1, metro2, metro3) {
     $('.univ-name').html(univ_name);
 
@@ -127,17 +154,7 @@ $(function() {
     // $('#map-metro-out-2').attr('src', `assets/data/${univ_id}/map-metro-out-2.html`);
   }
 
-  $('#univ_options a').on('click', function() {
-    var univ_id = $(this).data('univ-id'),
-        univ_name = $(this).data('univ-name'),
-        state = $(this).data('state-name'),
-        metro1 = $(this).data('metro1-name'),
-        metro2 = $(this).data('metro2-name'),
-        metro3 = $(this).data('metro3-name');
-
-    setUnivID(univ_id, univ_name, state, metro1, metro2, metro3);
-    Reveal.slide(4, 1);
-  });
+  // Graph Modal
 
   $('.reveal .vertical .graphs-set img').on('click', function() {
     var src = $(this).attr('src'),
@@ -158,5 +175,36 @@ $(function() {
     $(this).closest('.vertical').find('.modal').fadeOut();
     $(this).closest('.vertical').find('.graphs-set img').removeClass('disabled');
   });
+
+  // Metro Table
+
+  function populateTable(data) {
+    var result = $.csv.toObjects(data);
+    var table = document.getElementById('table-metro-count');
+
+    function addCell(tr, text) {
+        var td = tr.insertCell();
+        td.textContent = text;
+        return td;
+    }
+
+    var headerRow = table.insertRow();
+    addCell(headerRow, 'Metro Area');
+    addCell(headerRow, 'Total Visits');
+    addCell(headerRow, 'Public HS');
+    addCell(headerRow, 'Private HS');
+    addCell(headerRow, 'Community College');
+    addCell(headerRow, 'Other');
+
+    result.slice(0, 10).forEach(function(item) {
+        var row = table.insertRow();
+        addCell(row, item.cbsa_name);
+        addCell(row, item.total_count);
+        addCell(row, item.pubHS_count);
+        addCell(row, item.privHS_count);
+        addCell(row, item.cc_count);
+        addCell(row, item.other_count);
+    });
+  }
 
 });

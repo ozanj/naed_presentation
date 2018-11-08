@@ -50,7 +50,6 @@
   border-radius: 10px;
   font-size: 18px;
   padding: 6px;
-  transition: border 2s linear;
 }
 
 .reveal section img {
@@ -190,6 +189,53 @@
 .modal .close:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+.table-wrapper {
+  height: 500px;
+}
+
+.reveal table {
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.reveal td {
+    padding: 4px 0;
+}
+
+.reveal table tr:nth-of-type(1) td {
+  text-decoration: underline;
+  padding: 20px 0;
+}
+
+.reveal table tr td:nth-of-type(1) {
+  text-align: left;
+}
+
+#table-metro-count tr:not(:first-of-type) td:nth-of-type(1) ~ td {
+  color: gray;
+}
+
+#table-metro-count tr:not(:first-of-type) td:nth-of-type(2) {
+  font-weight: 600;
+}
+
+#table-metro-count tr:nth-of-type(1) td:nth-of-type(3) {
+  text-decoration-color: #42a9c6;
+}
+
+#table-metro-count tr:nth-of-type(1) td:nth-of-type(4) {
+  text-decoration-color: #d16822;
+}
+
+#table-metro-count tr:nth-of-type(1) td:nth-of-type(5) {
+  text-decoration-color: #30af37;
+}
+
+#table-metro-count tr:nth-of-type(1) td:nth-of-type(6) {
+  text-decoration-color: #8030d1;
 }
 
 /* Arrow Controls */
