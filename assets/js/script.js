@@ -139,6 +139,22 @@ $(function() {
     $('#graph-metro1-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro1.png`);
     $('#graph-metro1-6').attr('src', `assets/data/${univ_id}/distribution_math_metro1.png`);
 
+    $('#graph-metro2').prev().html(metro2);
+    $('#graph-metro2-1').attr('src', `assets/data/${univ_id}/distribution_median_metro2.png`);
+    $('#graph-metro2-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro2.png`);
+    $('#graph-metro2-3').attr('src', `assets/data/${univ_id}/distribution_size_metro2.png`);
+    $('#graph-metro2-4').attr('src', `assets/data/${univ_id}/distribution_race_metro2.png`);
+    $('#graph-metro2-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro2.png`);
+    $('#graph-metro2-6').attr('src', `assets/data/${univ_id}/distribution_math_metro2.png`);
+
+    $('#graph-metro3').prev().html(metro3);
+    $('#graph-metro3-1').attr('src', `assets/data/${univ_id}/distribution_median_metro3.png`);
+    $('#graph-metro3-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro3.png`);
+    $('#graph-metro3-3').attr('src', `assets/data/${univ_id}/distribution_size_metro3.png`);
+    $('#graph-metro3-4').attr('src', `assets/data/${univ_id}/distribution_race_metro3.png`);
+    $('#graph-metro3-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro3.png`);
+    $('#graph-metro3-6').attr('src', `assets/data/${univ_id}/distribution_math_metro3.png`);
+
     $('#graph-outofstate-1').attr('src', `assets/data/${univ_id}/median_income.png`);
     $('#graph-outofstate-2').attr('src', `assets/data/${univ_id}/race_pub_out.png`);
     $('#graph-outofstate-3').attr('src', `assets/data/${univ_id}/distribution_size_pub_priv_out.png`);
@@ -150,8 +166,11 @@ $(function() {
     $('#map-metro-in').prev().html(metro1);
     $('#map-metro-in').attr('src', `assets/data/${univ_id}/map-metro-in.html`);
 
-    // $('#map-metro-out-1').attr('src', `assets/data/${univ_id}/map-metro-out-1.html`);
-    // $('#map-metro-out-2').attr('src', `assets/data/${univ_id}/map-metro-out-2.html`);
+    $('#map-metro-out-1').prev().html(metro2);
+    $('#map-metro-out-1').attr('src', `assets/data/${univ_id}/map-metro-out-1.html`);
+
+    $('#map-metro-out-2').prev().html(metro3);
+    $('#map-metro-out-2').attr('src', `assets/data/${univ_id}/map-metro-out-2.html`);
   }
 
   // Graph Modal

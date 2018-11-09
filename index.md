@@ -50,13 +50,21 @@ left join meta_univ_classification muc on muc.univ_id = mu.univ_id
 left join msa_metadata msa1 on msa1.cbsa_code = muc.metro1
 left join msa_metadata msa2 on msa2.cbsa_code = muc.metro2
 left join msa_metadata msa3 on msa3.cbsa_code = muc.metro3
-where mu.univ_id in ('100751', '106397', '110635', '110653', '126614', '139959', '149222', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
+where mu.univ_id in ('100751', '106397', '110635', '110653', '126614', '139959', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
 order by 2;
 -->
 
 <ul id="univ_options">
-<li><a data-univ-id="199193" data-univ-name="North Carolina State University at Raleigh" data-state-name="North Carolina" data-metro1-name="Raleigh, NC" data-metro2-name="NULL" data-metro3-name="NULL">North Carolina State University at Raleigh</a></li><li><a data-univ-id="186380" data-univ-name="Rutgers University-New Brunswick" data-state-name="New Jersey" data-metro1-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro2-name="NULL" data-metro3-name="NULL">Rutgers University-New Brunswick</a></li><li><a data-univ-id="149222" data-univ-name="Southern Illinois University-Carbondale" data-state-name="Illinois" data-metro1-name="St. Louis, MO-IL" data-metro2-name="NULL" data-metro3-name="NULL">Southern Illinois University-Carbondale</a></li><li><a data-univ-id="196097" data-univ-name="Stony Brook University" data-state-name="New York" data-metro1-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro2-name="NULL" data-metro3-name="NULL">Stony Brook University</a></li><li><a data-univ-id="100751" data-univ-name="University of Alabama" data-state-name="Alabama" data-metro1-name="Birmingham-Hoover, AL" data-metro2-name="NULL" data-metro3-name="NULL">University of Alabama</a></li><li><a data-univ-id="106397" data-univ-name="University of Arkansas" data-state-name="Arkansas" data-metro1-name="Fayetteville-Springdale-Rogers, AR-MO" data-metro2-name="NULL" data-metro3-name="NULL">University of Arkansas</a></li><li><a data-univ-id="110635" data-univ-name="University of California-Berkeley" data-state-name="California" data-metro1-name="San Francisco-Oakland-Hayward, CA" data-metro2-name="NULL" data-metro3-name="NULL">University of California-Berkeley</a></li><li><a data-univ-id="110653" data-univ-name="University of California-Irvine" data-state-name="California" data-metro1-name="Los Angeles-Long Beach-Anaheim, CA" data-metro2-name="NULL" data-metro3-name="NULL">University of California-Irvine</a></li><li><a data-univ-id="201885" data-univ-name="University of Cincinnati" data-state-name="Ohio" data-metro1-name="Cincinnati, OH-KY-IN" data-metro2-name="NULL" data-metro3-name="NULL">University of Cincinnati</a></li><li><a data-univ-id="126614" data-univ-name="University of Colorado-Boulder" data-state-name="Colorado" data-metro1-name="Denver-Aurora-Lakewood, CO" data-metro2-name="NULL" data-metro3-name="NULL">University of Colorado-Boulder</a></li><li><a data-univ-id="139959" data-univ-name="University of Georgia" data-state-name="Georgia" data-metro1-name="Atlanta-Sandy Springs-Roswell, GA" data-metro2-name="NULL" data-metro3-name="NULL">University of Georgia</a></li><li><a data-univ-id="155317" data-univ-name="University of Kansas" data-state-name="Kansas" data-metro1-name="Kansas City, MO-KS" data-metro2-name="NULL" data-metro3-name="NULL">University of Kansas</a></li><li><a data-univ-id="166629" data-univ-name="University of Massachusetts-Amherst" data-state-name="Massachusetts" data-metro1-name="Boston-Cambridge-Newton, MA-NH" data-metro2-name="NULL" data-metro3-name="NULL">University of Massachusetts-Amherst</a></li><li><a data-univ-id="181464" data-univ-name="University of Nebraska-Lincoln" data-state-name="Nebraska" data-metro1-name="Lincoln, NE" data-metro2-name="NULL" data-metro3-name="NULL">University of Nebraska-Lincoln</a></li><li><a data-univ-id="215293" data-univ-name="University of Pittsburgh" data-state-name="Pennsylvania" data-metro1-name="Pittsburgh, PA" data-metro2-name="NULL" data-metro3-name="NULL">University of Pittsburgh</a></li><li><a data-univ-id="218663" data-univ-name="University of South Carolina-Columbia" data-state-name="South Carolina" data-metro1-name="Columbia, SC" data-metro2-name="NULL" data-metro3-name="NULL">University of South Carolina-Columbia</a></li>
+<li><a data-univ-id="199193" data-univ-name="North Carolina State University at Raleigh" data-state-name="North Carolina" data-metro1-name="Raleigh, NC" data-metro2-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro3-name="Washington-Arlington-Alexandria, DC-VA-MD-WV">North Carolina State University at Raleigh</a></li><li><a data-univ-id="186380" data-univ-name="Rutgers University-New Brunswick" data-state-name="New Jersey" data-metro1-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro2-name="Washington-Arlington-Alexandria, DC-VA-MD-WV" data-metro3-name="San Francisco-Oakland-Hayward, CA">Rutgers University-New Brunswick</a></li><li><a data-univ-id="196097" data-univ-name="Stony Brook University" data-state-name="New York" data-metro1-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro2-name="Hartford-West Hartford-East Hartford, CT" data-metro3-name="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD">Stony Brook University</a></li><li><a data-univ-id="100751" data-univ-name="University of Alabama" data-state-name="Alabama" data-metro1-name="Birmingham-Hoover, AL" data-metro2-name="Atlanta-Sandy Springs-Roswell, GA" data-metro3-name="Dallas-Fort Worth-Arlington, TX">University of Alabama</a></li><li><a data-univ-id="106397" data-univ-name="University of Arkansas" data-state-name="Arkansas" data-metro1-name="Fayetteville-Springdale-Rogers, AR-MO" data-metro2-name="Dallas-Fort Worth-Arlington, TX" data-metro3-name="Chicago-Naperville-Elgin, IL-IN-WI">University of Arkansas</a></li><li><a data-univ-id="110635" data-univ-name="University of California-Berkeley" data-state-name="California" data-metro1-name="San Francisco-Oakland-Hayward, CA" data-metro2-name="Washington-Arlington-Alexandria, DC-VA-MD-WV" data-metro3-name="Atlanta-Sandy Springs-Roswell, GA">University of California-Berkeley</a></li><li><a data-univ-id="110653" data-univ-name="University of California-Irvine" data-state-name="California" data-metro1-name="Los Angeles-Long Beach-Anaheim, CA" data-metro2-name="Las Vegas-Henderson-Paradise, NV" data-metro3-name="Seattle-Tacoma-Bellevue, WA">University of California-Irvine</a></li><li><a data-univ-id="201885" data-univ-name="University of Cincinnati" data-state-name="Ohio" data-metro1-name="Cincinnati, OH-KY-IN" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="Washington-Arlington-Alexandria, DC-VA-MD-WV">University of Cincinnati</a></li><li><a data-univ-id="126614" data-univ-name="University of Colorado-Boulder" data-state-name="Colorado" data-metro1-name="Denver-Aurora-Lakewood, CO" data-metro2-name="Los Angeles-Long Beach-Anaheim, CA" data-metro3-name="Chicago-Naperville-Elgin, IL-IN-WI">University of Colorado-Boulder</a></li><li><a data-univ-id="139959" data-univ-name="University of Georgia" data-state-name="Georgia" data-metro1-name="Atlanta-Sandy Springs-Roswell, GA" data-metro2-name="Los Angeles-Long Beach-Anaheim, CA" data-metro3-name="Dallas-Fort Worth-Arlington, TX">University of Georgia</a></li><li><a data-univ-id="155317" data-univ-name="University of Kansas" data-state-name="Kansas" data-metro1-name="Kansas City, MO-KS" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="St. Louis, MO-IL">University of Kansas</a></li><li><a data-univ-id="166629" data-univ-name="University of Massachusetts-Amherst" data-state-name="Massachusetts" data-metro1-name="Boston-Cambridge-Newton, MA-NH" data-metro2-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro3-name="Los Angeles-Long Beach-Anaheim, CA">University of Massachusetts-Amherst</a></li><li><a data-univ-id="181464" data-univ-name="University of Nebraska-Lincoln" data-state-name="Nebraska" data-metro1-name="Lincoln, NE" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="Dallas-Fort Worth-Arlington, TX">University of Nebraska-Lincoln</a></li><li><a data-univ-id="215293" data-univ-name="University of Pittsburgh" data-state-name="Pennsylvania" data-metro1-name="Pittsburgh, PA" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="Washington-Arlington-Alexandria, DC-VA-MD-WV">University of Pittsburgh</a></li><li><a data-univ-id="218663" data-univ-name="University of South Carolina-Columbia" data-state-name="South Carolina" data-metro1-name="Columbia, SC" data-metro2-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro3-name="Chicago-Naperville-Elgin, IL-IN-WI">University of South Carolina-Columbia</a></li>
 </ul>
+
+***
+
+# Top Visited Metro Areas
+
+<div class="table-wrapper">
+  <table id="table-metro-count"></table>
+</div>
 
 ***
 
@@ -71,13 +79,6 @@ order by 2;
     <img id="graph-overview-3" data-title="Timeline of visits" />
     <img id="graph-overview-4" data-title="Number of events by urban or rural area" />
   </div>
-</div>
-
-<div class="modal">
-  <span class="close">&times;</span>
-  <h3></h3>
-  <img />
-  <p></p>
 </div>
 
 ***
@@ -105,12 +106,7 @@ order by 2;
   </div>
 </div>
 
-<div class="modal">
-  <span class="close">&times;</span>
-  <h3></h3>
-  <img />
-  <p></p>
-</div>
+
 
 ***
 
@@ -137,13 +133,6 @@ order by 2;
   </div>
 </div>
 
-<div class="modal">
-  <span class="close">&times;</span>
-  <h3></h3>
-  <img />
-  <p></p>
-</div>
-
 ***
 
 # Out-of-State Results
@@ -159,42 +148,55 @@ order by 2;
   </div>
 </div>
 
-<div class="modal">
-  <span class="close">&times;</span>
-  <h3></h3>
-  <img />
-  <p></p>
-</div>
-
-***
-
-# Top Visited Metro Areas
-
-<div class="table-wrapper">
-  <table id="table-metro-count"></table>
-</div>
-
 ***
 
 # Out-of-State Results
 ## Metro Area Map
 
-<div style="height:450px;"><p style="margin-top:40px">Add map.</p></div>
-
-<!--
 <iframe id="map-metro-out-1" width=100% height=100% allowtransparency="true"></iframe>
--->
+
+***
+
+# Out-of-State Results
+## Metro Area Figures
+
+<div id="graph-metro2" class="graphs-set graphs-set-wide">
+  <div class="graphs-row">
+    <img id="graph-metro2-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
+    <img id="graph-metro2-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
+    <img id="graph-metro2-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph-metro2-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
+    <img id="graph-metro2-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
+    <img id="graph-metro2-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+  </div>
+</div>
 
 ***
 
 # Out-of-State Results
 ## Metro Area Map
 
-<div style="height:450px;"><p style="margin-top:40px">Add map.</p></div>
-
-<!--
 <iframe id="map-metro-out-2" width=100% height=100% allowtransparency="true"></iframe>
--->
+
+***
+
+# Out-of-State Results
+## Metro Area Figures
+
+<div id="graph-metro3" class="graphs-set graphs-set-wide">
+  <div class="graphs-row">
+    <img id="graph-metro3-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
+    <img id="graph-metro3-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
+    <img id="graph-metro3-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+  </div>
+  <div class="graphs-row">
+    <img id="graph-metro3-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
+    <img id="graph-metro3-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
+    <img id="graph-metro3-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+  </div>
+</div>
 
 ---
 

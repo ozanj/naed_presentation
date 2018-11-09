@@ -130,6 +130,7 @@
 
 .reveal .graphs-set img {
   border: silver 1px solid;
+  background-color: white;
   height: 90%;
 }
 
