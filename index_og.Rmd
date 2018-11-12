@@ -18,33 +18,19 @@ Date
 --- 
 
 # Motivation
-## The enrollment management industry
+## Enrollment Funnel
 
-The "enrollment funnel"
 <img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
 
 ---
 
 # Motivation
-## Scholarship on college access
+## Research and policy on access inequality
 
-Demand-side causes and interventions
-
-- Research and policy discourse focuses on students and K-12 schools
-    - e.g., 2014 White House Access Summit
-- The "under-matching" explanation
-    - High-achieving, low-income students lack information/guidance
-    - Interventions to overcome information asymmetries, nudge students
-
-Sociology on recruiting
-
-- From the college perspective [CITE STEVENS]
-    - High school visits important for relationships with prospects and counselors at "feeder" schools
-- From the student/high school perspective [CITE HOLLAND]
-    - Which universities visit affects student decisions, especially first-generation and students of color
-
+Add text.
 
 ---
+
 # Motivation
 ## Scholarship on recruiting
 
