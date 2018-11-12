@@ -10,6 +10,8 @@ revealjs:
   center: 'false'
 --- &title
 
+
+
 # Title Slide
 ## Author
 
@@ -18,23 +20,120 @@ Date
 --- 
 
 # Motivation
-## Enrollment Funnel
+## The problem with policy discourse about college access
 
-<img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
+The 2014 White House "Access Summit"
+
+- White House (2014b) review of causes of unequal college access
+    - Highlights achievement gap, "under-matching"
+- *Commitments to Action on College Opportunity* (The White House, 2014a)
+    - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
+
+Problem with policy discourse
+- Focus on deficiencies of students, K-12 schools
+- Assumes universities are passive or progressive actors
+
+Alternative explanation for access inequality
+- University enrollment priorities and behaviors biased against low-income students and/or communities of color
+- Recruiting behavior an indicator of enrollment preferences
+- This project analyzes off-campus recruiting visits by public research universities
+
+--- &twocol
+
+# Background
+## The enrollment management industry
+
+*** =left
+
+**The enrollment funnel**:
+
+<img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:50%;float:left;">
+
+*** =right
+
+**Recruiting interventions**:
+* Identify prospects
+    - Purchase "student lists"
+* Recruit prospects remotely
+    * Email, mail, text, etc.
+* Recruit prospects in-person
+    * __Off-campus recruiting (e.g., high
+school visits, fairs)__
+    * Campus visits
+    * Other "outreach"
+* Solicit inquiries, stealth applicants
+    * Social media, advertising
 
 ---
 
-# Motivation
-## Research and policy on access inequality
+# Background
+## Scholarship on college access
 
-Add text.
+Most research on access focuses on "demand side"
+- Response to aid
+- "under-matching": high-achieving, low-income students lack information/guidance
+    - Interventions to overcome information asymmetries, nudge students
+
+Few studies analyze recruiting
+
+- Audits of university resonse to inquiries
+- Off-campus recruiting visits
+    - College perspective (Stevens, 2007): important for relationships with prospects, counselors at "feeder" schools
+    - Student/high school perspective (Holland, forthcoming): Which universities visit affects student decisions, especially first-generation and students of color
+
+Research gap
+
+- Access depends on which universities visit your school
+- We don't know which universities visit which schools
 
 ---
 
-# Motivation
-## Scholarship on recruiting
+# Theoretical motivation
+## Enrollment priorities and recruiting behavior
 
-Add text.
+Organizational theory
+
+- Contingency theory (Thompson, 1967)
+    - Technical level vs. managerial level
+- "New" institutional theory (Meyer & Rowan, 1977)
+    - Publicly adopt goals demanded by environment
+    - Technical level cannot pursue all goals
+    - Substantively adopt some goals (technical level)
+    - Symbolically adopt others (policies, rhetoric)
+
+Application to enrollment management
+
+- "iron triangle" of enrollment management
+    - Universities pursue three enrollment goals: access, academic profile, tuition revenue
+- Recruiting is allocation of resources from technical level
+    - Knowing which populations targeted by recruiting is indicator of enrollment priorities
+
+
+
+
+
+--- &twocol
+
+# Research design
+## Overview of off-campus recruiting project
+
+*** =left
+
+<img src="assets/img/southcarolina.png" style="width:75%;float:left;">
+
+*** =right
+
+**Project overview**:
+
+* Data collection
+    - Off-campus recruiting visits
+* Data collection method
+    - Web-scrape admissions websites
+* Analysis period
+    - 1/1/2017 to 12/31/2017
+    - (data collection ongoing)
+* Project sample
+    * 
 
 --- &vertical
 
