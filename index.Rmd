@@ -6,9 +6,10 @@ ext_widgets : {rCharts: [libraries/leaflet]}
 framework: revealjs # framework refers to layouts, transitions, vertical slides, other features, etc.
 revealjs:
   theme: sky # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
-
   transition: slide
   center: 'false'
+bibliography: ./assets/other/spencer-bib.bib
+csl: ./assets/other/apa.csl
 --- &title
 
 ```{r, include=FALSE}
@@ -18,6 +19,9 @@ library(slidifyLibraries)
 #library("slidifyLibraries", lib.loc="~/R/win-library/3.5")
 #detach("package:slidify", unload=TRUE)
 #detach("package:slidifyLibraries", unload=TRUE)
+
+library(knitcitations)
+cleanbib()
 ```
 
 # Title Slide
@@ -30,7 +34,7 @@ Date
 # Motivation
 ## The problem with policy discourse about college access
 
-The 2014 White House "Access Summit"
+The 2014 White House "Access Summit" `r citep("10.1016/j.econedurev.2016.02.009")`
 
 - White House (2014b) review of causes of unequal college access
     - Highlights achievement gap, "under-matching"
@@ -468,3 +472,11 @@ for (i in 1:nrow(univs)) {
 # Conclusion
 
 The End.
+
+---
+
+# References
+
+```{r results='asis', echo=FALSE}
+bibliography('html')
+````

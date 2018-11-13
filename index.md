@@ -6,10 +6,12 @@ ext_widgets : {rCharts: [libraries/leaflet]}
 framework: revealjs # framework refers to layouts, transitions, vertical slides, other features, etc.
 revealjs:
   theme: sky # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
-
   transition: slide
   center: 'false'
+bibliography: ./assets/other/spencer-bib.bib
+csl: ./assets/other/apa.csl
 --- &title
+
 
 
 
@@ -23,7 +25,7 @@ Date
 # Motivation
 ## The problem with policy discourse about college access
 
-The 2014 White House "Access Summit"
+The 2014 White House "Access Summit" (Page and Scott-Clayton, 2016)
 
 - White House (2014b) review of causes of unequal college access
     - Highlights achievement gap, "under-matching"
@@ -456,3 +458,14 @@ order by 2;
 # Conclusion
 
 The End.
+
+---
+
+# References
+
+<p><a id='bib-Page_2016'></a><a href="#cite-Page_2016">[1]</a><cite>
+L. C. Page and J. Scott-Clayton.
+&ldquo;Improving college access in the United States: Barriers and policy responses&rdquo;.
+In: <em>Economics of Education Review</em> 51 (Apr. 2016), pp. 4&ndash;22.
+DOI: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">10.1016/j.econedurev.2016.02.009</a>.
+URL: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">https://doi.org/10.1016/j.econedurev.2016.02.009</a>.</cite></p>
