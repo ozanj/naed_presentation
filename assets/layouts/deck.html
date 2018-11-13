@@ -2,16 +2,7 @@
 <html lang="en">
 <head>
   {{> head }}
-  <script>
-    var link = document.createElement( 'link' );
-  	link.rel = 'stylesheet';
-  	link.type = 'text/css';
-  	link.href = 'assets/css/pdf.css';
-  	if (window.location.search.match(/print-pdf/gi)) {
-  	  document.getElementsByTagName('head')[0].appendChild(link);
-  	}
-  </script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  {{{ page.assets.css }}}
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 </head>
 <body>
