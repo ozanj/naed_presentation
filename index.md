@@ -5,10 +5,13 @@ mode: selfcontained
 ext_widgets : {rCharts: [libraries/leaflet]}
 framework: revealjs # framework refers to layouts, transitions, vertical slides, other features, etc.
 revealjs:
-  theme: sky
+  theme: sky # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
   transition: slide
   center: 'false'
+bibliography: ./assets/other/spencer-bib.bib
+csl: ./assets/other/apa.csl
 --- &title
+
 
 
 
@@ -22,7 +25,7 @@ Date
 # Motivation
 ## The problem with policy discourse about college access
 
-The 2014 White House "Access Summit"
+The 2014 White House "Access Summit" (Page and Scott-Clayton, 2016)
 
 - White House (2014b) review of causes of unequal college access
     - Highlights achievement gap, "under-matching"
@@ -47,7 +50,7 @@ Alternative explanation for access inequality
 
 **The enrollment funnel**:
 
-<img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:50%;float:left;">
+<img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:70%;float:left;">
 
 *** =right
 
@@ -64,6 +67,28 @@ school visits, fairs)__
 * Solicit inquiries, stealth applicants
     * Social media, advertising
 
+---
+
+# Literature review
+## Scholarship on the enrollment funnel
+
+Most research analyzes admissions or financial aid
+- Final stages of enrollment funnel
+
+Scholarship on recruiting
+- Audits of university resonse to inquiries [CITE]
+
+- Off-campus recruiting visits
+    - College perspective (Stevens, 2007)
+        - important for relationships with prospects, counselors at "feeder" schools
+    - Student/high school perspective (Holland, forthcoming): 
+        - Which universities visit affects student decisions, especially first-generation and students of color
+
+Research gap
+- We don't know which universities visit which schools and communities
+- If poor students, communities of color not being recruited, then "under-matching" may be due to under-recruiting rather than lack of guidance
+
+<!--
 ---
 
 # Background
@@ -85,6 +110,7 @@ Research gap
 
 - Access depends on which universities visit your school
 - We don't know which universities visit which schools
+-->
 
 ---
 
@@ -119,21 +145,136 @@ Application to enrollment management
 
 *** =left
 
-<img src="assets/img/southcarolina.png" style="width:75%;float:left;">
+**Data collection**
 
+* Method
+    - Web-scrape admissions websites
+* Criteria to be included in data collection
+    1. Post visits on admissions websites
+    2. Organizational type
+* Data collection sample [CRYSTAL - CHECK?]
+    - 49 public research universities
+    - 49 private research universities
+    - 42 selective private liberal arts
+* Data collection period
+    - 1/1/2017 to 12/31/2017
+    - Ongoing data collection with larger sample
+    
 *** =right
 
-**Project overview**:
+**Sample data**
 
-* Data collection
-    - Off-campus recruiting visits
-* Data collection method
-    - Web-scrape admissions websites
-* Analysis period
-    - 1/1/2017 to 12/31/2017
-    - (data collection ongoing)
-* Project sample
-    * 
+<img src="assets/img/southcarolina.png" style="width:75%;float:left;">
+
+---
+
+# Research design
+## Focus of the present paper
+
+Guiding research question:
+- What are the similarities and differences in off-campus recruiting patterns across public research universities?
+
+Why this research question: 
+- First paper from the larger study
+- Explore behavior inductively, rather than test specific hypotheses
+- Subsequent papers more focused, thematic (e.g., racial red-lining)
+
+Why focus on public research universities:
+- Historic mission of social mobility for state residents
+- Decline in state funding, growth in nonresident enrollment (Jaquette &
+Curs, 2015)
+- What are they doing to get all these nonresident students? More effort recruiting nonresidents than residents?
+
+--- 
+
+# Research design
+## Defining events
+
+Off-campus recruiting events: events by paid staff or consultants focused on soliciting applications
+- Event Type
+    - Include: College fairs, high school visits, community college visits,
+counselor events
+    - Exclude: interviews, admitted or committed student events
+- Event Host
+    - Include: paid admissions staff or consultants (e.g. regional
+    - Exclude: alumni, student volunteers
+recruiters)
+- Event location
+    - Any off-campus location
+    - E.g., high school, community college, hotel, convention center, cafe, etc.
+
+--- 
+
+# Research design
+## Data collection, processing, quality
+
+Data collection
+- University website checked four times per year by two staff for URLs with recruiting events
+- Web-scraping scripts run once per week
+
+Data processing
+- "Parsing": transform HTML text into tabular data
+- "Geocoding": use Google Maps API to obtain detailed location data based on limited data
+- Merge recruiting data to secondary data (e.g., school data, community data)
+
+Data quality (are these data any good?)
+- Concern 1: Are scraped events properly classified and merged to secondary data
+    - Solution: manually check each scraped event
+        - 8 of 15 universities checked thus far
+- Concern 2: Are all events posted on admissions website
+    - Solution: issue public records requests for all off-cmapus recruiting events
+        - Received data from X universities; not yet incorporated
+
+
+<!--
+--- 
+
+# Research design
+## Secondary data
+
+Secondary data Sources:
+
+- NCES Common Core of Data (public high schools)
+- NCES Private School University Survey (private high schools)
+- U.S. Census American Community Survey (community characteristics)
+- IPEDS (community colleges)
+- EdFacts Initiative (public high school academic achievement)
+- Equality of Opportunity Project (university income
+distributions)
+-->
+
+--- 
+
+# Research design
+## Research design for analyses
+
+Quantitative multiple case study design
+- "quantitative case study": case study where quantitative data is used as the sole source of evidence (Korzilius, 2010)
+
+Comparison to alternative research designs
+- Large-N, random samplying
+    - Not possible because reruiting data unavailable for random sample
+    - Not desirable for our RQ because large-N designs pool results across cases
+- Qualitative case study (usually collect data from multiple sources)
+    - Develop more holistic view of recruiting (e.g., Stevens, 2007)
+    - Less systematic analysis of particular phenomena
+
+Data analysis
+- Within-case analyses
+    - Situate within local context; national overview; "deep dive" of in-state and out-of-state recruiting patterns
+    - Simple descriptive statistics (e.g., counts), static visualizations, interactive maps
+- Cross-case analyses
+
+--- 
+
+# Research design
+## Analysis sample compared to population
+
+Analysis sample consists of 15 public research universities
+- Chosen based on "completeness" of recruiting event data
+- Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" (Patton, 2002)
+
+CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION
 
 --- &vertical
 
@@ -317,3 +458,14 @@ order by 2;
 # Conclusion
 
 The End.
+
+---
+
+# References
+
+<p><a id='bib-Page_2016'></a><a href="#cite-Page_2016">[1]</a><cite>
+L. C. Page and J. Scott-Clayton.
+&ldquo;Improving college access in the United States: Barriers and policy responses&rdquo;.
+In: <em>Economics of Education Review</em> 51 (Apr. 2016), pp. 4&ndash;22.
+DOI: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">10.1016/j.econedurev.2016.02.009</a>.
+URL: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">https://doi.org/10.1016/j.econedurev.2016.02.009</a>.</cite></p>
