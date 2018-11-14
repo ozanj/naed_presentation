@@ -7,7 +7,7 @@ mode: selfcontained
 ext_widgets : {rCharts: [libraries/leaflet]}
 framework: revealjs # framework refers to layouts, transitions, vertical slides, other features, etc.
 revealjs:
-  theme: sky # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
+  theme: custom # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
   transition: slide
   center: 'false'
 bibliography: ./assets/other/spencer-bib.bib
@@ -26,6 +26,24 @@ library(slidifyLibraries)
 library(knitcitations)
 cleanbib()
 bib <- read.bibtex('./assets/other/spencer-bib.bib')
+
+# Function for parenthetical citation needing `e.g.,` or have no year (ie. forthcoming)
+# b: citation(s)
+# eg: T/F - whether or not to include `e.g.,` in citation
+cite <- function(b, eg = TRUE) {
+  c <- ifelse(eg, '(e.g., ', '(')
+  for (i in seq_along(b)) {
+    if (i != 1) {
+      c <- paste0(c, '; ')
+    }
+    a <- paste(b[[i]]$author$family, collapse = ', ')
+    y <- ifelse(is.null(b[[i]]$year), 'forthcoming', b[[i]]$year)
+    entry <- paste(a, y, sep = ', ')
+    c <- paste0(c, entry)
+    record_as_cited(b[[i]])
+  }
+  paste0(c, ')')
+}
 ```
 
 # Coming Soon to a Neighborhood Near You? Off-Campus Recruiting by Public Research Universities
@@ -71,13 +89,13 @@ This paper
 
 *** =left
 
-**The enrollment funnel**:
+The enrollment funnel
 
 <img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:80%;float:left;">
 
 *** =right
 
-**Interventions along the funnel**:
+Interventions along the funnel
 * Identify prospects
     - Purchase "student lists"
 * Recruit prospects remotely
@@ -100,15 +118,15 @@ school visits, fairs)__
 
 
 
-Most research analyzes admissions (CRYSTAL ADD EG) `r citep(bib[c("RN3536")])` or financial aid (CRYSTAL ADD EG) `r citep(bib[c("RN1948")])`
+Most research analyzes admissions `r cite(bib['RN3536'])` or financial aid `r cite(bib['RN1948'])`
 - Final stages of enrollment funnel
 
 Scholarship on recruiting
-- Audits of university resonse to inquiries (Hanson, 2017; Thornhill, forthcoming)
+- Audits of university resonse to inquiries `r cite(bib[c('RN4331', 'RN4360')], F)`
 - Off-campus recruiting visits
-    - College perspective `r citep(bib[c("RN3519")])`
+    - College perspective `r citep(bib['RN3519'])`
         - important for relationships with prospects, counselors at "feeder" schools
-    - Student/high school perspective (Holland, forthcoming)
+    - Student/high school perspective `r citep(bib['RN4324'])`
         - Which universities visit affects student decisions, especially first-generation and students of color
 
 
@@ -147,9 +165,9 @@ Research gap
 
 Organizational theory
 
-- Contingency theory (Thompson, 1967)
+- Contingency theory `r citep(bib['RN531'])`
     - Technical level vs. managerial level
-- "New" institutional theory (Meyer & Rowan, 1977)
+- "New" institutional theory `r citep(bib['RN513'])`
     - Publicly adopt goals demanded by environment
     - Technical level cannot pursue all goals
     - Substantively adopt some goals (technical level)
@@ -193,7 +211,7 @@ Application to enrollment management
 
 **Sample data**
 
-<img src="assets/img/southcarolina.png" style="width:75%;float:left;">
+<img src="assets/img/southcarolina.png" style="width:65%;float:left;">
 
 ---
 
@@ -210,8 +228,7 @@ Why this research question:
 
 Why focus on public research universities:
 - Historic mission of social mobility for state residents
-- Decline in state funding, growth in nonresident enrollment (Jaquette &
-Curs, 2015)
+- Decline in state funding, growth in nonresident enrollment `r citep(bib['RN3753'])`
 - What are they doing to get all these nonresident students? More effort recruiting nonresidents than residents?
 
 Why N=15? Why these 15 universities?
@@ -259,9 +276,8 @@ Data quality (are these data any good?)
         - Received data from X universities; not yet incorporated [CRYSTAL CHECK]
 
 
-
---- 
 <!--
+---
 
 # Research methods
 ## Secondary data
@@ -284,14 +300,14 @@ distributions)
 ## Research design for analyses
 
 Quantitative multiple case study design
-- "quantitative case study": case study where quantitative data is used as the sole source of evidence (Korzilius, 2010)
+- "quantitative case study": case study where quantitative data is used as the sole source of evidence `r citep(bib['RN4545'])`
 
 Comparison to alternative research designs
 - Large-N, random samplying
     - Not possible because reruiting data unavailable for random sample
     - Not desirable for our RQ because large-N designs pool results across cases
 - Qualitative case study (usually collect data from multiple sources)
-    - Develop more holistic view of recruiting (e.g., Stevens, 2007)
+    - Develop more holistic view of recruiting `r cite(bib['RN3519'])`
     - Less systematic analysis of particular phenomena
 
 Data analysis
@@ -307,13 +323,14 @@ Data analysis
 
 Analysis sample consists of 15 public research universities
 - Chosen from larger data collection sample (N=X CRYSTAL) based on "completeness" of recruiting event data
-- Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" (Patton, 2002)
+- Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" `r citep(bib['RN4549'])`
 
 CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, MAKE THIS ONE OF THE "POP UP/ZOOM" FIGURES LIKE IN THE DEEP-DIVE RESULTS
 
 --- &vertical
 
 # Deep-Dive Results
+## &nbsp;
 
 Select a university to take a closer look at the results.
 
@@ -341,6 +358,7 @@ for (i in 1:nrow(univs)) {
 ***
 
 # Top Visited Metro Areas
+## &nbsp;
 
 <div class="table-wrapper">
   <table id="table-metro-count"></table>
@@ -349,6 +367,7 @@ for (i in 1:nrow(univs)) {
 ***
 
 # National Overview
+## &nbsp;
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -416,6 +435,7 @@ for (i in 1:nrow(univs)) {
 ***
 
 # Out-of-State Results
+## &nbsp;
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -481,6 +501,7 @@ for (i in 1:nrow(univs)) {
 ---
 
 # Cross-university comparisons
+## &nbsp;
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -496,6 +517,7 @@ for (i in 1:nrow(univs)) {
 ---
 
 # Cross-university comparisons
+## &nbsp;
 
 CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET'S SAY NUMBER OF EVENTS BY STATE AND TYPE
 
@@ -521,7 +543,7 @@ Next steps
 ---
 
 # Discussion
-## Future research: using "data science" and public records requests to study recruiting
+## Future research: Using "data science" & public records requests to study recruiting
 
 Off-campus recruiting project
 - Continue/expand data collection (e.g., add regional public universities)
@@ -538,9 +560,10 @@ Impact goals
 - Making recruiting data public empowers local actors to hold universities accountable
     - Unless we interrogate university enrollment management behavior, we invite symbolic responses to calls for access
 
----
+--- #references
 
 # References
+## &nbsp;
 
 ```{r results='asis', echo=FALSE}
 bibliography('html')

@@ -127,7 +127,9 @@
 
 #references p {
   padding-left: 25px;
-  text-indent: -25px;
+  text-indent: -22px;
+  line-height: 1.5em;
+  padding-bottom: 6px;
 }
 
 #references a[href^='#'] {
