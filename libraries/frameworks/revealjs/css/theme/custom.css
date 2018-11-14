@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Source+Code+Pro:500|Open+Sans:300,400,700|Oswald);
+
+/* Main */
+
+body {
+  font-family: 'Open Sans','Helvetica', 'Crimson Text', 'Garamond', 'Palatino', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2em;
+  color: #444;
+  background-color: whitesmoke;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal strong {
+  font-weight: 700;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal section img {
+  display: block;
+  margin: 5px auto;
+}
+
+.reveal hr {
+  transform: translateY(20px);
+  background-color: #AA0000;
+  height: 1px;
+  border: 0;
+}
+
+.reveal .slide h1 {
+  font-family: Times, serif;
+  color: #AA0000;
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-size: 50px;
+  margin: 10px 0 30px;
+}
+
+.reveal .slide h2 {
+  color: #000;
+  letter-spacing: -2px;
+  font-size: 30px;
+  margin: -35px 0 35px;
+}
+
+.reveal p {
+  font-weight: 400;
+}
+
+/* Lists */
+
+#univ_options {
+  columns: 2;
+  margin: 10px 0 0 25px;
+}
+
+.reveal ul, .reveal ol {
+  padding: 0;
+  margin-left: 3em;
+  font-weight: 300;
+}
+
+/*
+.left > ul, .right > ul {
+  margin-left: 25px;
+}
+*/
+
+.reveal ul li {
+  list-style-type: circle;
+}
+
+.reveal ol li {
+  list-style-type: decimal;
+}
+
+.reveal ul ul li {
+  list-style-type: none;
+}
+
+.reveal ul ul li:before {
+  content: '-';
+  font-weight: 400;
+  margin-left: -1em;
+  position: absolute;
+}
+
+.reveal ul ul ul li:before {
+  content: '\00B7';
+}
+
+/* Tables */
+
+.table-wrapper {
+  height: 500px;
+}
+
+.reveal table {
+  font-size: 18px;
+  width: 100%;
+  text-align: right;
+  line-height: 1em;
+}
+
+.reveal table thead td {
+  text-decoration: underline;
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
+.reveal table tr td:nth-of-type(1) {
+  text-align: left;
+}
+
+.reveal td {
+    padding: 6px 0;
+}
+
+/* Links */
+
+.reveal .btn {
+  top: 10px;
+  border: #AA0000 1.5px dashed;
+  color: #AA0000;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 6px;
+  transition: all 0.2s ease-out;
+}
+
+.reveal .btn:hover {
+  border: gray 1.5px solid;
+  color: gray;
+}
+
+.reveal a {
+  cursor: pointer;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+.reveal a:hover {
+  color: #AA0000;
+}
+
+/* Text */
+
+.reveal span.univ-name {
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin: 5px 0;
+  color: gray;
+}

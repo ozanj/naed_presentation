@@ -1,13 +1,14 @@
 <section>
    <section class='slide vertical-top {{slide.class}}' data-state='slide-horizontal'>
     {{{slide.header}}}
+    <hr />
     {{{slide.content}}}
     <aside class='notes'>
       {{{ slide.pnotes }}}
     </aside>
    </section>
    {{# slide.blocks }}
-   <section class='vertical {{class}}' data-state='slide-vertical'>
+   <section class='slide vertical {{class}}' data-state='slide-vertical'>
      <span class='univ-name'></span>
     {{{ header }}}
     {{{ content }}}
@@ -17,7 +18,7 @@
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       {{{ pnotes.html }}}
     </aside>
