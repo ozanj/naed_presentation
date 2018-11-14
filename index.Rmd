@@ -26,6 +26,9 @@ library(slidifyLibraries)
 library(knitcitations)
 cleanbib()
 bib <- read.bibtex('./assets/other/spencer-bib.bib')
+  typeof(bib)
+  names(bib)
+  str(bib["RN4360"]) # thornhill; year is "forthcoming" but when i compile slidify, shows up as 2018...?
 
 # Function for parenthetical citation needing `e.g.,` or have no year (ie. forthcoming)
 # b: citation(s)
@@ -44,6 +47,8 @@ cite <- function(b, eg = TRUE) {
   }
   paste0(c, ')')
 }
+
+#slidify ("index.Rmd")
 ```
 
 # Coming Soon to a Neighborhood Near You?
@@ -67,20 +72,20 @@ Crystal Han
 
 The 2014 White House "Access Summit" 
 - `r citet(bib['RN4016'])` review of causes of unequal college access
-    - Highlights achievement gap, "under-matching"
-- *Commitments to Action on College Opportunity* `r citep(bib['RN4017'])`
+    - Highlights "achievement gap", "under-matching"
+- *Commitments to Action on College Opportunity*  `r citep(bib['RN4017'])`
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
 - Place responsibility on students, K-12 schools; assume universities are passive or progressive
 
-
+<br>
 Alternative explanation for access inequality
-- University enrollment priorities and behaviors biased against low-income students and/or communities of color
+- University enrollment priorities and behaviors biased against poor students and/or communities of color
 
-This paper
-- Recruiting behavior an indicator of enrollment preferences
-- Research question: What are the similarities and differences in off-campus recruiting patterns across public research universities?
+Research focus (this paper)
+- We argue recruiting behavior is an indicator of enrollment preferences
+- **Research question**: What are the similarities and differences in off-campus recruiting patterns across public research universities?
 
 
 --- &twocol
@@ -90,20 +95,20 @@ This paper
 
 *** =left
 
-The enrollment funnel
+**The enrollment funnel**
 
 <img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:80%;float:left;">
 
 *** =right
 
-Interventions along the funnel
+**Interventions along the funnel**
 * Identify prospects
     - Purchase "student lists"
 * Recruit prospects remotely
     * Email, mail, text, etc.
 * Recruit prospects in-person
-    * __Off-campus recruiting (e.g., high
-school visits, fairs)__
+    * **Off-campus recruiting visits** (e.g., high
+school visits, fairs)
     * Campus visits
     * Other "outreach"
 * Solicit inquiries, stealth applicants
@@ -119,17 +124,17 @@ school visits, fairs)__
 
 
 
-Most research analyzes admissions `r cite(bib['RN3536'])` or financial aid `r cite(bib['RN1948'])`
+Most research analyzes admissions `r cite(bib['RN3522'])` or financial aid `r cite(bib['RN1948'])`
 - Final stages of enrollment funnel
 
-Scholarship on recruiting
+Scholarship on recruiting is sparse
 
-- Audits of university resonse to inquiries `r cite(bib[c('RN4331','RN4360')], F)`
+- Audits of university resonse to inquiries `r cite(bib[c('RN4331','RN4360')])`
 - Off-campus recruiting visits
-    - College perspective `r citep(bib['RN3519'])`
+    - From the college perspective `r citep(bib['RN3519'])`
         - important for relationships with prospects, counselors at "feeder" schools
-    - Student/high school perspective `r citep(bib['RN4324'])`
-        - Which universities visit affects student decisions, especially first-generation and students of color
+    - From the perspective of high school students `r citep(bib['RN4324'])`
+        - Which universities visit affects student decisions, especially first-gen and students of color
 
 
 Research gap
@@ -173,16 +178,16 @@ Organizational theory
 - "New" institutional theory `r citep(bib['RN513'])`
     - Publicly adopt goals demanded by environment
     - Technical level cannot pursue all goals
-    - Substantively adopt some goals (technical level)
-    - Symbolically adopt others (policies, rhetoric)
+        - Substantively adopt some goals (technical level)
+        - Symbolically adopt others (policies, rhetoric)
 
-Application to enrollment management
+Application to enrollment management (EM)
 
-- "iron triangle" of enrollment management
-    - Universities pursue three enrollment goals: access, academic profile, tuition revenue
+- "Iron triangle" of EM highlights three broad enrollment goals: **access, academic profile, revenue**
+    - Resources scarce; depending on priorities, some goals receive more resources than others
 - Enrollment priorities cannot be discerned by policies, rhetoric    
 - Recruiting is allocation of resources from technical level
-    - Knowing which populations targeted by recruiting is indicator of enrollment priorities
+    - Knowing which populations targeted by recruiting interventions is indicator of enrollment priorities
 
 
 
@@ -190,8 +195,8 @@ Application to enrollment management
 
 --- &twocol
 
-# Project overview
-## The broader off-campus recruiting project
+# Research overview
+## The broader off-campus recruiting research project
 
 *** =left
 
@@ -218,12 +223,13 @@ Application to enrollment management
 
 ---
 
-# Project overview
-## Focus of the present paper
+# Research overview
+## Focus of this research paper
 
-Research question: what are the similarities and differences in off-campus recruiting patterns across public research universities?
+**Research question: what are the similarities and differences in off-campus recruiting patterns across public research universities?**
 - Quantitative multiple case study of 15 public research universities
 
+<br>
 Why this research question: 
 - First paper from the larger study
 - Explore behavior inductively, rather than test specific hypotheses
@@ -232,10 +238,9 @@ Why this research question:
 Why focus on public research universities:
 - Historic mission of social mobility for state residents
 - Decline in state funding, growth in nonresident enrollment `r citep(bib['RN3753'])`
-- What are they doing to get all these nonresident students? More effort recruiting nonresidents than residents?
+- What are they doing to get all these nonresidents? More effort recruiting nonresidents than residents?
 
-Why N=15? Why these 15 universities?
-- Discussed below
+
 
 
 --- 
@@ -243,43 +248,45 @@ Why N=15? Why these 15 universities?
 # Research methods
 ## Defining events
 
-"Off-campus recruiting events" defined as off-campus events hosted by paid staff or consultants focused on soliciting applications
+**"Off-campus recruiting events" defined as off-campus events hosted by paid staff/consultants focused on soliciting applications**
+
+<br>
 - Event type
-    - Include: College fairs, high school visits, community college visits,
+    - Include: college fairs, high school visits, community college visits,
 counselor events
-    - Exclude: interviews, admitted or committed student events
+    - Exclude: admitted or committed student events, interviews
 - Event host
-    - Include: paid admissions staff or consultants (e.g. regional
+    - Include: paid admissions staff or consultants (e.g. regional recruiters)
     - Exclude: alumni, student volunteers
-recruiters)
 - Event location
     - Any off-campus location
-    - E.g., high school, community college, hotel, convention center, cafe, etc.
+    - e.g., high school, community college, hotel, convention center, cafe, etc.
 
 --- 
 
 # Research methods
-## Data collection, processing, quality
+## Data collection, data processing, data quality
 
 Data collection
 - University website checked four times per year by two staff for URLs with recruiting events
-- Web-scraping scripts run once per week
+- Web-scraping scripts run once per week (over X (CRYSTAL ADD) unique pages scraped to date)
 
 Data processing
 - "Parsing": transform HTML text into tabular data
 - "Geocoding": use Google Maps API to obtain detailed location data based on limited data
-- Merge recruiting data to secondary data (e.g., school data, community data)
+- Merge recruiting data to secondary data (e.g., schools, communities)
 
 Data quality (are these data any good?)
-- Concern 1: Are scraped events properly classified and merged to secondary data
+- Concern 1: are scraped events properly classified and merged to secondary data?
     - Solution: manually check each scraped event
         - 8 of 15 universities checked thus far
-- Concern 2: Are all events posted on admissions website
+- Concern 2: are all events posted on admissions website?
     - Solution: issue public records requests for all off-cmapus recruiting events
-        - Received data from 7 universities; not yet incorporated
+        - Received data from 7 of 15 universities; not yet incorporated
 
 
-<!--
+<!-- COMMENT -->
+
 ---
 
 # Research methods
@@ -295,29 +302,26 @@ Secondary data Sources:
 - Equality of Opportunity Project (university income
 distributions)
 
--->
-
 --- 
 
 # Research methods
 ## Research design for analyses
 
 Quantitative multiple case study design
-- "quantitative case study": case study where quantitative data is used as the sole source of evidence `r citep(bib['RN4545'])`
+- "quantitative case study" uses quantitative data as sole source of evidence `r citep(bib['RN4545'])`
+- "Within-case" analyses of recruiting patterns
+    - Situate within local context; national overview; "deep dive" of in-state and out-of-state patterns
+    - Simple descriptive statistics (e.g., counts), static visualizations, interactive maps
+- "Cross-case" analyses
+    - Descriptive statistics and qualitative coding methods
 
 Comparison to alternative research designs
-- Large-N, random samplying
+- Large-N, random sample design
     - Not possible because reruiting data unavailable for random sample
-    - Not desirable for our RQ because large-N designs pool results across cases
+    - Not desirable for present research because large-N designs pool results across cases
 - Qualitative case study (usually collect data from multiple sources)
-    - Develop more holistic view of recruiting `r cite(bib['RN3519'])`
-    - Less systematic analysis of particular phenomena
-
-Data analysis
-- Within-case analyses
-    - Situate within local context; national overview; "deep dive" of in-state and out-of-state recruiting patterns
-    - Simple descriptive statistics (e.g., counts), static visualizations, interactive maps
-- Cross-case analyses
+    - Our design narrowly focused, systematic analysis of particular phenomena
+    - Unlike `r citet(bib['RN3519'])`, we do not develop a holistic understanding of recruiting behavior
 
 --- 
 
@@ -333,9 +337,9 @@ CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, M
 --- &vertical
 
 # Deep-Dive Results
-## &nbsp;
+## Click on a university to take a closer look at the results &nbsp;
 
-Select a university to take a closer look at the results.
+**N** refers to total number of recruiting visits
 
 <!--
 select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name
@@ -526,42 +530,49 @@ CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET'S SA
 
 ---
 
-# Discussion
-## Summary and next steps (this paper)
+# Summary
+## Summary of results and next steps for this paper
 
 Summary of results
 - Majority of universities in our sample hosted twice as many out-of-state events as in-state events
-    - Out-of-state events focus on private schools and affluent public schools
-- Several universities focus more on in-state recruiting (e.g., U. Nebraska, North Carolina State, UC Berkeley, UC Irvine)
+    - Out-of-state events focus on affluent public schools and private schools
+- Several universities focus more on in-state recruiting (e.g., U. Nebraska, North Carolina State, UC Berkeley)
 - In-state visits tend to show little evidence of income or racial bias
-    - But small number of universities (e.g., Rutgers) show income/racial bias even in in-state visits
+- Some universities (e.g., Rutgers) show income/racial bias even in in-state visits
+    - Must investigate whether bias persists after controlling for academic achievement, other factors
 
+<br>
 Next steps
-- Complete data quality checks (e.g., incorporate data from public records requests) - Finish "deep dive" for all universities
-- Compare results across universities
-    - Quantitative descriptive analyses
-    - Qualitative coding
-- Categorize universities into broad recruiting types
+- Complete data quality checks (e.g., incorporate data from public records requests) 
+- Conduct "deep dive" for all universities
+- Compare results across universitiesq
+    - Quantitative descriptive analyses; qualitative coding
+- Develop broad categories of recruiting "types" and categorize universities
 
 ---
 
-# Discussion
-## Future research: Using "data science" & public records requests to study recruiting
+# Future research
+## Using "data science" and public records requests to study recruiting
+
 
 Off-campus recruiting project
-- Continue/expand data collection (e.g., add regional public universities)
-- Write journal manuscripts with more narrow focus (e.g., focus on private high schools)
+- Expand data collection (e.g., regional public universities); publicly release all data
+- Develop manuscripts with more narrow focus (e.g., do new public high schools get visits?)
 
-New research projects
-- Which student characteristics do universities prioritize when purchasing "student lists"
-    - Public records requests
-- Experimental audits of university responses to "inquiries"
-    - Automate emails; auto-fill "inquiry forms"
+Student list project (collected pilot data)
+- Which student characteristics do universities prioritize when prospect lists from College Board/ACT?
+- Data collection: Public records requests
 
+Experimental audits of university responses to "inquiries" (pre-pilot stage)
+- More favorable response to inquiries with certain characteristics (e.g., affluence of zip-code/school, evidence of third-party grant/loan)?
+- Data collection: Automate emails; auto-fill "inquiry forms"
+
+<br>
 Impact goals
 - Change national policy discourse on access inequality
-- Making recruiting data public empowers local actors to hold universities accountable
-    - Unless we interrogate university enrollment management behavior, we invite symbolic responses to calls for access
+- Empower local actors to hold universities accountable for stated commitments to access
+    - Unless we document enrollment management behavior, we invite symbolic responses
+
 
 --- #references
 
