@@ -1,5 +1,7 @@
 ---
-title: "Presentation"
+title: "Coming Soon to a Neighborhood Near You?"
+subtitle: "Off-Campus Recruiting by Public Research Universities"
+author: Ozan Jaquette
 # lib_cdn: "https://cdn.rawgit.com/ramnathv/slidifyLibraries/master/inst/libraries"
 mode: selfcontained
 ext_widgets : {rCharts: [libraries/leaflet]}
@@ -10,8 +12,9 @@ revealjs:
   center: 'false'
 bibliography: ./assets/other/spencer-bib.bib
 csl: ./assets/other/apa.csl
---- &title
 
+
+--- &title
 ```{r, include=FALSE}
 library(slidify)
 library(slidifyLibraries)
@@ -22,33 +25,44 @@ library(slidifyLibraries)
 
 library(knitcitations)
 cleanbib()
+bib <- read.bibtex('./assets/other/spencer-bib.bib')
 ```
 
-# Title Slide
-## Author
+# Coming Soon to a Neighborhood Near You? Off-Campus Recruiting by Public Research Universities
 
-Date
+CRYSTAL - CAN YOU ADD/EDIT TITLE SLIDE; I DON'T CARE IF YOU USE YAML HEADER OR NOT; JUST SHOULD HAVE A PAPER TITLE THAT LOOKS GOOD AND LISTS AUTHOR NAMES AND UNIVERSITY AFFILIATIONS
+
+Karina Salazar,
+University of Arizona
+
+Ozan Jaquette, 
+UCLA
+
+Crystal Han, 
+UCLA
 
 --- 
 
 # Motivation
 ## The problem with policy discourse about college access
 
-The 2014 White House "Access Summit" `r citep("10.1016/j.econedurev.2016.02.009")`
-
-- White House (2014b) review of causes of unequal college access
+The 2014 White House "Access Summit" 
+- `r citet(bib['RN4016'])` review of causes of unequal college access
     - Highlights achievement gap, "under-matching"
-- *Commitments to Action on College Opportunity* (The White House, 2014a)
+- *Commitments to Action on College Opportunity* `r citep(bib['RN4017'])`
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
-- Focus on deficiencies of students, K-12 schools
-- Assumes universities are passive or progressive actors
+- Place responsibility on students, K-12 schools; assume universities are passive or progressive
+
 
 Alternative explanation for access inequality
 - University enrollment priorities and behaviors biased against low-income students and/or communities of color
+
+This paper
 - Recruiting behavior an indicator of enrollment preferences
-- This project analyzes off-campus recruiting visits by public research universities
+- Research question: What are the similarities and differences in off-campus recruiting patterns across public research universities?
+
 
 --- &twocol
 
@@ -59,11 +73,11 @@ Alternative explanation for access inequality
 
 **The enrollment funnel**:
 
-<img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:70%;float:left;">
+<img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:80%;float:left;">
 
 *** =right
 
-**Recruiting interventions**:
+**Interventions along the funnel**:
 * Identify prospects
     - Purchase "student lists"
 * Recruit prospects remotely
@@ -75,23 +89,28 @@ school visits, fairs)__
     * Other "outreach"
 * Solicit inquiries, stealth applicants
     * Social media, advertising
+* Convert admits to enrolles
+    * Financial aid leveraging
+
 
 ---
 
 # Literature review
 ## Scholarship on the enrollment funnel
 
-Most research analyzes admissions or financial aid
+
+
+Most research analyzes admissions (CRYSTAL ADD EG) `r citep(bib[c("RN3536")])` or financial aid (CRYSTAL ADD EG) `r citep(bib[c("RN1948")])`
 - Final stages of enrollment funnel
 
 Scholarship on recruiting
-- Audits of university resonse to inquiries [CITE]
-
+- Audits of university resonse to inquiries (Hanson, 2017; Thornhill, forthcoming)
 - Off-campus recruiting visits
-    - College perspective (Stevens, 2007)
+    - College perspective `r citep(bib[c("RN3519")])`
         - important for relationships with prospects, counselors at "feeder" schools
-    - Student/high school perspective (Holland, forthcoming): 
+    - Student/high school perspective (Holland, forthcoming)
         - Which universities visit affects student decisions, especially first-generation and students of color
+
 
 Research gap
 - We don't know which universities visit which schools and communities
@@ -140,6 +159,7 @@ Application to enrollment management
 
 - "iron triangle" of enrollment management
     - Universities pursue three enrollment goals: access, academic profile, tuition revenue
+- Enrollment priorities cannot be discerned by policies, rhetoric    
 - Recruiting is allocation of resources from technical level
     - Knowing which populations targeted by recruiting is indicator of enrollment priorities
 
@@ -149,8 +169,8 @@ Application to enrollment management
 
 --- &twocol
 
-# Research design
-## Overview of off-campus recruiting project
+# Project overview
+## The broader off-campus recruiting project
 
 *** =left
 
@@ -177,16 +197,16 @@ Application to enrollment management
 
 ---
 
-# Research design
+# Project overview
 ## Focus of the present paper
 
-Guiding research question:
-- What are the similarities and differences in off-campus recruiting patterns across public research universities?
+Research question: what are the similarities and differences in off-campus recruiting patterns across public research universities?
+- Quantitative multiple case study of 15 public research universities
 
 Why this research question: 
 - First paper from the larger study
 - Explore behavior inductively, rather than test specific hypotheses
-- Subsequent papers more focused, thematic (e.g., racial red-lining)
+- Subsequent papers more focused, thematic (e.g., racial red-lining, international recruiting)
 
 Why focus on public research universities:
 - Historic mission of social mobility for state residents
@@ -194,17 +214,21 @@ Why focus on public research universities:
 Curs, 2015)
 - What are they doing to get all these nonresident students? More effort recruiting nonresidents than residents?
 
+Why N=15? Why these 15 universities?
+- Discussed below
+
+
 --- 
 
-# Research design
+# Research methods
 ## Defining events
 
-Off-campus recruiting events: events by paid staff or consultants focused on soliciting applications
-- Event Type
+"Off-campus recruiting events" defined as off-campus events hosted by paid staff or consultants focused on soliciting applications
+- Event type
     - Include: College fairs, high school visits, community college visits,
 counselor events
     - Exclude: interviews, admitted or committed student events
-- Event Host
+- Event host
     - Include: paid admissions staff or consultants (e.g. regional
     - Exclude: alumni, student volunteers
 recruiters)
@@ -214,7 +238,7 @@ recruiters)
 
 --- 
 
-# Research design
+# Research methods
 ## Data collection, processing, quality
 
 Data collection
@@ -229,16 +253,17 @@ Data processing
 Data quality (are these data any good?)
 - Concern 1: Are scraped events properly classified and merged to secondary data
     - Solution: manually check each scraped event
-        - 8 of 15 universities checked thus far
+        - 8 of 15 universities checked thus far [CRYSTAL CHECK]
 - Concern 2: Are all events posted on admissions website
     - Solution: issue public records requests for all off-cmapus recruiting events
-        - Received data from X universities; not yet incorporated
+        - Received data from X universities; not yet incorporated [CRYSTAL CHECK]
 
 
-<!--
+
 --- 
+<!--
 
-# Research design
+# Research methods
 ## Secondary data
 
 Secondary data Sources:
@@ -250,11 +275,12 @@ Secondary data Sources:
 - EdFacts Initiative (public high school academic achievement)
 - Equality of Opportunity Project (university income
 distributions)
+
 -->
 
 --- 
 
-# Research design
+# Research methods
 ## Research design for analyses
 
 Quantitative multiple case study design
@@ -276,14 +302,14 @@ Data analysis
 
 --- 
 
-# Research design
-## Analysis sample compared to population
+# Research methods
+## Analysis sample
 
 Analysis sample consists of 15 public research universities
-- Chosen based on "completeness" of recruiting event data
+- Chosen from larger data collection sample (N=X CRYSTAL) based on "completeness" of recruiting event data
 - Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" (Patton, 2002)
 
-CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION
+CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, MAKE THIS ONE OF THE "POP UP/ZOOM" FIGURES LIKE IN THE DEEP-DIVE RESULTS
 
 --- &vertical
 
@@ -454,7 +480,7 @@ for (i in 1:nrow(univs)) {
 
 ---
 
-# Cross-University Results
+# Cross-university comparisons
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -469,9 +495,48 @@ for (i in 1:nrow(univs)) {
 
 ---
 
-# Conclusion
+# Cross-university comparisons
 
-The End.
+CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET'S SAY NUMBER OF EVENTS BY STATE AND TYPE
+
+---
+
+# Discussion
+## Summary and next steps (this paper)
+
+Summary of results
+- Majority of universities in our sample hosted twice as many out-of-state events as in-state events
+    - Out-of-state events focus on private schools and affluent public schools
+- Several universities focus more on in-state recruiting (e.g., U. Nebraska, North Carolina State, UC Berkeley, UC Irvine)
+- In-state visits tend to show little evidence of income or racial bias
+    - But small number of universities (e.g., Rutgers) show income/racial bias even in in-state visits
+
+Next steps
+- Complete data quality checks (e.g., incorporate data from public records requests) - Finish "deep dive" for all universities
+- Compare results across universities
+    - Quantitative descriptive analyses
+    - Qualitative coding
+- Categorize universities into broad recruiting types
+
+---
+
+# Discussion
+## Future research: using "data science" and public records requests to study recruiting
+
+Off-campus recruiting project
+- Continue/expand data collection (e.g., add regional public universities)
+- Write journal manuscripts with more narrow focus (e.g., focus on private high schools)
+
+New research projects
+- Which student characteristics do universities prioritize when purchasing "student lists"
+    - Public records requests
+- Experimental audits of university responses to "inquiries"
+    - Automate emails; auto-fill "inquiry forms"
+
+Impact goals
+- Change national policy discourse on access inequality
+- Making recruiting data public empowers local actors to hold universities accountable
+    - Unless we interrogate university enrollment management behavior, we invite symbolic responses to calls for access
 
 ---
 
