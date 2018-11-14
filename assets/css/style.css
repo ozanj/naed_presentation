@@ -70,6 +70,10 @@
   width: 100%;
 }
 
+.reveal .graphs-set-all .graphs-row {
+  height: 33%;
+}
+
 .reveal .graphs-set img {
   border: silver 1px solid;
   background-color: white;
@@ -81,7 +85,11 @@
   height: 75%;
 }
 
-.reveal .vertical .graphs-set img:hover {
+.reveal .graphs-set-all img {
+  height: 85%;
+}
+
+.reveal .graphs-set img:hover {
   opacity: 0.7;
   cursor: pointer;
   transform: scale(1.05);

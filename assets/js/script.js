@@ -174,24 +174,24 @@ $(function() {
 
   // Graph Modal
 
-  $('.reveal .vertical .graphs-set img').on('click', function() {
+  $('.reveal .slide .graphs-set img').on('click', function() {
     var src = $(this).attr('src'),
         title = $(this).data('title'),
         caption = $(this).data('caption');
 
-    var $slide = $(this).closest('.vertical');
+    var $slide = $(this).closest('.slide');
 
     $slide.find('.modal img').attr('src', src);
-    $slide.find('.modal h3')[0].innerHTML = title;
+    $slide.find('.modal h3')[0].innerHTML = title ? title : '';
     $slide.find('.modal p')[0].innerHTML = caption ? caption : '';
 
-    $(this).closest('.vertical').find('.modal').fadeIn();
-    $(this).closest('.vertical').find('.graphs-set img').addClass('disabled');
+    $(this).closest('.slide').find('.modal').fadeIn();
+    $(this).closest('.slide').find('.graphs-set img').addClass('disabled');
   });
 
   $('.close').on('click', function() {
-    $(this).closest('.vertical').find('.modal').fadeOut();
-    $(this).closest('.vertical').find('.graphs-set img').removeClass('disabled');
+    $(this).closest('.slide').find('.modal').fadeOut();
+    $(this).closest('.slide').find('.graphs-set img').removeClass('disabled');
   });
 
   // Metro Table

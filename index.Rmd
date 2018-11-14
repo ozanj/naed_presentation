@@ -504,25 +504,38 @@ for (i in 1:nrow(univs)) {
 ---
 
 # Cross-university comparisons
-## &nbsp;
+## Map of Visits
 
-<div class="graphs-set">
+<div class="graphs-set graphs-set-all">
   <div class="graphs-row">
-    <img src="https://map.emraresearch.org/static/small_multiples/196097/titled_map.png" />
-    <img src="https://map.emraresearch.org/static/small_multiples/215293/titled_map.png" />
-  </div>
-  <div class="graphs-row">
-    <img src="https://map.emraresearch.org/static/small_multiples/110635/titled_map.png" />
-    <img src="https://map.emraresearch.org/static/small_multiples/139959/titled_map.png" />
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_map.png" />'))
+  if (i %% 5 == 0) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
   </div>
 </div>
 
 ---
 
 # Cross-university comparisons
-## &nbsp;
+## Number of events by event type
 
-CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET'S SAY NUMBER OF EVENTS BY STATE AND TYPE
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_scaled_visit_count.png" />'))
+  if (i %% 5 == 0) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+</div>
 
 ---
 
