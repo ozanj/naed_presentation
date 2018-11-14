@@ -3,13 +3,11 @@ $(function() {
   // Keyboard Controls
   
   function handleRight() {
-    var verticalSlide = 4;
-    Reveal.getState().indexh === verticalSlide - 1 ? Reveal.slide(4, 0) : Reveal.right();
+    Reveal.getState().indexh === verticalSlide - 1 ? Reveal.slide(verticalSlide, 0) : Reveal.right();
   }
   
   function handleLeft() {
-    var verticalSlide = 4;
-    Reveal.getState().indexh === verticalSlide + 1 ? Reveal.slide(4, 0) : Reveal.left();
+    Reveal.getState().indexh === verticalSlide + 1 ? Reveal.slide(verticalSlide, 0) : Reveal.left();
   }
 
   var horizontalKeyboard = {
@@ -51,7 +49,7 @@ $(function() {
         keyboard: horizontalKeyboardDownDisabled
       });
       $('.slide-horizontal .reveal .controls .navigate-down').css('display', 'none');
-      Reveal.slide(4, 0);
+      Reveal.slide(verticalSlide, 0);
     }
   }
 
@@ -70,6 +68,7 @@ $(function() {
   }
 
   Reveal.addEventListener('ready', function(e) {
+    $('.btn').attr('href', "#/11")
     if ($(e.currentSlide).hasClass('vertical')) {
       handleVertical();
     } else { // horizontal slide
@@ -110,7 +109,7 @@ $(function() {
       success: function(data) { populateTable(data); }
     });
 
-    Reveal.slide(4, 1);
+    Reveal.slide(verticalSlide, 1);
   });
 
   // Maps + Graphs
@@ -207,7 +206,9 @@ $(function() {
         return td;
     }
 
-    var headerRow = table.insertRow();
+    //var headerRow = table.insertRow();
+    var thead = table.createTHead();
+    var headerRow = thead.insertRow();
     addCell(headerRow, 'Metro Area');
     addCell(headerRow, 'Total Visits');
     addCell(headerRow, 'Public HS');
@@ -215,8 +216,9 @@ $(function() {
     addCell(headerRow, 'Community College');
     addCell(headerRow, 'Other');
 
+    var tbody = table.createTBody();
     result.slice(0, 10).forEach(function(item) {
-        var row = table.insertRow();
+        var row = tbody.insertRow();
         addCell(row, item.cbsa_name);
         addCell(row, item.total_count);
         addCell(row, item.pubHS_count);
