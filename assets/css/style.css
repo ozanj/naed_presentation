@@ -2,7 +2,6 @@
 
 .reveal #title {
   text-align: center;
-  padding-top: 50px;
 }
 
 .reveal #title hr,
@@ -16,25 +15,26 @@
   opacity: 0.2;
   width: 300px;
   left: 50%;
-  transform: translate(-50%, -130%);
+  transform: translate(-50%, -120%);
+  padding-bottom: 20px;
 }
 
 .reveal #title h1 {
   z-index: 5;
   position: relative;
-  transform: translateY(180px);
+  transform: translateY(210px);
   text-shadow: 2px 2px 15px #ffffff;
 }
 
 .reveal #title h2 {
   z-index: 5;
   position: relative;
-  transform: translateY(195px);
+  transform: translateY(225px);
   text-shadow: 2px 2px 10px #ffffff;
 }
 
 .reveal #title p {
-  transform: translateY(300px);
+  transform: translateY(320px);
   line-height: 1.2em;
 }
 
@@ -42,6 +42,7 @@
   margin-bottom: 20px;
   color: gray;
   font-weight: 300;
+  font-size: 16px;
 }
 
 /* Deep-Dive Slides */
