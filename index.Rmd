@@ -199,8 +199,8 @@ Application to enrollment management
 * Criteria to be included in data collection
     1. Post visits on admissions websites
     2. Organizational type
-* Data collection sample [CRYSTAL - CHECK?]
-    - 49 public research universities
+* Data collection sample
+    - 54 public research universities
     - 49 private research universities
     - 42 selective private liberal arts
 * Data collection period
@@ -270,10 +270,10 @@ Data processing
 Data quality (are these data any good?)
 - Concern 1: Are scraped events properly classified and merged to secondary data
     - Solution: manually check each scraped event
-        - 8 of 15 universities checked thus far [CRYSTAL CHECK]
+        - 8 of 15 universities checked thus far
 - Concern 2: Are all events posted on admissions website
     - Solution: issue public records requests for all off-cmapus recruiting events
-        - Received data from X universities; not yet incorporated [CRYSTAL CHECK]
+        - Received data from 7 universities; not yet incorporated
 
 
 <!--
@@ -322,7 +322,7 @@ Data analysis
 ## Analysis sample
 
 Analysis sample consists of 15 public research universities
-- Chosen from larger data collection sample (N=X CRYSTAL) based on "completeness" of recruiting event data
+- Chosen from larger data collection sample (N=54) based on "completeness" of recruiting event data
 - Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" `r citep(bib['RN4549'])`
 
 CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, MAKE THIS ONE OF THE "POP UP/ZOOM" FIGURES LIKE IN THE DEEP-DIVE RESULTS
