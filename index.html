@@ -8,52 +8,59 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
-  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/sky.css" id="theme">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/custom.css" id="theme">
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+  	document.write( '<link rel="stylesheet" href="libraries/frameworks/revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css">' );
+  </script>
+  
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
-  <![endif]-->  <script>
-    var link = document.createElement( 'link' );
-  	link.rel = 'stylesheet';
-  	link.type = 'text/css';
-  	link.href = 'assets/css/pdf.css';
-  	if (window.location.search.match(/print-pdf/gi)) {
-  	  document.getElementsByTagName('head')[0].appendChild(link);
-  	}
-  </script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <![endif]-->  <link rel=stylesheet href="./assets/css/style.css"></link>
+
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>var verticalSlide = 11;</script>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
-      <section class='title ' data-state='slide-horizontal' id='slide-1'>
-  <h1>Coming Soon to a Neighborhood Near You? Off-Campus Recruiting by Public Research Universities</h1>
-  <p>CRYSTAL - CAN YOU ADD/EDIT TITLE SLIDE; I DON&#39;T CARE IF YOU USE YAML HEADER OR NOT; JUST SHOULD HAVE A PAPER TITLE THAT LOOKS GOOD AND LISTS AUTHOR NAMES AND UNIVERSITY AFFILIATIONS</p>
+      <section class='slide ' data-state='slide-horizontal' id='title'>
+  <h1>Coming Soon to a Neighborhood Near You?</h1>
+  <hr />
+  <h2>Off-Campus Recruiting by Public Research Universities</h2>
 
-<p>Karina Salazar,
-University of Arizona</p>
+<p><img src='assets/img/emra.png' alt='emra' /></p>
 
-<p>Ozan Jaquette, 
-UCLA</p>
+<p>Karina Salazar</p>
 
-<p>Crystal Han, 
-UCLA</p>
+<p class='affiliation'>University of Arizona</p>
 
+<p>Ozan Jaquette</p>
+
+<p class='affiliation'>University of California, Los Angeles</p>
+
+<p>Crystal Han</p>
+
+<p class='affiliation'>University of California, Los Angeles</p>
+
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
 </section>
 <section class='slide ' data-state='slide-horizontal' id='slide-2'>
   <h1>Motivation</h1>
+  <hr />
   <h2>The problem with policy discourse about college access</h2>
 
 <p>The 2014 White House &quot;Access Summit&quot; </p>
 
 <ul>
-<li>The White House (2014) review of causes of unequal college access
+<li>The White House (2014a) review of causes of unequal college access
 
 <ul>
 <li>Highlights achievement gap, &quot;under-matching&quot;</li>
 </ul></li>
-<li><em>Commitments to Action on College Opportunity</em> (The White House, 2014)
+<li><em>Commitments to Action on College Opportunity</em> (The White House, 2014b)
 
 <ul>
 <li>Universities pledge &quot;action plans&quot; (e.g., holistic admission, need-based aid, &quot;outreach&quot;)</li>
@@ -79,20 +86,21 @@ UCLA</p>
 <li>Research question: What are the similarities and differences in off-campus recruiting patterns across public research universities?</li>
 </ul>
 
-  </section>
-<section class='' data-state='slide-horizontal' id='slide-3'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-3'>
   <h1>Background</h1>
-  <article>
-    <h2>The enrollment management industry</h2>
-  
-    <div class='left' style='float:left;width:48%'>
-     <p><strong>The enrollment funnel</strong>:</p>
+  <hr />
+  <h2>The enrollment management industry</h2>
+
+  <div class='left' style='float:left;width:48%'>
+   <p>The enrollment funnel</p>
 
 <p><img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:80%;float:left;"></p>
 
-    </div>    
-    <div class='right' style='float:right;width:48%'>
-     <p><strong>Interventions along the funnel</strong>:</p>
+  </div>
+  <div class='right' style='float:right;width:48%'>
+   <p>Interventions along the funnel</p>
 
 <ul>
 <li>Identify prospects
@@ -125,14 +133,15 @@ school visits, fairs)</strong></li>
 </ul></li>
 </ul>
 
-    </div>
-  </article>
+  </div>
+  <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
 </section>
 <section class='slide ' data-state='slide-horizontal' id='slide-4'>
   <h1>Literature review</h1>
+  <hr />
   <h2>Scholarship on the enrollment funnel</h2>
 
-<p>Most research analyzes admissions (CRYSTAL ADD EG) (Alon, 2009) or financial aid (CRYSTAL ADD EG) (McPherson and Schapiro, 1998)</p>
+<p>Most research analyzes admissions (e.g., Alon, 2009) or financial aid (e.g., McPherson, Schapiro, 1998)</p>
 
 <ul>
 <li>Final stages of enrollment funnel</li>
@@ -150,7 +159,7 @@ school visits, fairs)</strong></li>
 <ul>
 <li>important for relationships with prospects, counselors at &quot;feeder&quot; schools</li>
 </ul></li>
-<li>Student/high school perspective (Holland, forthcoming)
+<li>Student/high school perspective (Holland, 2019)
 
 <ul>
 <li>Which universities visit affects student decisions, especially first-generation and students of color</li>
@@ -189,9 +198,11 @@ Research gap
 - We don't know which universities visit which schools
 -->
 
-  </section>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
 <section class='slide ' data-state='slide-horizontal' id='slide-5'>
   <h1>Theoretical motivation</h1>
+  <hr />
   <h2>Enrollment priorities and recruiting behavior</h2>
 
 <p>Organizational theory</p>
@@ -202,7 +213,7 @@ Research gap
 <ul>
 <li>Technical level vs. managerial level</li>
 </ul></li>
-<li>&quot;New&quot; institutional theory (Meyer &amp; Rowan, 1977)
+<li>&quot;New&quot; institutional theory (Meyer and Rowan, 1977)
 
 <ul>
 <li>Publicly adopt goals demanded by environment</li>
@@ -228,14 +239,15 @@ Research gap
 </ul></li>
 </ul>
 
-  </section>
-<section class='' data-state='slide-horizontal' id='slide-6'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-6'>
   <h1>Project overview</h1>
-  <article>
-    <h2>The broader off-campus recruiting project</h2>
-  
-    <div class='left' style='float:left;width:48%'>
-     <p><strong>Data collection</strong></p>
+  <hr />
+  <h2>The broader off-campus recruiting project</h2>
+
+  <div class='left' style='float:left;width:48%'>
+   <p><strong>Data collection</strong></p>
 
 <ul>
 <li>Method
@@ -249,10 +261,10 @@ Research gap
 <li>Post visits on admissions websites</li>
 <li>Organizational type</li>
 </ol></li>
-<li>Data collection sample [CRYSTAL - CHECK?]
+<li>Data collection sample
 
 <ul>
-<li>49 public research universities</li>
+<li>54 public research universities</li>
 <li>49 private research universities</li>
 <li>42 selective private liberal arts</li>
 </ul></li>
@@ -264,17 +276,18 @@ Research gap
 </ul></li>
 </ul>
 
-    </div>    
-    <div class='right' style='float:right;width:48%'>
-     <p><strong>Sample data</strong></p>
+  </div>
+  <div class='right' style='float:right;width:48%'>
+   <p><strong>Sample data</strong></p>
 
-<p><img src="assets/img/southcarolina.png" style="width:75%;float:left;"></p>
+<p><img src="assets/img/southcarolina.png" style="width:65%;float:left;"></p>
 
-    </div>
-  </article>
+  </div>
+  <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
 </section>
 <section class='slide ' data-state='slide-horizontal' id='slide-7'>
   <h1>Project overview</h1>
+  <hr />
   <h2>Focus of the present paper</h2>
 
 <p>Research question: what are the similarities and differences in off-campus recruiting patterns across public research universities?</p>
@@ -295,8 +308,7 @@ Research gap
 
 <ul>
 <li>Historic mission of social mobility for state residents</li>
-<li>Decline in state funding, growth in nonresident enrollment (Jaquette &amp;
-Curs, 2015)</li>
+<li>Decline in state funding, growth in nonresident enrollment (Jaquette and Curs, 2015)</li>
 <li>What are they doing to get all these nonresident students? More effort recruiting nonresidents than residents?</li>
 </ul>
 
@@ -306,9 +318,11 @@ Curs, 2015)</li>
 <li>Discussed below</li>
 </ul>
 
-  </section>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
 <section class='slide ' data-state='slide-horizontal' id='slide-8'>
   <h1>Research methods</h1>
+  <hr />
   <h2>Defining events</h2>
 
 <p>&quot;Off-campus recruiting events&quot; defined as off-campus events hosted by paid staff or consultants focused on soliciting applications</p>
@@ -336,9 +350,11 @@ recruiters)</li>
 </ul></li>
 </ul>
 
-  </section>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
 <section class='slide ' data-state='slide-horizontal' id='slide-9'>
   <h1>Research methods</h1>
+  <hr />
   <h2>Data collection, processing, quality</h2>
 
 <p>Data collection</p>
@@ -365,7 +381,7 @@ recruiters)</li>
 <li>Solution: manually check each scraped event
 
 <ul>
-<li>8 of 15 universities checked thus far [CRYSTAL CHECK]</li>
+<li>8 of 15 universities checked thus far</li>
 </ul></li>
 </ul></li>
 <li>Concern 2: Are all events posted on admissions website
@@ -374,15 +390,13 @@ recruiters)</li>
 <li>Solution: issue public records requests for all off-cmapus recruiting events
 
 <ul>
-<li>Received data from X universities; not yet incorporated [CRYSTAL CHECK]</li>
+<li>Received data from 7 universities; not yet incorporated</li>
 </ul></li>
 </ul></li>
 </ul>
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-10'>
-  
-  <!--
+<!--
+---
 
 # Research methods
 ## Secondary data
@@ -399,9 +413,11 @@ distributions)
 
 -->
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-11'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-10'>
   <h1>Research methods</h1>
+  <hr />
   <h2>Research design for analyses</h2>
 
 <p>Quantitative multiple case study design</p>
@@ -439,25 +455,31 @@ distributions)
 <li>Cross-case analyses</li>
 </ul>
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-12'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-11'>
   <h1>Research methods</h1>
+  <hr />
   <h2>Analysis sample</h2>
 
 <p>Analysis sample consists of 15 public research universities</p>
 
 <ul>
-<li>Chosen from larger data collection sample (N=X CRYSTAL) based on &quot;completeness&quot; of recruiting event data</li>
+<li>Chosen from larger data collection sample (N=54) based on &quot;completeness&quot; of recruiting event data</li>
 <li>Subsequent drafts may reduce sample size, based on case study principles of &quot;purposeful sampling&quot; (Patton, 2002)</li>
 </ul>
 
 <p>CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, MAKE THIS ONE OF THE &quot;POP UP/ZOOM&quot; FIGURES LIKE IN THE DEEP-DIVE RESULTS</p>
 
-  </section>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
 <section>
    <section class='slide vertical-top ' data-state='slide-horizontal'>
     <h1>Deep-Dive Results</h1>
-    <p>Select a university to take a closer look at the results.</p>
+    <hr />
+    <h2>&nbsp;</h2>
+
+<p>Select a university to take a closer look at the results.</p>
 
 <!--
 select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name
@@ -478,11 +500,14 @@ order by 2;
     <aside class='notes'>
       
     </aside>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>Top Visited Metro Areas</h1>
-    <div class="table-wrapper">
+    <h2>&nbsp;</h2>
+
+<div class="table-wrapper">
   <table id="table-metro-count"></table>
 </div>
 
@@ -492,15 +517,17 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>National Overview</h1>
-    <div class="graphs-set">
+    <h2>&nbsp;</h2>
+
+<div class="graphs-set">
   <div class="graphs-row">
     <img id="graph-overview-1" data-title="Map of visits" />
     <img id="graph-overview-2" data-title="Number of events by event type" />
@@ -517,12 +544,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>In-State Results</h1>
     <h2>State Map</h2>
@@ -535,12 +562,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>In-State Results</h1>
     <h2>State Figures</h2>
@@ -564,12 +591,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>In-State Results</h1>
     <h2>Metro Area Map</h2>
@@ -582,12 +609,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>In-State Results</h1>
     <h2>Metro Area Figures</h2>
@@ -611,15 +638,17 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>Out-of-State Results</h1>
-    <div class="graphs-set">
+    <h2>&nbsp;</h2>
+
+<div class="graphs-set">
   <div class="graphs-row">
     <img id="graph-outofstate-1" data-title="Average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used; Out-of-state only includes states where the university visited at least one high school" />
     <img id="graph-outofstate-2" data-title="Average racial composition of university vs state vs visited public HS's vs non-visited public HS's" data-caption="Out-of-state only includes states where the university visited at least one high school" />
@@ -636,12 +665,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>Out-of-State Results</h1>
     <h2>Metro Area Map</h2>
@@ -654,12 +683,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>Out-of-State Results</h1>
     <h2>Metro Area Figures</h2>
@@ -683,12 +712,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>Out-of-State Results</h1>
     <h2>Metro Area Map</h2>
@@ -701,12 +730,12 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
-   <section class='vertical ' data-state='slide-vertical'>
+   <section class='slide vertical ' data-state='slide-vertical'>
      <span class='univ-name'></span>
     <h1>Out-of-State Results</h1>
     <h2>Metro Area Figures</h2>
@@ -730,15 +759,18 @@ order by 2;
       <img />
       <p></p>
     </div>
-    <a class='btn' href="#/4">Select another university</a>
+    <a class='btn' href="#/11">Select another university</a>
     <aside class='notes'>
       
     </aside>
    </section>
 </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-14'>
+<section class='slide ' data-state='slide-horizontal' id='slide-13'>
   <h1>Cross-university comparisons</h1>
-  <div class="graphs-set">
+  <hr />
+  <h2>&nbsp;</h2>
+
+<div class="graphs-set">
   <div class="graphs-row">
     <img src="https://map.emraresearch.org/static/small_multiples/196097/titled_map.png" />
     <img src="https://map.emraresearch.org/static/small_multiples/215293/titled_map.png" />
@@ -749,14 +781,20 @@ order by 2;
   </div>
 </div>
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-15'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-14'>
   <h1>Cross-university comparisons</h1>
-  <p>CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET&#39;S SAY NUMBER OF EVENTS BY STATE AND TYPE</p>
+  <hr />
+  <h2>&nbsp;</h2>
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-16'>
+<p>CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET&#39;S SAY NUMBER OF EVENTS BY STATE AND TYPE</p>
+
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-15'>
   <h1>Discussion</h1>
+  <hr />
   <h2>Summary and next steps (this paper)</h2>
 
 <p>Summary of results</p>
@@ -788,10 +826,12 @@ order by 2;
 <li>Categorize universities into broad recruiting types</li>
 </ul>
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-17'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='slide-16'>
   <h1>Discussion</h1>
-  <h2>Future research: using &quot;data science&quot; and public records requests to study recruiting</h2>
+  <hr />
+  <h2>Future research: Using &quot;data science&quot; &amp; public records requests to study recruiting</h2>
 
 <p>Off-campus recruiting project</p>
 
@@ -826,17 +866,94 @@ order by 2;
 </ul></li>
 </ul>
 
-  </section>
-<section class='slide ' data-state='slide-horizontal' id='slide-18'>
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
+<section class='slide ' data-state='slide-horizontal' id='references'>
   <h1>References</h1>
-  <p><a id='bib-Page_2016'></a><a href="#cite-Page_2016">[1]</a><cite>
-L. C. Page and J. Scott-Clayton.
-&ldquo;Improving college access in the United States: Barriers and policy responses&rdquo;.
-In: <em>Economics of Education Review</em> 51 (Apr. 2016), pp. 4&ndash;22.
-DOI: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">10.1016/j.econedurev.2016.02.009</a>.
-URL: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">https://doi.org/10.1016/j.econedurev.2016.02.009</a>.</cite></p>
+  <hr />
+  <h2>&nbsp;</h2>
 
-  </section>
+<p><a id='bib-RN3536'></a><a href="#cite-RN3536">[1]</a><cite>
+S. Alon.
+&ldquo;The evolution of class inequality in higher education: competition, exclusion, and adaptation&rdquo;.
+In: <em>American Sociological Review</em> 74.5 (2009), pp. 731-755.
+ISSN: 0003-1224.</cite></p>
+
+<p><a id='bib-RN4331'></a><a href="#cite-RN4331">[2]</a><cite>
+A. Hanson.
+&ldquo;Do college admissions counselors discriminate? Evidence from a correspondence-based field experiment&rdquo;.
+In: <em>Economics of Education Review</em> 60 (2017), pp. 86-96.
+ISSN: 0272-7757.
+DOI: <a href="https://doi.org/https://doi.org/10.1016/j.econedurev.2017.08.004">https://doi.org/10.1016/j.econedurev.2017.08.004</a>.
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S0272775716304526">http://www.sciencedirect.com/science/article/pii/S0272775716304526</a>.</cite></p>
+
+<p><a id='bib-RN4324'></a><a href="#cite-RN4324">[3]</a><cite>
+M. M. Holland.
+<em>Divergent pathways to college: Race, class, and inequality in high schools</em>.
+New Brunswick, NJ: Rutgers University Press, 2019.</cite></p>
+
+<p><a id='bib-RN3753'></a><a href="#cite-RN3753">[4]</a><cite>
+O. Jaquette and B. R. Curs.
+&ldquo;Creating the out-of-state university: Do public universities increase nonresident freshman enrollment in response to declining state appropriations?&rdquo;
+In: <em>Research in Higher Education</em> 56.6 (2015), pp. 535-565.
+ISSN: 0361-0365.</cite></p>
+
+<p><a id='bib-RN4545'></a><a href="#cite-RN4545">[5]</a><cite>
+H. Korzilius.
+&ldquo;Quantitative Analysis in Case Study&rdquo;.
+In: 
+<em>Encyclopedia of case study research</em>.
+Ed. by A. J. Mills, G. Durepos and E. Wiebe.
+Thousand Oaks: SAGE Publications, Inc., 2010, pp. 760-764.</cite></p>
+
+<p><a id='bib-RN1948'></a><a href="#cite-RN1948">[6]</a><cite>
+M. S. McPherson and M. O. Schapiro.
+<em>The student aid game</em>.
+Princeton, NJ: Princeton University Press, 1998.</cite></p>
+
+<p><a id='bib-RN513'></a><a href="#cite-RN513">[7]</a><cite>
+J. W. Meyer and B. Rowan.
+&ldquo;Institutionalized organizations: formal structure as myth and ceremony&rdquo;.
+In: <em>The American Journal of Sociology</em> 83.2 (1977), pp. 340-363.</cite></p>
+
+<p><a id='bib-RN4549'></a><a href="#cite-RN4549">[8]</a><cite>
+M. Q. Patton.
+<em>Qualitative research and evaluation methods</em>.
+Thousand Oaks, Calif.: Sage, 2002.
+ISBN: 0761919716 9780761919711.</cite></p>
+
+<p><a id='bib-RN3519'></a><a href="#cite-RN3519">[9]</a><cite>
+M. L. Stevens.
+<em>Creating a class: College admissions and the education of elites</em>.
+Cambridge, MA: Harvard University Press, 2007, p. 308 p.
+ISBN: 9780674026735 (alk. paper) 067402673X (alk. paper).</cite></p>
+
+<p><a id='bib-RN4017'></a><a href="#cite-RN4017">[10]</a><cite>
+The White House.
+<em>Commitments to action on college opportunity</em>.
+Tech. rep.
+The Executive Office of the President, 2014.</cite></p>
+
+<p><a id='bib-RN4016'></a><a href="#cite-RN4016">[11]</a><cite>
+The White House.
+<em>Increasing college opportunity for low-income students</em>.
+Tech. rep.
+The Executive Office of the President, 2014.</cite></p>
+
+<p><a id='bib-RN531'></a><a href="#cite-RN531">[12]</a><cite>
+J. Thompson.
+<em>Organizations in action</em>.
+New York: McGraw Hill, 1967.</cite></p>
+
+<p><a id='bib-RN4360'></a><a href="#cite-RN4360">[13]</a><cite>
+T. Thornhill.
+&ldquo;We Want Black Students, Just Not You: How White Admissions Counselors Screen Black Prospective Students&rdquo;.
+In: <em>Sociology of Race and Ethnicity</em> 0.0 (), p. 2332649218792579.
+DOI: <a href="https://doi.org/10.1177/2332649218792579">10.1177/2332649218792579</a>.
+URL: <a href="https://journals.sagepub.com/doi/abs/10.1177/2332649218792579">https://journals.sagepub.com/doi/abs/10.1177/2332649218792579</a>.</cite></p>
+
+    <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+</section>
     </div>
   </div>
 </body>
@@ -852,7 +969,7 @@ URL: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">https://doi.org/
     pdfSeparateFragments: false,
     viewDistance: 15,
     center: false,
-    theme: Reveal.getQueryHash().theme || 'sky', 
+    theme: Reveal.getQueryHash().theme || 'custom', 
     transition: Reveal.getQueryHash().transition || 'slide', 
     dependencies: [
     // Cross-browser shim that fully implements classList -

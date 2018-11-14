@@ -6,7 +6,7 @@ body {
   font-family: 'Open Sans','Helvetica', 'Crimson Text', 'Garamond', 'Palatino', sans-serif;
   font-size: 19px;
   font-weight: 300;
-  line-height: 2em;
+  line-height: 1.9em;
   color: #444;
   background-color: whitesmoke;
 }
@@ -161,4 +161,10 @@ body {
   letter-spacing: -1px;
   margin: 5px 0;
   color: gray;
+}
+
+.reveal .logo {
+  position: absolute;
+  top: 660px;
+  font-size: 14px;
 }

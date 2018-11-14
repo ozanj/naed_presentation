@@ -7,28 +7,29 @@ mode: selfcontained
 ext_widgets : {rCharts: [libraries/leaflet]}
 framework: revealjs # framework refers to layouts, transitions, vertical slides, other features, etc.
 revealjs:
-  theme: sky # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
+  theme: custom # Black, White, League, Sky, Beige, Simple, Serif, Blood, Night, Moon - Solarized
   transition: slide
   center: 'false'
 bibliography: ./assets/other/spencer-bib.bib
 csl: ./assets/other/apa.csl
 
 
---- &title
+--- #title
 
 
-# Coming Soon to a Neighborhood Near You? Off-Campus Recruiting by Public Research Universities
+# Coming Soon to a Neighborhood Near You?
+## Off-Campus Recruiting by Public Research Universities
 
-CRYSTAL - CAN YOU ADD/EDIT TITLE SLIDE; I DON'T CARE IF YOU USE YAML HEADER OR NOT; JUST SHOULD HAVE A PAPER TITLE THAT LOOKS GOOD AND LISTS AUTHOR NAMES AND UNIVERSITY AFFILIATIONS
+<img src='assets/img/emra.png' alt='emra' />
 
-Karina Salazar,
-University of Arizona
+Karina Salazar
+<p class='affiliation'>University of Arizona</p>
 
-Ozan Jaquette, 
-UCLA
+Ozan Jaquette
+<p class='affiliation'>University of California, Los Angeles</p>
 
-Crystal Han, 
-UCLA
+Crystal Han
+<p class='affiliation'>University of California, Los Angeles</p>
 
 --- 
 
@@ -36,9 +37,9 @@ UCLA
 ## The problem with policy discourse about college access
 
 The 2014 White House "Access Summit" 
-- The White House (2014) review of causes of unequal college access
+- The White House (2014a) review of causes of unequal college access
     - Highlights achievement gap, "under-matching"
-- *Commitments to Action on College Opportunity* (The White House, 2014)
+- *Commitments to Action on College Opportunity* (The White House, 2014b)
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
@@ -60,13 +61,13 @@ This paper
 
 *** =left
 
-**The enrollment funnel**:
+The enrollment funnel
 
 <img src="assets/img/New-Admissions-Funnel.png" alt="Enrollment Funnel" style="width:80%;float:left;">
 
 *** =right
 
-**Interventions along the funnel**:
+Interventions along the funnel
 * Identify prospects
     - Purchase "student lists"
 * Recruit prospects remotely
@@ -89,7 +90,7 @@ school visits, fairs)__
 
 
 
-Most research analyzes admissions (CRYSTAL ADD EG) (Alon, 2009) or financial aid (CRYSTAL ADD EG) (McPherson and Schapiro, 1998)
+Most research analyzes admissions (e.g., Alon, 2009) or financial aid (e.g., McPherson, Schapiro, 1998)
 - Final stages of enrollment funnel
 
 Scholarship on recruiting
@@ -97,7 +98,7 @@ Scholarship on recruiting
 - Off-campus recruiting visits
     - College perspective (Stevens, 2007)
         - important for relationships with prospects, counselors at "feeder" schools
-    - Student/high school perspective (Holland, forthcoming)
+    - Student/high school perspective (Holland, 2019)
         - Which universities visit affects student decisions, especially first-generation and students of color
 
 
@@ -138,7 +139,7 @@ Organizational theory
 
 - Contingency theory (Thompson, 1967)
     - Technical level vs. managerial level
-- "New" institutional theory (Meyer & Rowan, 1977)
+- "New" institutional theory (Meyer and Rowan, 1977)
     - Publicly adopt goals demanded by environment
     - Technical level cannot pursue all goals
     - Substantively adopt some goals (technical level)
@@ -170,8 +171,8 @@ Application to enrollment management
 * Criteria to be included in data collection
     1. Post visits on admissions websites
     2. Organizational type
-* Data collection sample [CRYSTAL - CHECK?]
-    - 49 public research universities
+* Data collection sample
+    - 54 public research universities
     - 49 private research universities
     - 42 selective private liberal arts
 * Data collection period
@@ -182,7 +183,7 @@ Application to enrollment management
 
 **Sample data**
 
-<img src="assets/img/southcarolina.png" style="width:75%;float:left;">
+<img src="assets/img/southcarolina.png" style="width:65%;float:left;">
 
 ---
 
@@ -199,8 +200,7 @@ Why this research question:
 
 Why focus on public research universities:
 - Historic mission of social mobility for state residents
-- Decline in state funding, growth in nonresident enrollment (Jaquette &
-Curs, 2015)
+- Decline in state funding, growth in nonresident enrollment (Jaquette and Curs, 2015)
 - What are they doing to get all these nonresident students? More effort recruiting nonresidents than residents?
 
 Why N=15? Why these 15 universities?
@@ -242,15 +242,14 @@ Data processing
 Data quality (are these data any good?)
 - Concern 1: Are scraped events properly classified and merged to secondary data
     - Solution: manually check each scraped event
-        - 8 of 15 universities checked thus far [CRYSTAL CHECK]
+        - 8 of 15 universities checked thus far
 - Concern 2: Are all events posted on admissions website
     - Solution: issue public records requests for all off-cmapus recruiting events
-        - Received data from X universities; not yet incorporated [CRYSTAL CHECK]
+        - Received data from 7 universities; not yet incorporated
 
 
-
---- 
 <!--
+---
 
 # Research methods
 ## Secondary data
@@ -295,7 +294,7 @@ Data analysis
 ## Analysis sample
 
 Analysis sample consists of 15 public research universities
-- Chosen from larger data collection sample (N=X CRYSTAL) based on "completeness" of recruiting event data
+- Chosen from larger data collection sample (N=54) based on "completeness" of recruiting event data
 - Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" (Patton, 2002)
 
 CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, MAKE THIS ONE OF THE "POP UP/ZOOM" FIGURES LIKE IN THE DEEP-DIVE RESULTS
@@ -303,6 +302,7 @@ CRYSTALL - INSERT TABLE OF SAMPLE COMPARED TO POPULATION; IF NECESSARY TO FIT, M
 --- &vertical
 
 # Deep-Dive Results
+## &nbsp;
 
 Select a university to take a closer look at the results.
 
@@ -325,6 +325,7 @@ order by 2;
 ***
 
 # Top Visited Metro Areas
+## &nbsp;
 
 <div class="table-wrapper">
   <table id="table-metro-count"></table>
@@ -333,6 +334,7 @@ order by 2;
 ***
 
 # National Overview
+## &nbsp;
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -400,6 +402,7 @@ order by 2;
 ***
 
 # Out-of-State Results
+## &nbsp;
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -465,6 +468,7 @@ order by 2;
 ---
 
 # Cross-university comparisons
+## &nbsp;
 
 <div class="graphs-set">
   <div class="graphs-row">
@@ -480,6 +484,7 @@ order by 2;
 ---
 
 # Cross-university comparisons
+## &nbsp;
 
 CRYSTAL - CAN YOU ADD ONE MORE CROSS-UNIVERSITY RESULTS SMALL MULTIPLE; LET'S SAY NUMBER OF EVENTS BY STATE AND TYPE
 
@@ -505,7 +510,7 @@ Next steps
 ---
 
 # Discussion
-## Future research: using "data science" and public records requests to study recruiting
+## Future research: Using "data science" & public records requests to study recruiting
 
 Off-campus recruiting project
 - Continue/expand data collection (e.g., add regional public universities)
@@ -522,13 +527,86 @@ Impact goals
 - Making recruiting data public empowers local actors to hold universities accountable
     - Unless we interrogate university enrollment management behavior, we invite symbolic responses to calls for access
 
----
+--- #references
 
 # References
+## &nbsp;
 
-<p><a id='bib-Page_2016'></a><a href="#cite-Page_2016">[1]</a><cite>
-L. C. Page and J. Scott-Clayton.
-&ldquo;Improving college access in the United States: Barriers and policy responses&rdquo;.
-In: <em>Economics of Education Review</em> 51 (Apr. 2016), pp. 4&ndash;22.
-DOI: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">10.1016/j.econedurev.2016.02.009</a>.
-URL: <a href="https://doi.org/10.1016/j.econedurev.2016.02.009">https://doi.org/10.1016/j.econedurev.2016.02.009</a>.</cite></p>
+<p><a id='bib-RN3536'></a><a href="#cite-RN3536">[1]</a><cite>
+S. Alon.
+&ldquo;The evolution of class inequality in higher education: competition, exclusion, and adaptation&rdquo;.
+In: <em>American Sociological Review</em> 74.5 (2009), pp. 731-755.
+ISSN: 0003-1224.</cite></p>
+
+<p><a id='bib-RN4331'></a><a href="#cite-RN4331">[2]</a><cite>
+A. Hanson.
+&ldquo;Do college admissions counselors discriminate? Evidence from a correspondence-based field experiment&rdquo;.
+In: <em>Economics of Education Review</em> 60 (2017), pp. 86-96.
+ISSN: 0272-7757.
+DOI: <a href="https://doi.org/https://doi.org/10.1016/j.econedurev.2017.08.004">https://doi.org/10.1016/j.econedurev.2017.08.004</a>.
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S0272775716304526">http://www.sciencedirect.com/science/article/pii/S0272775716304526</a>.</cite></p>
+
+<p><a id='bib-RN4324'></a><a href="#cite-RN4324">[3]</a><cite>
+M. M. Holland.
+<em>Divergent pathways to college: Race, class, and inequality in high schools</em>.
+New Brunswick, NJ: Rutgers University Press, 2019.</cite></p>
+
+<p><a id='bib-RN3753'></a><a href="#cite-RN3753">[4]</a><cite>
+O. Jaquette and B. R. Curs.
+&ldquo;Creating the out-of-state university: Do public universities increase nonresident freshman enrollment in response to declining state appropriations?&rdquo;
+In: <em>Research in Higher Education</em> 56.6 (2015), pp. 535-565.
+ISSN: 0361-0365.</cite></p>
+
+<p><a id='bib-RN4545'></a><a href="#cite-RN4545">[5]</a><cite>
+H. Korzilius.
+&ldquo;Quantitative Analysis in Case Study&rdquo;.
+In: 
+<em>Encyclopedia of case study research</em>.
+Ed. by A. J. Mills, G. Durepos and E. Wiebe.
+Thousand Oaks: SAGE Publications, Inc., 2010, pp. 760-764.</cite></p>
+
+<p><a id='bib-RN1948'></a><a href="#cite-RN1948">[6]</a><cite>
+M. S. McPherson and M. O. Schapiro.
+<em>The student aid game</em>.
+Princeton, NJ: Princeton University Press, 1998.</cite></p>
+
+<p><a id='bib-RN513'></a><a href="#cite-RN513">[7]</a><cite>
+J. W. Meyer and B. Rowan.
+&ldquo;Institutionalized organizations: formal structure as myth and ceremony&rdquo;.
+In: <em>The American Journal of Sociology</em> 83.2 (1977), pp. 340-363.</cite></p>
+
+<p><a id='bib-RN4549'></a><a href="#cite-RN4549">[8]</a><cite>
+M. Q. Patton.
+<em>Qualitative research and evaluation methods</em>.
+Thousand Oaks, Calif.: Sage, 2002.
+ISBN: 0761919716 9780761919711.</cite></p>
+
+<p><a id='bib-RN3519'></a><a href="#cite-RN3519">[9]</a><cite>
+M. L. Stevens.
+<em>Creating a class: College admissions and the education of elites</em>.
+Cambridge, MA: Harvard University Press, 2007, p. 308 p.
+ISBN: 9780674026735 (alk. paper) 067402673X (alk. paper).</cite></p>
+
+<p><a id='bib-RN4017'></a><a href="#cite-RN4017">[10]</a><cite>
+The White House.
+<em>Commitments to action on college opportunity</em>.
+Tech. rep.
+The Executive Office of the President, 2014.</cite></p>
+
+<p><a id='bib-RN4016'></a><a href="#cite-RN4016">[11]</a><cite>
+The White House.
+<em>Increasing college opportunity for low-income students</em>.
+Tech. rep.
+The Executive Office of the President, 2014.</cite></p>
+
+<p><a id='bib-RN531'></a><a href="#cite-RN531">[12]</a><cite>
+J. Thompson.
+<em>Organizations in action</em>.
+New York: McGraw Hill, 1967.</cite></p>
+
+<p><a id='bib-RN4360'></a><a href="#cite-RN4360">[13]</a><cite>
+T. Thornhill.
+&ldquo;We Want Black Students, Just Not You: How White Admissions Counselors Screen Black Prospective Students&rdquo;.
+In: <em>Sociology of Race and Ethnicity</em> 0.0 (), p. 2332649218792579.
+DOI: <a href="https://doi.org/10.1177/2332649218792579">10.1177/2332649218792579</a>.
+URL: <a href="https://journals.sagepub.com/doi/abs/10.1177/2332649218792579">https://journals.sagepub.com/doi/abs/10.1177/2332649218792579</a>.</cite></p>
