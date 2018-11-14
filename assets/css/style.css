@@ -1,3 +1,47 @@
+/* Title Slide */
+
+.reveal #title {
+  text-align: center;
+}
+
+.reveal #title hr {
+  display: none;
+}
+
+.reveal #title img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+  width: 300px;
+  left: 50%;
+  transform: translate(-50%, -130%);
+}
+
+.reveal #title h1 {
+  z-index: 5;
+  position: relative;
+  transform: translateY(180px);
+  text-shadow: 2px 2px 10px #ffffff;
+}
+
+.reveal #title h2 {
+  z-index: 5;
+  position: relative;
+  transform: translateY(190px);
+  text-shadow: 2px 2px 6px #ffffff;
+}
+
+.reveal #title p {
+  transform: translateY(300px);
+  line-height: 1.2em;
+}
+
+p.affiliation {
+  margin-bottom: 20px;
+  color: gray;
+  font-weight: 300;
+}
+
 /* Deep-Dive Slides */
 
 .reveal .vertical h1 {

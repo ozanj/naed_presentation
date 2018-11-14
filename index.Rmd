@@ -14,7 +14,7 @@ bibliography: ./assets/other/spencer-bib.bib
 csl: ./assets/other/apa.csl
 
 
---- &title
+--- #title
 ```{r, include=FALSE}
 library(slidify)
 library(slidifyLibraries)
@@ -46,18 +46,19 @@ cite <- function(b, eg = TRUE) {
 }
 ```
 
-# Coming Soon to a Neighborhood Near You? Off-Campus Recruiting by Public Research Universities
+# Coming Soon to a Neighborhood Near You?
+## Off-Campus Recruiting by Public Research Universities
 
-CRYSTAL - CAN YOU ADD/EDIT TITLE SLIDE; I DON'T CARE IF YOU USE YAML HEADER OR NOT; JUST SHOULD HAVE A PAPER TITLE THAT LOOKS GOOD AND LISTS AUTHOR NAMES AND UNIVERSITY AFFILIATIONS
+<img src='assets/img/emra.png' alt='emra' />
 
-Karina Salazar,
-University of Arizona
+Karina Salazar
+<p class='affiliation'>University of Arizona</p>
 
-Ozan Jaquette, 
-UCLA
+Ozan Jaquette
+<p class='affiliation'>University of California, Los Angeles</p>
 
-Crystal Han, 
-UCLA
+Crystal Han
+<p class='affiliation'>University of California, Los Angeles</p>
 
 --- 
 
