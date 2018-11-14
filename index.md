@@ -20,8 +20,6 @@ csl: ./assets/other/apa.csl
 # Coming Soon to a Neighborhood Near You?
 ## Off-Campus Recruiting by Public Research Universities
 
-<img src='assets/img/emra.png' alt='emra' />
-
 Karina Salazar
 <p class='affiliation'>University of Arizona</p>
 
@@ -30,6 +28,11 @@ Ozan Jaquette
 
 Crystal Han
 <p class='affiliation'>University of California, Los Angeles</p>
+
+<img id='logo_ua' src='assets/img/ua.png' alt='University of Arizona' />
+<img id='logo_ucla' src='assets/img/ucla.png' alt='University of California, Los Angeles' />
+
+<a id='link_presentation' href='https://ozanj.github.io/naed_presentation/' target='_blank'>ozanj.github.io/naed_presentation</a>
 
 --- 
 
@@ -475,7 +478,7 @@ order by 2;
 
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
-<img src="assets/data/199193/titled_map.png" /><img src="assets/data/186380/titled_map.png" /><img src="assets/data/196097/titled_map.png" /><img src="assets/data/100751/titled_map.png" /><img src="assets/data/106397/titled_map.png" /></div><div class="graphs-row"><img src="assets/data/110635/titled_map.png" /><img src="assets/data/110653/titled_map.png" /><img src="assets/data/201885/titled_map.png" /><img src="assets/data/126614/titled_map.png" /><img src="assets/data/139959/titled_map.png" /></div><div class="graphs-row"><img src="assets/data/155317/titled_map.png" /><img src="assets/data/166629/titled_map.png" /><img src="assets/data/181464/titled_map.png" /><img src="assets/data/215293/titled_map.png" /><img src="assets/data/218663/titled_map.png" /></div><div class="graphs-row">
+<img src="assets/data/199193/titled_map.png" /><img src="assets/data/186380/titled_map.png" /><img src="assets/data/196097/titled_map.png" /><img src="assets/data/100751/titled_map.png" /><img src="assets/data/106397/titled_map.png" /></div><div class="graphs-row"><img src="assets/data/110635/titled_map.png" /><img src="assets/data/110653/titled_map.png" /><img src="assets/data/201885/titled_map.png" /><img src="assets/data/126614/titled_map.png" /><img src="assets/data/139959/titled_map.png" /></div><div class="graphs-row"><img src="assets/data/155317/titled_map.png" /><img src="assets/data/166629/titled_map.png" /><img src="assets/data/181464/titled_map.png" /><img src="assets/data/215293/titled_map.png" /><img src="assets/data/218663/titled_map.png" />
   </div>
 </div>
 
@@ -486,7 +489,7 @@ order by 2;
 
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
-<img src="assets/data/199193/titled_scaled_visit_count.png" /><img src="assets/data/186380/titled_scaled_visit_count.png" /><img src="assets/data/196097/titled_scaled_visit_count.png" /><img src="assets/data/100751/titled_scaled_visit_count.png" /><img src="assets/data/106397/titled_scaled_visit_count.png" /></div><div class="graphs-row"><img src="assets/data/110635/titled_scaled_visit_count.png" /><img src="assets/data/110653/titled_scaled_visit_count.png" /><img src="assets/data/201885/titled_scaled_visit_count.png" /><img src="assets/data/126614/titled_scaled_visit_count.png" /><img src="assets/data/139959/titled_scaled_visit_count.png" /></div><div class="graphs-row"><img src="assets/data/155317/titled_scaled_visit_count.png" /><img src="assets/data/166629/titled_scaled_visit_count.png" /><img src="assets/data/181464/titled_scaled_visit_count.png" /><img src="assets/data/215293/titled_scaled_visit_count.png" /><img src="assets/data/218663/titled_scaled_visit_count.png" /></div><div class="graphs-row">
+<img src="assets/data/199193/titled_scaled_visit_count.png" /><img src="assets/data/186380/titled_scaled_visit_count.png" /><img src="assets/data/196097/titled_scaled_visit_count.png" /><img src="assets/data/100751/titled_scaled_visit_count.png" /><img src="assets/data/106397/titled_scaled_visit_count.png" /></div><div class="graphs-row"><img src="assets/data/110635/titled_scaled_visit_count.png" /><img src="assets/data/110653/titled_scaled_visit_count.png" /><img src="assets/data/201885/titled_scaled_visit_count.png" /><img src="assets/data/126614/titled_scaled_visit_count.png" /><img src="assets/data/139959/titled_scaled_visit_count.png" /></div><div class="graphs-row"><img src="assets/data/155317/titled_scaled_visit_count.png" /><img src="assets/data/166629/titled_scaled_visit_count.png" /><img src="assets/data/181464/titled_scaled_visit_count.png" /><img src="assets/data/215293/titled_scaled_visit_count.png" /><img src="assets/data/218663/titled_scaled_visit_count.png" />
   </div>
 </div>
 

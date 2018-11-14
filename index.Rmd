@@ -54,8 +54,6 @@ cite <- function(b, eg = TRUE) {
 # Coming Soon to a Neighborhood Near You?
 ## Off-Campus Recruiting by Public Research Universities
 
-<img src='assets/img/emra.png' alt='emra' />
-
 Karina Salazar
 <p class='affiliation'>University of Arizona</p>
 
@@ -64,6 +62,11 @@ Ozan Jaquette
 
 Crystal Han
 <p class='affiliation'>University of California, Los Angeles</p>
+
+<img id='logo_ua' src='assets/img/ua.png' alt='University of Arizona' />
+<img id='logo_ucla' src='assets/img/ucla.png' alt='University of California, Los Angeles' />
+
+<a id='link_presentation' href='https://ozanj.github.io/naed_presentation/' target='_blank'>ozanj.github.io/naed_presentation</a>
 
 --- 
 
@@ -517,7 +520,7 @@ for (i in 1:nrow(univs)) {
 ```{r, echo=FALSE, results='asis'}
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_map.png" />'))
-  if (i %% 5 == 0) {
+  if (i %% 5 == 0 && i < nrow(univs)) {
     cat('</div><div class="graphs-row">')
   }
 }
@@ -535,7 +538,7 @@ for (i in 1:nrow(univs)) {
 ```{r, echo=FALSE, results='asis'}
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_scaled_visit_count.png" />'))
-  if (i %% 5 == 0) {
+  if (i %% 5 == 0 && i < nrow(univs)) {
     cat('</div><div class="graphs-row">')
   }
 }
