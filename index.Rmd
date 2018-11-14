@@ -123,7 +123,8 @@ Most research analyzes admissions `r cite(bib['RN3536'])` or financial aid `r ci
 - Final stages of enrollment funnel
 
 Scholarship on recruiting
-- Audits of university resonse to inquiries `r cite(bib[c('RN4331', 'RN4360')], F)`
+
+- Audits of university resonse to inquiries `r cite(bib[c('RN4331','RN4360')], F)`
 - Off-campus recruiting visits
     - College perspective `r citep(bib['RN3519'])`
         - important for relationships with prospects, counselors at "feeder" schools
@@ -158,6 +159,7 @@ Research gap
 - Access depends on which universities visit your school
 - We don't know which universities visit which schools
 -->
+
 
 ---
 
