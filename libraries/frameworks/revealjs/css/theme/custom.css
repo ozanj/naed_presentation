@@ -126,6 +126,17 @@ body {
 
 /* Links */
 
+.reveal a {
+  cursor: pointer;
+  color: #0000EE;
+  transition: color 0.1s;
+  text-decoration: none;
+}
+
+.reveal a:hover {
+  text-decoration: underline;
+}
+
 .reveal .btn {
   top: 10px;
   border: #AA0000 1.5px dashed;
@@ -133,23 +144,12 @@ body {
   border-radius: 10px;
   font-size: 16px;
   padding: 6px;
-  transition: all 0.2s ease-out;
 }
 
 .reveal .btn:hover {
   border: gray 1.5px solid;
   color: gray;
-}
-
-.reveal a {
-  cursor: pointer;
-  color: #444;
   text-decoration: none;
-  transition: color 0.4s ease-in-out;
-}
-
-.reveal a:hover {
-  color: #AA0000;
 }
 
 /* Text */
