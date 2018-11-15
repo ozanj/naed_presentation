@@ -10,9 +10,9 @@
 
 .reveal #title .logo {
   font-size: 20px;
-  position: relative;
-  top: 245px;
-  left: 0;
+  float: none;
+  position: absolute;
+  transform: translate(-50%, 552px);
 }
 
 #link_presentation {

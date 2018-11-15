@@ -168,9 +168,16 @@ body {
 }
 
 .reveal .logo {
-  position: absolute;
-  top: 25px;
-  left: 830px;
+  float: right;
   font-size: 16px;
   font-weight: 300;
+  margin: 5px 0;
+}
+
+/* PDF */
+
+@media print {
+  .backgrounds {
+    background-color: whitesmoke;
+  }
 }
