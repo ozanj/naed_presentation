@@ -1,5 +1,16 @@
 $(function() {
 
+  if (query_id) {
+    var univ_id = query_id[1];
+    $univ = $(`a[data-univ-id='${query_id[1]}']`)
+
+    loadFigures(univ_id, $univ);
+
+    $('.slides section').wrap("<div class='pdf-page' style='height: 727px;'></div>");
+    $('.reveal section.stack').unwrap();
+
+  }
+
   // Keyboard Controls
   
   function handleRight() {
@@ -92,12 +103,21 @@ $(function() {
   // Univ Selection
 
   $('#univ_options a').on('click', function() {
-    var univ_id = $(this).data('univ-id'),
-        univ_name = $(this).data('univ-name'),
-        state = $(this).data('state-name'),
-        metro1 = $(this).data('metro1-name'),
-        metro2 = $(this).data('metro2-name'),
-        metro3 = $(this).data('metro3-name');
+    var univ_id = $(this).data('univ-id');
+
+    loadFigures(univ_id, $(this));
+
+    Reveal.slide(verticalSlide, 1);
+  });
+
+  // Load Figures
+
+  function loadFigures(univ_id, sel) {
+    var univ_name = sel.data('univ-name'),
+        state = sel.data('state-name'),
+        metro1 = sel.data('metro1-name'),
+        metro2 = sel.data('metro2-name'),
+        metro3 = sel.data('metro3-name');
 
     setUnivID(univ_id, univ_name, state, metro1, metro2, metro3);
     $('#table-metro-count').empty();
@@ -108,9 +128,7 @@ $(function() {
       dataType: 'text',
       success: function(data) { populateTable(data); }
     });
-
-    Reveal.slide(verticalSlide, 1);
-  });
+  }
 
   // Maps + Graphs
 
