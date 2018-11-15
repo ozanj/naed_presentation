@@ -55,9 +55,9 @@ This research was made possible by funding from the following sources:
 ## The problem with policy discourse about college access
 
 The 2014 White House "Access Summit" 
-- The White House (2014a) review of causes of unequal college access
+- The White House (2014) review of causes of unequal college access
     - Highlights "achievement gap", "under-matching"
-- *Commitments to Action on College Opportunity*  (The White House, 2014b)
+- *Commitments to Action on College Opportunity*  (The White House, 2014)
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
