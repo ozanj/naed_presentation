@@ -167,7 +167,8 @@ body {
 
 .reveal .logo {
   position: absolute;
-  top: 660px;
-  font-size: 14px;
+  top: 25px;
+  left: 830px;
+  font-size: 16px;
   font-weight: 300;
 }
