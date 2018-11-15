@@ -348,15 +348,6 @@ order by 2;
 
 ***
 
-# Top Visited Metro Areas
-## &nbsp;
-
-<div class="table-wrapper">
-  <table id="table-metro-count"></table>
-</div>
-
-***
-
 # National Overview
 ## &nbsp;
 
@@ -396,8 +387,6 @@ order by 2;
   </div>
 </div>
 
-
-
 ***
 
 # In-State Results
@@ -421,6 +410,15 @@ order by 2;
     <img id="graph-metro1-5" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
     <img id="graph-metro1-6" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
   </div>
+</div>
+
+***
+
+# Out-of-State Results
+## Top Visited Metro Areas
+
+<div class="table-wrapper">
+  <table id="table-metro-count"></table>
 </div>
 
 ***
