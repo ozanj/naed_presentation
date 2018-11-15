@@ -344,10 +344,28 @@ Analysis sample consists of 15 public research universities
 # Deep-Dive Results
 ## Click on a university to take a closer look at the results &nbsp;
 
-**N** refers to total number of recruiting visits
-
 <!--
-select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name
+select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name, (
+  select count(*)
+	from parsing p
+	left join parsing_visiting_univs pvu on pvu.pid = p.pid
+	left join univ_canon uc on uc.univ_id = pvu.univ_id and uc.pid = pvu.pid
+	left join location_matches lm on lm.pid = p.pid and lm.id_type = 'ncessch'
+	left join location_matches lm2 on lm2.pid = p.pid and lm2.id_type = 'ipeds'
+	left join meta_high_school_public mpub on mpub.ncessch = lm.location_id
+  left join meta_high_school_private mpri on mpri.ncessch = lm.location_id
+  left join meta_university imu on imu.univ_id = lm2.location_id
+  where pvu.univ_id = mu.univ_id
+  and event_country = 'US'
+  and event_date between '2017-01-01' and '2017-12-31'
+  and uc.univ_canonical_pid is null
+  and p.include = 1
+  and (mpub.ncessch is null or mpub.include_school = 1)
+  and (mpri.ncessch is null or mpri.include_school = 1)
+  and (lm.location_id is null or lm.location_id != 'indy')
+  and (imu.univ_id is null or imu.univ_id != mu.univ_id)
+  and coalesce(p.`event_state`, mpub.`state_code`, mpri.`state_code`, imu.`state_code`) is not null
+) as count
 from meta_university mu
 left join state_data sd on sd.state_code = mu.state_code
 left join meta_univ_classification muc on muc.univ_id = mu.univ_id
@@ -362,7 +380,7 @@ order by 2;
 ```{r, echo=FALSE, results='asis'}
 univs <- read.csv('./assets/tables/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
-  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-name="', univs[i, 'state_name'], '" data-metro1-name="', univs[i, 'metro1_name'], '" data-metro2-name="', univs[i, 'metro2_name'], '" data-metro3-name="', univs[i, 'metro3_name'], '">', univs[i, 'univ_name'], '</a></li>'))
+  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-name="', univs[i, 'state_name'], '" data-metro1-name="', univs[i, 'metro1_name'], '" data-metro2-name="', univs[i, 'metro2_name'], '" data-metro3-name="', univs[i, 'metro3_name'], '">', univs[i, 'univ_name'], '</a> (N=', univs[i, 'count'], ')</li>'))
 }
 ```
 </ul>
