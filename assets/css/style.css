@@ -185,27 +185,35 @@
 
 /* Tables */
 
-#table-metro-count td:nth-of-type(1) ~ td {
+#table-metro-count td:nth-of-type(4) {
+  width: 12%;
+}
+
+#table-metro-count td:nth-of-type(4) ~ td {
   width: 10%;
 }
 
-#table-metro-count tbody td:nth-of-type(2) {
-  font-weight: 400;
+#table-metro-count tbody td:nth-of-type(3) {
+  font-weight: 600;
 }
 
-#table-metro-count thead td:nth-of-type(3) {
-  text-decoration-color: #42a9c6;
+#table-metro-count tbody td:nth-of-type(3) ~ td {
+  color: gray;
 }
 
 #table-metro-count thead td:nth-of-type(4) {
-  text-decoration-color: #d16822;
+  text-decoration-color: #42a9c6;
 }
 
 #table-metro-count thead td:nth-of-type(5) {
-  text-decoration-color: #30af37;
+  text-decoration-color: #d16822;
 }
 
 #table-metro-count thead td:nth-of-type(6) {
+  text-decoration-color: #30af37;
+}
+
+#table-metro-count thead td:nth-of-type(7) {
   text-decoration-color: #8030d1;
 }
 

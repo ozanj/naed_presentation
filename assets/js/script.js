@@ -210,16 +210,18 @@ $(function() {
     var thead = table.createTHead();
     var headerRow = thead.insertRow();
     addCell(headerRow, 'Metro Area');
+    addCell(headerRow, 'State');
     addCell(headerRow, 'Total Visits');
     addCell(headerRow, 'Public HS');
     addCell(headerRow, 'Private HS');
-    addCell(headerRow, 'Community College');
+    addCell(headerRow, 'Cmty Coll');
     addCell(headerRow, 'Other');
 
     var tbody = table.createTBody();
     result.slice(0, 10).forEach(function(item) {
         var row = tbody.insertRow();
-        addCell(row, item.cbsa_name);
+        addCell(row, item.metro_name);
+        addCell(row, item.state_code);
         addCell(row, item.total_count);
         addCell(row, item.pubHS_count);
         addCell(row, item.privHS_count);
