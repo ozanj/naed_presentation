@@ -124,35 +124,35 @@ $(function() {
 
     $('#graph-instate').prev().html(state);
     $('#graph-instate-1').attr('src', `assets/data/${univ_id}/distribution_median_in.png`);
-    $('#graph-instate-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_in.png`);
-    $('#graph-instate-3').attr('src', `assets/data/${univ_id}/distribution_size_in.png`);
+    $('#graph-instate-2').attr('src', `assets/data/${univ_id}/distribution_size_in.png`);
+    $('#graph-instate-3').attr('src', `assets/data/${univ_id}/scatterplot_income_math_in.png`);
     $('#graph-instate-4').attr('src', `assets/data/${univ_id}/distribution_race_in.png`);
-    $('#graph-instate-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_in.png`);
-    $('#graph-instate-6').attr('src', `assets/data/${univ_id}/distribution_math_in.png`);
+    $('#graph-instate-5').attr('src', `assets/data/${univ_id}/distribution_math_in.png`);
+    $('#graph-instate-6').attr('src', `assets/data/${univ_id}/scatterplot_race_math_in.png`);
 
     $('#graph-metro1').prev().html(metro1);
     $('#graph-metro1-1').attr('src', `assets/data/${univ_id}/distribution_median_metro1.png`);
-    $('#graph-metro1-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro1.png`);
-    $('#graph-metro1-3').attr('src', `assets/data/${univ_id}/distribution_size_metro1.png`);
+    $('#graph-metro1-2').attr('src', `assets/data/${univ_id}/distribution_size_metro1.png`);
+    $('#graph-metro1-3').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro1.png`);
     $('#graph-metro1-4').attr('src', `assets/data/${univ_id}/distribution_race_metro1.png`);
-    $('#graph-metro1-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro1.png`);
-    $('#graph-metro1-6').attr('src', `assets/data/${univ_id}/distribution_math_metro1.png`);
+    $('#graph-metro1-5').attr('src', `assets/data/${univ_id}/distribution_math_metro1.png`);
+    $('#graph-metro1-6').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro1.png`);
 
     $('#graph-metro2').prev().html(metro2);
     $('#graph-metro2-1').attr('src', `assets/data/${univ_id}/distribution_median_metro2.png`);
-    $('#graph-metro2-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro2.png`);
-    $('#graph-metro2-3').attr('src', `assets/data/${univ_id}/distribution_size_metro2.png`);
+    $('#graph-metro2-2').attr('src', `assets/data/${univ_id}/distribution_size_metro2.png`);
+    $('#graph-metro2-3').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro2.png`);
     $('#graph-metro2-4').attr('src', `assets/data/${univ_id}/distribution_race_metro2.png`);
-    $('#graph-metro2-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro2.png`);
-    $('#graph-metro2-6').attr('src', `assets/data/${univ_id}/distribution_math_metro2.png`);
+    $('#graph-metro2-5').attr('src', `assets/data/${univ_id}/distribution_math_metro2.png`);
+    $('#graph-metro2-6').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro2.png`);
 
     $('#graph-metro3').prev().html(metro3);
     $('#graph-metro3-1').attr('src', `assets/data/${univ_id}/distribution_median_metro3.png`);
-    $('#graph-metro3-2').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro3.png`);
-    $('#graph-metro3-3').attr('src', `assets/data/${univ_id}/distribution_size_metro3.png`);
+    $('#graph-metro3-2').attr('src', `assets/data/${univ_id}/distribution_size_metro3.png`);
+    $('#graph-metro3-3').attr('src', `assets/data/${univ_id}/scatterplot_income_math_metro3.png`);
     $('#graph-metro3-4').attr('src', `assets/data/${univ_id}/distribution_race_metro3.png`);
-    $('#graph-metro3-5').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro3.png`);
-    $('#graph-metro3-6').attr('src', `assets/data/${univ_id}/distribution_math_metro3.png`);
+    $('#graph-metro3-5').attr('src', `assets/data/${univ_id}/distribution_math_metro3.png`);
+    $('#graph-metro3-6').attr('src', `assets/data/${univ_id}/scatterplot_race_math_metro3.png`);
 
     $('#graph-outofstate-1').attr('src', `assets/data/${univ_id}/median_income.png`);
     $('#graph-outofstate-2').attr('src', `assets/data/${univ_id}/race_pub_out.png`);

@@ -238,7 +238,7 @@ counselor events
 
 Data collection
 - University website checked four times per year by two staff for URLs with recruiting events
-- Web-scraping scripts run once per week (over X (CRYSTAL ADD) unique pages scraped to date)
+- Web-scraping scripts run once per week
 
 Data processing
 - "Parsing": transform HTML text into tabular data
@@ -386,13 +386,13 @@ order by 2;
 <div id="graph-instate" class="graphs-set graphs-set-wide">
   <div class="graphs-row">
     <img id="graph-instate-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-instate-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-instate-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-instate-2" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-instate-3" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
   </div>
   <div class="graphs-row">
     <img id="graph-instate-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-instate-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-instate-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-instate-5" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-instate-6" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
   </div>
 </div>
 
@@ -413,13 +413,13 @@ order by 2;
 <div id="graph-metro1" class="graphs-set graphs-set-wide">
   <div class="graphs-row">
     <img id="graph-metro1-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-metro1-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-metro1-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro1-2" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro1-3" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
   </div>
   <div class="graphs-row">
     <img id="graph-metro1-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-metro1-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-metro1-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro1-5" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro1-6" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
   </div>
 </div>
 
@@ -454,13 +454,13 @@ order by 2;
 <div id="graph-metro2" class="graphs-set graphs-set-wide">
   <div class="graphs-row">
     <img id="graph-metro2-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-metro2-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-metro2-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro2-2" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro2-3" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
   </div>
   <div class="graphs-row">
     <img id="graph-metro2-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-metro2-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-metro2-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro2-5" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro2-6" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
   </div>
 </div>
 
@@ -479,13 +479,13 @@ order by 2;
 <div id="graph-metro3" class="graphs-set graphs-set-wide">
   <div class="graphs-row">
     <img id="graph-metro3-1" data-title="Distribution of average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-metro3-2" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
-    <img id="graph-metro3-3" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro3-2" data-title="Distribution of 12th grade enrollment size of visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro3-3" data-title="Math score proficiency by average median household income in zip codes of visited public HS's vs non-visited public HS's" data-caption="Average median household income of age group 25-64 years olds were used" />
   </div>
   <div class="graphs-row">
     <img id="graph-metro3-4" data-title="Distribution of percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-metro3-5" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
-    <img id="graph-metro3-6" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro3-5" data-title="Distribution of number of students scoring proficient in Math in visited public HS's vs non-visited public HS's" />
+    <img id="graph-metro3-6" data-title="Math score proficiency by percent non-white students enrolled in visited public HS's vs non-visited public HS's" data-caption="Non-white is defined as students identifying as Black, Latinx, or Native" />
   </div>
 </div>
 
