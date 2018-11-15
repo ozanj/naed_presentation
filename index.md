@@ -40,9 +40,9 @@ Crystal Han
 ## The problem with policy discourse about college access
 
 The 2014 White House "Access Summit" 
-- The White House (2014a) review of causes of unequal college access
+- The White House (2014) review of causes of unequal college access
     - Highlights "achievement gap", "under-matching"
-- *Commitments to Action on College Opportunity*  (The White House, 2014b)
+- *Commitments to Action on College Opportunity*  (The White House, 2014)
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
@@ -82,7 +82,7 @@ school visits, fairs)
     * Other "outreach"
 * Solicit inquiries, stealth applicants
     * Social media, advertising
-* Convert admits to enrolles
+* Convert admits to enrollees
     * Financial aid leveraging
 
 
@@ -98,17 +98,17 @@ Most research analyzes admissions (e.g., Killgore, 2009) or financial aid (e.g.,
 
 Scholarship on recruiting is sparse
 
-- Audits of university resonse to inquiries (e.g., Hanson, 2017; Thornhill, forthcoming)
+- Audits of university response to inquiries (e.g., Hanson, 2017; Thornhill, forthcoming)
 - Off-campus recruiting visits
     - From the college perspective (Stevens, 2007)
-        - important for relationships with prospects, counselors at "feeder" schools
+        - Important for relationships with prospects, counselors at "feeder" schools
     - From the perspective of high school students (Holland, 2019)
         - Which universities visit affects student decisions, especially first-gen and students of color
 
 
 Research gap
 - We don't know which universities visit which schools and communities
-- If poor students, communities of color not being recruited, then "under-matching" may be due to under-recruiting rather than lack of guidance
+- If poor students, communities of color are not being recruited, then "under-matching" may be due to under-recruiting rather than lack of guidance
 
 <!--
 ---
@@ -250,7 +250,7 @@ Data quality (are these data any good?)
     - Solution: manually check each scraped event
         - 8 of 15 universities checked thus far
 - Concern 2: are all events posted on admissions website?
-    - Solution: issue public records requests for all off-cmapus recruiting events
+    - Solution: issue public records requests for all off-campus recruiting events
         - Received data from 7 of 15 universities; not yet incorporated
 
 
@@ -277,7 +277,7 @@ distributions)
 ## Research design for analyses
 
 Quantitative multiple case study design
-- "quantitative case study" uses quantitative data as sole source of evidence (Korzilius, 2010)
+- "Quantitative case study" uses quantitative data as sole source of evidence (Korzilius, 2010)
 - "Within-case" analyses of recruiting patterns
     - Situate within local context; national overview; "deep dive" of in-state and out-of-state patterns
     - Simple descriptive statistics (e.g., counts), static visualizations, interactive maps
@@ -286,10 +286,10 @@ Quantitative multiple case study design
 
 Comparison to alternative research designs
 - Large-N, random sample design
-    - Not possible because reruiting data unavailable for random sample
+    - Not possible because recruiting data unavailable for random sample
     - Not desirable for present research because large-N designs pool results across cases
 - Qualitative case study (usually collect data from multiple sources)
-    - Our design narrowly focused, systematic analysis of particular phenomena
+    - Our design is narrowly focused, systematic analysis of particular phenomena
     - Unlike Stevens (2007), we do not develop a holistic understanding of recruiting behavior
 
 --- .table
@@ -544,13 +544,7 @@ Impact goals
 # References
 ## &nbsp;
 
-<p><a id='bib-RN3536'></a><a href="#cite-RN3536">[1]</a><cite>
-S. Alon.
-&ldquo;The evolution of class inequality in higher education: competition, exclusion, and adaptation&rdquo;.
-In: <em>American Sociological Review</em> 74.5 (2009), pp. 731-755.
-ISSN: 0003-1224.</cite></p>
-
-<p><a id='bib-RN4331'></a><a href="#cite-RN4331">[2]</a><cite>
+<p><a id='bib-RN4331'></a><a href="#cite-RN4331">[1]</a><cite>
 A. Hanson.
 &ldquo;Do college admissions counselors discriminate? Evidence from a correspondence-based field experiment&rdquo;.
 In: <em>Economics of Education Review</em> 60 (2017), pp. 86-96.
@@ -558,16 +552,23 @@ ISSN: 0272-7757.
 DOI: <a href="https://doi.org/https://doi.org/10.1016/j.econedurev.2017.08.004">https://doi.org/10.1016/j.econedurev.2017.08.004</a>.
 URL: <a href="http://www.sciencedirect.com/science/article/pii/S0272775716304526">http://www.sciencedirect.com/science/article/pii/S0272775716304526</a>.</cite></p>
 
-<p><a id='bib-RN4324'></a><a href="#cite-RN4324">[3]</a><cite>
+<p><a id='bib-RN4324'></a><a href="#cite-RN4324">[2]</a><cite>
 M. M. Holland.
 <em>Divergent pathways to college: Race, class, and inequality in high schools</em>.
 New Brunswick, NJ: Rutgers University Press, 2019.</cite></p>
 
-<p><a id='bib-RN3753'></a><a href="#cite-RN3753">[4]</a><cite>
+<p><a id='bib-RN3753'></a><a href="#cite-RN3753">[3]</a><cite>
 O. Jaquette and B. R. Curs.
 &ldquo;Creating the out-of-state university: Do public universities increase nonresident freshman enrollment in response to declining state appropriations?&rdquo;
 In: <em>Research in Higher Education</em> 56.6 (2015), pp. 535-565.
 ISSN: 0361-0365.</cite></p>
+
+<p><a id='bib-RN3522'></a><a href="#cite-RN3522">[4]</a><cite>
+L. Killgore.
+&ldquo;Merit and Competition in Selective College Admissions&rdquo;.
+In: <em>Review of Higher Education</em> 32.4 (2009), pp. 469-488.
+ISSN: 0162-5748; 1090-7009.
+URL: <a href="%3CGo to ISI%3E://WOS:000266737500002">&lt;Go to ISI&gt;://WOS:000266737500002</a>.</cite></p>
 
 <p><a id='bib-RN4545'></a><a href="#cite-RN4545">[5]</a><cite>
 H. Korzilius.
@@ -619,6 +620,6 @@ New York: McGraw Hill, 1967.</cite></p>
 <p><a id='bib-RN4360'></a><a href="#cite-RN4360">[13]</a><cite>
 T. Thornhill.
 &ldquo;We Want Black Students, Just Not You: How White Admissions Counselors Screen Black Prospective Students&rdquo;.
-In: <em>Sociology of Race and Ethnicity</em> 0.0 (), p. 2332649218792579.
+In: <em>Sociology of Race and Ethnicity</em> 0.0 ().
 DOI: <a href="https://doi.org/10.1177/2332649218792579">10.1177/2332649218792579</a>.
 URL: <a href="https://journals.sagepub.com/doi/abs/10.1177/2332649218792579">https://journals.sagepub.com/doi/abs/10.1177/2332649218792579</a>.</cite></p>

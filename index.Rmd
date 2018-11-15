@@ -116,7 +116,7 @@ school visits, fairs)
     * Other "outreach"
 * Solicit inquiries, stealth applicants
     * Social media, advertising
-* Convert admits to enrolles
+* Convert admits to enrollees
     * Financial aid leveraging
 
 
@@ -132,17 +132,17 @@ Most research analyzes admissions `r cite(bib['RN3522'])` or financial aid `r ci
 
 Scholarship on recruiting is sparse
 
-- Audits of university resonse to inquiries `r cite(bib[c('RN4331','RN4360')])`
+- Audits of university response to inquiries `r cite(bib[c('RN4331','RN4360')])`
 - Off-campus recruiting visits
     - From the college perspective `r citep(bib['RN3519'])`
-        - important for relationships with prospects, counselors at "feeder" schools
+        - Important for relationships with prospects, counselors at "feeder" schools
     - From the perspective of high school students `r citep(bib['RN4324'])`
         - Which universities visit affects student decisions, especially first-gen and students of color
 
 
 Research gap
 - We don't know which universities visit which schools and communities
-- If poor students, communities of color not being recruited, then "under-matching" may be due to under-recruiting rather than lack of guidance
+- If poor students, communities of color are not being recruited, then "under-matching" may be due to under-recruiting rather than lack of guidance
 
 <!--
 ---
@@ -284,7 +284,7 @@ Data quality (are these data any good?)
     - Solution: manually check each scraped event
         - 8 of 15 universities checked thus far
 - Concern 2: are all events posted on admissions website?
-    - Solution: issue public records requests for all off-cmapus recruiting events
+    - Solution: issue public records requests for all off-campus recruiting events
         - Received data from 7 of 15 universities; not yet incorporated
 
 
@@ -311,7 +311,7 @@ distributions)
 ## Research design for analyses
 
 Quantitative multiple case study design
-- "quantitative case study" uses quantitative data as sole source of evidence `r citep(bib['RN4545'])`
+- "Quantitative case study" uses quantitative data as sole source of evidence `r citep(bib['RN4545'])`
 - "Within-case" analyses of recruiting patterns
     - Situate within local context; national overview; "deep dive" of in-state and out-of-state patterns
     - Simple descriptive statistics (e.g., counts), static visualizations, interactive maps
@@ -320,10 +320,10 @@ Quantitative multiple case study design
 
 Comparison to alternative research designs
 - Large-N, random sample design
-    - Not possible because reruiting data unavailable for random sample
+    - Not possible because recruiting data unavailable for random sample
     - Not desirable for present research because large-N designs pool results across cases
 - Qualitative case study (usually collect data from multiple sources)
-    - Our design narrowly focused, systematic analysis of particular phenomena
+    - Our design is narrowly focused, systematic analysis of particular phenomena
     - Unlike `r citet(bib['RN3519'])`, we do not develop a holistic understanding of recruiting behavior
 
 --- .table
