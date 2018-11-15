@@ -380,7 +380,7 @@ order by 2;
 ```{r, echo=FALSE, results='asis'}
 univs <- read.csv('./assets/tables/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
-  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-name="', univs[i, 'state_name'], '" data-metro1-name="', univs[i, 'metro1_name'], '" data-metro2-name="', univs[i, 'metro2_name'], '" data-metro3-name="', univs[i, 'metro3_name'], '">', univs[i, 'univ_name'], '</a> (N=', univs[i, 'count'], ')</li>'))
+  cat(paste0('<li><a data-univ-id="', univs[i, 'univ_id'], '" data-univ-name="', univs[i, 'univ_name'], '" data-state-name="', univs[i, 'state_name'], '" data-metro1-name="', univs[i, 'metro1_name'], '" data-metro2-name="', univs[i, 'metro2_name'], '" data-metro3-name="', univs[i, 'metro3_name'], '">', univs[i, 'univ_name'], '</a> (N=', format(univs[i, 'count'], big.mark=','), ')</li>'))
 }
 ```
 </ul>
