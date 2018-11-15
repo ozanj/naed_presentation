@@ -28,13 +28,13 @@
 }
 
 #logo_ua {
-  transform: translate(-200%, -100%);
-  width: 200px;
+  transform: translate(-220%, -120%);
+  width: 150px;
 }
 
 #logo_ucla {
-  transform: translate(95%, -200%);
-  width: 220px;
+  transform: translate(100%, -240%);
+  width: 180px;
 }
 
 .reveal #title h1 {
