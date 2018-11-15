@@ -17,6 +17,8 @@ csl: ./assets/other/apa.csl
 --- #title
 
 
+
+
 # Coming Soon to a Neighborhood Near You?
 ## Off-Campus Recruiting by Public Research Universities
 
@@ -35,14 +37,27 @@ Crystal Han
 <a id='link_presentation' href='https://ozanj.github.io/naed_presentation/' target='_blank'>ozanj.github.io/naed_presentation</a>
 
 --- 
+# Acknowledgments
+
+<br>
+This research was made possible by funding from the following sources:
+
+<br>
+- __National Academy of Education/Spencer Foundation__ (Postdoctoral Fellowship)
+- __American Educational Research Association__ (Dissertation Grant)
+- __UCLA Office of Equity, Diversity, and Inclusion__ (Faculty Career Development Award)
+- __Joyce Foundation__ (Research Grant)
+
+
+--- 
 
 # Motivation
 ## The problem with policy discourse about college access
 
 The 2014 White House "Access Summit" 
-- The White House (2014a) review of causes of unequal college access
+- The White House (2014) review of causes of unequal college access
     - Highlights "achievement gap", "under-matching"
-- *Commitments to Action on College Opportunity*  (The White House, 2014b)
+- *Commitments to Action on College Opportunity*  (The White House, 2014)
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
@@ -50,7 +65,7 @@ Problem with policy discourse
 
 <br>
 Alternative explanation for access inequality
-- University enrollment priorities and behaviors biased against poor students and/or communities of color
+- University enrollment priorities biased against poor students and/or communities of color
 
 Research focus (this paper)
 - We argue recruiting behavior is an indicator of enrollment preferences
@@ -103,37 +118,12 @@ Scholarship on recruiting is sparse
     - From the college perspective (Stevens, 2007)
         - Important for relationships with prospects, counselors at "feeder" schools
     - From the perspective of high school students (Holland, 2019)
-        - Which universities visit affects student decisions, especially first-gen and students of color
+        - Which universities visit affects student decisions; especially first-gen, students of color
 
-
+<br>
 Research gap
 - We don't know which universities visit which schools and communities
 - If poor students, communities of color are not being recruited, then "under-matching" may be due to under-recruiting rather than lack of guidance
-
-<!--
----
-
-# Background
-## Scholarship on college access
-
-Most research on access focuses on "demand side"
-- Response to aid
-- "under-matching": high-achieving, low-income students lack information/guidance
-    - Interventions to overcome information asymmetries, nudge students
-
-Few studies analyze recruiting
-
-- Audits of university resonse to inquiries
-- Off-campus recruiting visits
-    - College perspective (Stevens, 2007): important for relationships with prospects, counselors at "feeder" schools
-    - Student/high school perspective (Holland, forthcoming): Which universities visit affects student decisions, especially first-generation and students of color
-
-Research gap
-
-- Access depends on which universities visit your school
-- We don't know which universities visit which schools
--->
-
 
 ---
 
@@ -150,17 +140,14 @@ Organizational theory
         - Substantively adopt some goals (technical level)
         - Symbolically adopt others (policies, rhetoric)
 
+<br>
 Application to enrollment management (EM)
 
 - "Iron triangle" of EM highlights three broad enrollment goals: **access, academic profile, revenue**
     - Resources scarce; depending on priorities, some goals receive more resources than others
 - Enrollment priorities cannot be discerned by policies, rhetoric    
 - Recruiting is allocation of resources from technical level
-    - Knowing which populations targeted by recruiting interventions is indicator of enrollment priorities
-
-
-
-
+    - Knowing which populations targeted by recruiting interventions indicate enrollment priorities
 
 --- &twocol
 
@@ -204,6 +191,7 @@ Why this research question:
 - Explore behavior inductively, rather than test specific hypotheses
 - Subsequent papers more focused, thematic (e.g., racial red-lining, international recruiting)
 
+<br>
 Why focus on public research universities:
 - Historic mission of social mobility for state residents
 - Decline in state funding, growth in nonresident enrollment (Jaquette and Curs, 2015)
@@ -284,6 +272,7 @@ Quantitative multiple case study design
 - "Cross-case" analyses
     - Descriptive statistics and qualitative coding methods
 
+<br>
 Comparison to alternative research designs
 - Large-N, random sample design
     - Not possible because recruiting data unavailable for random sample
@@ -299,7 +288,7 @@ Comparison to alternative research designs
 
 Analysis sample consists of 15 public research universities
 - Chosen from larger data collection sample (N=54) based on "completeness" of recruiting event data
-- Subsequent drafts may reduce sample size, based on case study principles of "purposeful sampling" (Patton, 2002)
+- Subsequent drafts may reduce sample size based on principles of purposeful sampling (Patton, 2002)
 
 <div class='graphs-set' style='height:380px;padding-top:5px'>
   <img src='assets/img/univ_characteristics_median.png' alt='University Sample Characteristics' style='height:100%' data-title='Characteristics of Study Institutions compared to National Selective Public Institutions' data-caption="* University of Alabama is only university in sample not part of 2015 Carnegie Classification's 'Doctoral Universities: Highest Research Activity'; 2017 US News World & Report ranking was used; 2017 IPEDS data was used for figures on SAT/ACT test scores, number of freshmen, percent out-of-state, and tuition; 2016 IPEDS data was used for figures on pell and revenue" />
@@ -309,6 +298,9 @@ Analysis sample consists of 15 public research universities
 
 # Deep-Dive Results
 ## Click on a university to take a closer look at the results &nbsp;
+
+<br>
+__N__ refers to total number of off-campus recruiting visits
 
 <!--
 select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name, (
@@ -341,6 +333,7 @@ left join msa_metadata msa3 on msa3.cbsa_code = muc.metro3
 where mu.univ_id in ('100751', '106397', '110635', '110653', '126614', '139959', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
 order by 2;
 -->
+
 
 <ul id="univ_options">
 <li><a data-univ-id="199193" data-univ-name="North Carolina State University" data-state-name="North Carolina" data-metro1-name="Raleigh, NC" data-metro2-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro3-name="Washington-Arlington-Alexandria, DC-VA-MD-WV">North Carolina State University</a> (N=649)</li><li><a data-univ-id="186380" data-univ-name="Rutgers University-New Brunswick" data-state-name="New Jersey" data-metro1-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro2-name="Washington-Arlington-Alexandria, DC-VA-MD-WV" data-metro3-name="San Francisco-Oakland-Hayward, CA">Rutgers University-New Brunswick</a> (N=1,143)</li><li><a data-univ-id="196097" data-univ-name="Stony Brook University" data-state-name="New York" data-metro1-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro2-name="Hartford-West Hartford-East Hartford, CT" data-metro3-name="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD">Stony Brook University</a> (N=730)</li><li><a data-univ-id="100751" data-univ-name="University of Alabama" data-state-name="Alabama" data-metro1-name="Birmingham-Hoover, AL" data-metro2-name="Atlanta-Sandy Springs-Roswell, GA" data-metro3-name="Dallas-Fort Worth-Arlington, TX">University of Alabama</a> (N=4,261)</li><li><a data-univ-id="106397" data-univ-name="University of Arkansas" data-state-name="Arkansas" data-metro1-name="Fayetteville-Springdale-Rogers, AR-MO" data-metro2-name="Dallas-Fort Worth-Arlington, TX" data-metro3-name="Chicago-Naperville-Elgin, IL-IN-WI">University of Arkansas</a> (N=1,001)</li><li><a data-univ-id="110635" data-univ-name="University of California-Berkeley" data-state-name="California" data-metro1-name="San Francisco-Oakland-Hayward, CA" data-metro2-name="Washington-Arlington-Alexandria, DC-VA-MD-WV" data-metro3-name="Atlanta-Sandy Springs-Roswell, GA">University of California-Berkeley</a> (N=879)</li><li><a data-univ-id="110653" data-univ-name="University of California-Irvine" data-state-name="California" data-metro1-name="Los Angeles-Long Beach-Anaheim, CA" data-metro2-name="Seattle-Tacoma-Bellevue, WA" data-metro3-name="Urban Honolulu, HI">University of California-Irvine</a> (N=540)</li><li><a data-univ-id="201885" data-univ-name="University of Cincinnati" data-state-name="Ohio" data-metro1-name="Cincinnati, OH-KY-IN" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="Washington-Arlington-Alexandria, DC-VA-MD-WV">University of Cincinnati</a> (N=681)</li><li><a data-univ-id="126614" data-univ-name="University of Colorado-Boulder" data-state-name="Colorado" data-metro1-name="Denver-Aurora-Lakewood, CO" data-metro2-name="Los Angeles-Long Beach-Anaheim, CA" data-metro3-name="Chicago-Naperville-Elgin, IL-IN-WI">University of Colorado-Boulder</a> (N=1,445)</li><li><a data-univ-id="139959" data-univ-name="University of Georgia" data-state-name="Georgia" data-metro1-name="Atlanta-Sandy Springs-Roswell, GA" data-metro2-name="Los Angeles-Long Beach-Anaheim, CA" data-metro3-name="Dallas-Fort Worth-Arlington, TX">University of Georgia</a> (N=834)</li><li><a data-univ-id="155317" data-univ-name="University of Kansas" data-state-name="Kansas" data-metro1-name="Kansas City, MO-KS" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="St. Louis, MO-IL">University of Kansas</a> (N=1,023)</li><li><a data-univ-id="166629" data-univ-name="University of Massachusetts-Amherst" data-state-name="Massachusetts" data-metro1-name="Boston-Cambridge-Newton, MA-NH" data-metro2-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro3-name="Los Angeles-Long Beach-Anaheim, CA">University of Massachusetts-Amherst</a> (N=908)</li><li><a data-univ-id="181464" data-univ-name="University of Nebraska-Lincoln" data-state-name="Nebraska" data-metro1-name="Lincoln, NE" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="Dallas-Fort Worth-Arlington, TX">University of Nebraska-Lincoln</a> (N=1,404)</li><li><a data-univ-id="215293" data-univ-name="University of Pittsburgh" data-state-name="Pennsylvania" data-metro1-name="Pittsburgh, PA" data-metro2-name="Chicago-Naperville-Elgin, IL-IN-WI" data-metro3-name="Washington-Arlington-Alexandria, DC-VA-MD-WV">University of Pittsburgh</a> (N=1,232)</li><li><a data-univ-id="218663" data-univ-name="University of South Carolina-Columbia" data-state-name="South Carolina" data-metro1-name="Columbia, SC" data-metro2-name="New York-Newark-Jersey City, NY-NJ-PA" data-metro3-name="Chicago-Naperville-Elgin, IL-IN-WI">University of South Carolina-Columbia</a> (N=1,472)</li>
@@ -517,16 +510,16 @@ order by 2;
 Summary of results
 - Majority of universities in our sample hosted twice as many out-of-state events as in-state events
     - Out-of-state events focus on affluent public schools and private schools
-- Several universities focus more on in-state recruiting (e.g., U. Nebraska, North Carolina State, UC Berkeley)
+- Several universities focus more on in-state recruiting (e.g., U. Nebraska, North Carolina State)
 - In-state visits tend to show little evidence of income or racial bias
 - Some universities (e.g., Rutgers) show income/racial bias even in in-state visits
-    - Must investigate whether bias persists after controlling for academic achievement, other factors
+    - Must investigate whether bias persists after controlling for academic achievement, etc.
 
 <br>
 Next steps
 - Complete data quality checks (e.g., incorporate data from public records requests) 
 - Conduct "deep dive" for all universities
-- Compare results across universitiesq
+- Compare results across universities
     - Quantitative descriptive analyses; qualitative coding
 - Develop broad categories of recruiting "types" and categorize universities
 
@@ -538,7 +531,7 @@ Next steps
 
 Off-campus recruiting project
 - Expand data collection (e.g., regional public universities); publicly release all data
-- Develop manuscripts with more narrow focus (e.g., do new public high schools get visits?)
+- Develop manuscripts with more narrow focus (e.g., nexus between state/local politics and visits)
 
 Student list project (collected pilot data)
 - Which student characteristics do universities prioritize when prospect lists from College Board/ACT?
@@ -551,7 +544,7 @@ Experimental audits of university responses to "inquiries" (pre-pilot stage)
 <br>
 Impact goals
 - Change national policy discourse on access inequality
-- Empower local actors to hold universities accountable for stated commitments to access
+- Empower local actors to hold universities accountable access commitments (example HERE; CRYSTAL ADD LINK)
     - Unless we document enrollment management behavior, we invite symbolic responses
 
 
@@ -560,13 +553,7 @@ Impact goals
 # References
 ## &nbsp;
 
-<p><a id='bib-RN3536'></a><a href="#cite-RN3536">[1]</a><cite>
-S. Alon.
-&ldquo;The evolution of class inequality in higher education: competition, exclusion, and adaptation&rdquo;.
-In: <em>American Sociological Review</em> 74.5 (2009), pp. 731-755.
-ISSN: 0003-1224.</cite></p>
-
-<p><a id='bib-RN4331'></a><a href="#cite-RN4331">[2]</a><cite>
+<p><a id='bib-RN4331'></a><a href="#cite-RN4331">[1]</a><cite>
 A. Hanson.
 &ldquo;Do college admissions counselors discriminate? Evidence from a correspondence-based field experiment&rdquo;.
 In: <em>Economics of Education Review</em> 60 (2017), pp. 86-96.
@@ -574,16 +561,23 @@ ISSN: 0272-7757.
 DOI: <a href="https://doi.org/https://doi.org/10.1016/j.econedurev.2017.08.004">https://doi.org/10.1016/j.econedurev.2017.08.004</a>.
 URL: <a href="http://www.sciencedirect.com/science/article/pii/S0272775716304526">http://www.sciencedirect.com/science/article/pii/S0272775716304526</a>.</cite></p>
 
-<p><a id='bib-RN4324'></a><a href="#cite-RN4324">[3]</a><cite>
+<p><a id='bib-RN4324'></a><a href="#cite-RN4324">[2]</a><cite>
 M. M. Holland.
 <em>Divergent pathways to college: Race, class, and inequality in high schools</em>.
 New Brunswick, NJ: Rutgers University Press, 2019.</cite></p>
 
-<p><a id='bib-RN3753'></a><a href="#cite-RN3753">[4]</a><cite>
+<p><a id='bib-RN3753'></a><a href="#cite-RN3753">[3]</a><cite>
 O. Jaquette and B. R. Curs.
 &ldquo;Creating the out-of-state university: Do public universities increase nonresident freshman enrollment in response to declining state appropriations?&rdquo;
 In: <em>Research in Higher Education</em> 56.6 (2015), pp. 535-565.
 ISSN: 0361-0365.</cite></p>
+
+<p><a id='bib-RN3522'></a><a href="#cite-RN3522">[4]</a><cite>
+L. Killgore.
+&ldquo;Merit and Competition in Selective College Admissions&rdquo;.
+In: <em>Review of Higher Education</em> 32.4 (2009), pp. 469-488.
+ISSN: 0162-5748; 1090-7009.
+URL: <a href="%3CGo to ISI%3E://WOS:000266737500002">&lt;Go to ISI&gt;://WOS:000266737500002</a>.</cite></p>
 
 <p><a id='bib-RN4545'></a><a href="#cite-RN4545">[5]</a><cite>
 H. Korzilius.
@@ -635,6 +629,6 @@ New York: McGraw Hill, 1967.</cite></p>
 <p><a id='bib-RN4360'></a><a href="#cite-RN4360">[13]</a><cite>
 T. Thornhill.
 &ldquo;We Want Black Students, Just Not You: How White Admissions Counselors Screen Black Prospective Students&rdquo;.
-In: <em>Sociology of Race and Ethnicity</em> 0.0 (), p. 2332649218792579.
+In: <em>Sociology of Race and Ethnicity</em> 0.0 ().
 DOI: <a href="https://doi.org/10.1177/2332649218792579">10.1177/2332649218792579</a>.
 URL: <a href="https://journals.sagepub.com/doi/abs/10.1177/2332649218792579">https://journals.sagepub.com/doi/abs/10.1177/2332649218792579</a>.</cite></p>
