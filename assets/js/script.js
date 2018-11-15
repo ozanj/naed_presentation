@@ -79,7 +79,6 @@ $(function() {
   }
 
   Reveal.addEventListener('ready', function(e) {
-    $('.btn').attr('href', `#/${verticalSlide}`)
     if ($(e.currentSlide).hasClass('vertical')) {
       handleVertical();
     } else { // horizontal slide

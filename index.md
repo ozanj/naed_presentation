@@ -55,9 +55,9 @@ This research was made possible by funding from the following sources:
 ## The problem with policy discourse about college access
 
 The 2014 White House "Access Summit" 
-- The White House (2014) review of causes of unequal college access
+- The White House (2014a) review of causes of unequal college access
     - Highlights "achievement gap", "under-matching"
-- *Commitments to Action on College Opportunity*  (The White House, 2014)
+- *Commitments to Action on College Opportunity*  (The White House, 2014b)
     - Universities pledge "action plans" (e.g., holistic admission, need-based aid, "outreach")
 
 Problem with policy discourse
@@ -534,7 +534,7 @@ Off-campus recruiting project
 - Develop manuscripts with more narrow focus (e.g., nexus between state/local politics and visits)
 
 Student list project (collected pilot data)
-- Which student characteristics do universities prioritize when prospect lists from College Board/ACT?
+- Which student characteristics do universities prioritize when purchasing prospect lists from College Board/ACT?
 - Data collection: Public records requests
 
 Experimental audits of university responses to "inquiries" (pre-pilot stage)
@@ -544,7 +544,7 @@ Experimental audits of university responses to "inquiries" (pre-pilot stage)
 <br>
 Impact goals
 - Change national policy discourse on access inequality
-- Empower local actors to hold universities accountable access commitments (example HERE; CRYSTAL ADD LINK)
+- Empower local actors to hold universities accountable access commitments (example <a href='./assets/other/colorado_letter.pdf' target='_blank'>HERE</a>)
     - Unless we document enrollment management behavior, we invite symbolic responses
 
 
