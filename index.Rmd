@@ -55,7 +55,10 @@ cite <- function(b, eg = TRUE) {
 #server stuff
 library(servr)
 servr::httd()
-#http://127.0.0.1:7508
+
+#link to online presentation
+https://ozanj.github.io/naed_presentation/
+
 ```
 
 # Coming Soon to a Neighborhood Near You?
