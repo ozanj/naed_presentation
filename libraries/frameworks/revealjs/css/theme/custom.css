@@ -113,6 +113,10 @@ body {
   line-height: 1em;
 }
 
+.reveal table tbody {
+  font-size: 17px;
+}
+
 .reveal table thead td {
   text-decoration: underline;
   padding-bottom: 20px;
