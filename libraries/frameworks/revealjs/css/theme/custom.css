@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Source+Code+Pro:500|Open+Sans:300,400,700|Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Source+Code+Pro:500|Open+Sans:300,400,600,700|Oswald);
 
 /* Main */
 
 body {
   font-family: 'Open Sans','Helvetica', 'Crimson Text', 'Garamond', 'Palatino', sans-serif;
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.9em;
   color: #444;
   background-color: whitesmoke;
@@ -16,7 +16,7 @@ body {
 }
 
 .reveal strong {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .reveal em {
@@ -49,10 +49,11 @@ body {
   letter-spacing: -2px;
   font-size: 30px;
   margin: -35px 0 35px;
+  font-weight: 300;
 }
 
 .reveal p {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* Lists */
@@ -65,7 +66,7 @@ body {
 .reveal ul, .reveal ol {
   padding: 0;
   margin-left: 3em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /*
@@ -156,15 +157,16 @@ body {
 
 .reveal span.univ-name {
   float: right;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: -1px;
-  margin: 5px 0;
-  color: gray;
+  margin: 10px 0;
+  color: #444;
 }
 
 .reveal .logo {
   position: absolute;
   top: 660px;
   font-size: 14px;
+  font-weight: 300;
 }
