@@ -544,7 +544,7 @@ Experimental audits of university responses to "inquiries" (pre-pilot stage)
 <br>
 Impact goals
 - Change national policy discourse on access inequality
-- Empower local actors to hold universities accountable access commitments (example <a href='./assets/other/colorado_letter.pdf' target='_blank'>HERE</a>)
+- Empower local actors to hold universities accountable for access commitments (example <a href='./assets/other/colorado_letter.pdf' target='_blank'>HERE</a>)
     - Unless we document enrollment management behavior, we invite symbolic responses
 
 
