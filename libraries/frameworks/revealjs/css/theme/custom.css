@@ -17,6 +17,7 @@ body {
 
 .reveal strong {
   font-weight: 700;
+  color: #111;
 }
 
 .reveal em {
@@ -53,7 +54,8 @@ body {
 }
 
 .reveal p {
-  font-weight: 700;
+  font-weight: 600;
+  color: #333;
 }
 
 /* Lists */
