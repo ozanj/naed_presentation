@@ -57,7 +57,7 @@ library(servr)
 servr::httd()
 
 #link to online presentation
-https://ozanj.github.io/naed_presentation/
+#https://ozanj.github.io/naed_presentation/
 
 ```
 
